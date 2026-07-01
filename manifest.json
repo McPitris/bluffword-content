@@ -1,24 +1,24 @@
 {
   "schemaVersion": 1,
   "contentVersion": 2,
-  "generatedAt": "2026-07-01T14:24:59Z",
+  "generatedAt": "2026-07-01T14:35:21Z",
   "minimumAppVersion": "0.7.0",
   "files": [
     {
       "id": "categories-cs",
       "path": "cs/categories.json",
       "url": "https://mcpitris.github.io/bluffword-content/cs/categories.json",
-      "sha256": "68ed8e9c5cfea5dd669d08b1a1ff47378abbeef0b1bd88c1d84f564f8e995df3",
+      "sha256": "3609ec35c31e83c5fb86c4b97144a0cd2a60aebb5e1a14bf1fd8e637679ff04a",
       "contentType": "application/json",
-      "sizeBytes": 16608
+      "sizeBytes": 20035
     },
     {
       "id": "categories-en",
       "path": "en/categories.json",
       "url": "https://mcpitris.github.io/bluffword-content/en/categories.json",
-      "sha256": "8526bd6f38855f8e0333fa954ff88cdb12614b02f4857e5f95ec745e655026c1",
+      "sha256": "adcf287d345dab9a51d1c30321722b04fe9eeb7a3ce43a808a0223e2fcd91c60",
       "contentType": "application/json",
-      "sizeBytes": 16375
+      "sizeBytes": 19736
     },
     {
       "id": "category-animals-image",
@@ -35,6 +35,14 @@
       "sha256": "0d30c9d6d6fb831be8935a528b2a8e18d7a727330971dc4d5c53e018029302ca",
       "contentType": "image/png",
       "sizeBytes": 1925682
+    },
+    {
+      "id": "category-jobs-image",
+      "path": "assets/categories/jobs.png",
+      "url": "https://mcpitris.github.io/bluffword-content/assets/categories/jobs.png",
+      "sha256": "b59237451cb733017f06135f3ec198dc4bc1ed70d9d98a1166c442dd0c67337a",
+      "contentType": "image/png",
+      "sizeBytes": 2163360
     },
     {
       "id": "category-movies-image",
