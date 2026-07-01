@@ -1,6 +1,6 @@
 {
   "locale": "cs",
-  "version": 1,
+  "version": 1.1,
   "categories": [
     {
       "id": "food",
@@ -56,6 +56,106 @@
           "id": "hranolky",
           "text": "Hranolky",
           "hint": "kečup"
+        },
+        {
+          "id": "rizek",
+          "text": "Řízek",
+          "hint": "strouhanka"
+        },
+        {
+          "id": "testoviny",
+          "text": "Těstoviny",
+          "hint": "omáčka"
+        },
+        {
+          "id": "salat",
+          "text": "Salát",
+          "hint": "zálivka"
+        },
+        {
+          "id": "hotdog",
+          "text": "Hotdog",
+          "hint": "hořčice"
+        },
+        {
+          "id": "donut",
+          "text": "Donut",
+          "hint": "poleva"
+        },
+        {
+          "id": "popcorn",
+          "text": "Popcorn",
+          "hint": "kino"
+        },
+        {
+          "id": "cokolada",
+          "text": "Čokoláda",
+          "hint": "kakao"
+        },
+        {
+          "id": "dort",
+          "text": "Dort",
+          "hint": "svíčka"
+        },
+        {
+          "id": "polevka",
+          "text": "Polévka",
+          "hint": "lžíce"
+        },
+        {
+          "id": "kava",
+          "text": "Káva",
+          "hint": "kofein"
+        },
+        {
+          "id": "caj",
+          "text": "Čaj",
+          "hint": "konvice"
+        },
+        {
+          "id": "sendvic",
+          "text": "Sendvič",
+          "hint": "toast"
+        },
+        {
+          "id": "omeleta",
+          "text": "Omeleta",
+          "hint": "vejce"
+        },
+        {
+          "id": "knedliky",
+          "text": "Knedlíky",
+          "hint": "pára"
+        },
+        {
+          "id": "steak",
+          "text": "Steak",
+          "hint": "gril"
+        },
+        {
+          "id": "rizoto",
+          "text": "Rizoto",
+          "hint": "rýže"
+        },
+        {
+          "id": "tortilla",
+          "text": "Tortilla",
+          "hint": "placka"
+        },
+        {
+          "id": "strudl",
+          "text": "Štrúdl",
+          "hint": "jablko"
+        },
+        {
+          "id": "vafle",
+          "text": "Vafle",
+          "hint": "mřížka"
+        },
+        {
+          "id": "med",
+          "text": "Med",
+          "hint": "úl"
         }
       ],
       "imagePath": "assets/categories/food.png"
@@ -114,6 +214,106 @@
           "id": "zaporak",
           "text": "Záporák",
           "hint": "plán"
+        },
+        {
+          "id": "reziser",
+          "text": "Režisér",
+          "hint": "klapka"
+        },
+        {
+          "id": "herec",
+          "text": "Herec",
+          "hint": "role"
+        },
+        {
+          "id": "kamera",
+          "text": "Kamera",
+          "hint": "objektiv"
+        },
+        {
+          "id": "scenar",
+          "text": "Scénář",
+          "hint": "dialog"
+        },
+        {
+          "id": "kino",
+          "text": "Kino",
+          "hint": "plátno"
+        },
+        {
+          "id": "trailer",
+          "text": "Trailer",
+          "hint": "ukázka"
+        },
+        {
+          "id": "soundtrack",
+          "text": "Soundtrack",
+          "hint": "melodie"
+        },
+        {
+          "id": "animak",
+          "text": "Animák",
+          "hint": "kresba"
+        },
+        {
+          "id": "western",
+          "text": "Western",
+          "hint": "klobouk"
+        },
+        {
+          "id": "romance",
+          "text": "Romance",
+          "hint": "polibek"
+        },
+        {
+          "id": "akcni_film",
+          "text": "Akční film",
+          "hint": "výbuch"
+        },
+        {
+          "id": "dokument",
+          "text": "Dokument",
+          "hint": "kamera"
+        },
+        {
+          "id": "mimozemstan",
+          "text": "Mimozemšťan",
+          "hint": "anténa"
+        },
+        {
+          "id": "zombie",
+          "text": "Zombie",
+          "hint": "hrob"
+        },
+        {
+          "id": "upir",
+          "text": "Upír",
+          "hint": "tesáky"
+        },
+        {
+          "id": "princezna",
+          "text": "Princezna",
+          "hint": "koruna"
+        },
+        {
+          "id": "rytir",
+          "text": "Rytíř",
+          "hint": "brnění"
+        },
+        {
+          "id": "duch",
+          "text": "Duch",
+          "hint": "prostěradlo"
+        },
+        {
+          "id": "komiks",
+          "text": "Komiks",
+          "hint": "bublina"
+        },
+        {
+          "id": "oscar",
+          "text": "Oscar",
+          "hint": "soška"
         }
       ],
       "imagePath": "assets/categories/movies.png"
@@ -172,6 +372,106 @@
           "id": "suvenyr",
           "text": "Suvenýr",
           "hint": "magnet"
+        },
+        {
+          "id": "autobus",
+          "text": "Autobus",
+          "hint": "zastávka"
+        },
+        {
+          "id": "lod",
+          "text": "Loď",
+          "hint": "kotva"
+        },
+        {
+          "id": "taxi",
+          "text": "Taxi",
+          "hint": "taxametr"
+        },
+        {
+          "id": "stan",
+          "text": "Stan",
+          "hint": "kolík"
+        },
+        {
+          "id": "batoh",
+          "text": "Batoh",
+          "hint": "popruh"
+        },
+        {
+          "id": "letiste",
+          "text": "Letiště",
+          "hint": "terminál"
+        },
+        {
+          "id": "vylet",
+          "text": "Výlet",
+          "hint": "trasa"
+        },
+        {
+          "id": "kemp",
+          "text": "Kemp",
+          "hint": "ohniště"
+        },
+        {
+          "id": "mesto",
+          "text": "Město",
+          "hint": "náměstí"
+        },
+        {
+          "id": "vesnice",
+          "text": "Vesnice",
+          "hint": "náves"
+        },
+        {
+          "id": "ostrov",
+          "text": "Ostrov",
+          "hint": "pobřeží"
+        },
+        {
+          "id": "zamek",
+          "text": "Zámek",
+          "hint": "věž"
+        },
+        {
+          "id": "hrad",
+          "text": "Hrad",
+          "hint": "hradba"
+        },
+        {
+          "id": "muzeum",
+          "text": "Muzeum",
+          "hint": "exponát"
+        },
+        {
+          "id": "lanovka",
+          "text": "Lanovka",
+          "hint": "kabina"
+        },
+        {
+          "id": "trajekt",
+          "text": "Trajekt",
+          "hint": "paluba"
+        },
+        {
+          "id": "letenka",
+          "text": "Letenka",
+          "hint": "brána"
+        },
+        {
+          "id": "dalnice",
+          "text": "Dálnice",
+          "hint": "pruh"
+        },
+        {
+          "id": "benzinka",
+          "text": "Benzínka",
+          "hint": "stojan"
+        },
+        {
+          "id": "pristav",
+          "text": "Přístav",
+          "hint": "molo"
         }
       ],
       "imagePath": "assets/categories/travel.png"
@@ -230,6 +530,106 @@
           "id": "kun",
           "text": "Kůň",
           "hint": "sedlo"
+        },
+        {
+          "id": "medved",
+          "text": "Medvěd",
+          "hint": "brloh"
+        },
+        {
+          "id": "vlk",
+          "text": "Vlk",
+          "hint": "smečka"
+        },
+        {
+          "id": "liska",
+          "text": "Liška",
+          "hint": "ocas"
+        },
+        {
+          "id": "opice",
+          "text": "Opice",
+          "hint": "banán"
+        },
+        {
+          "id": "krokodyl",
+          "text": "Krokodýl",
+          "hint": "čelisti"
+        },
+        {
+          "id": "zralok",
+          "text": "Žralok",
+          "hint": "ploutev"
+        },
+        {
+          "id": "lama",
+          "text": "Lama",
+          "hint": "plivnutí"
+        },
+        {
+          "id": "kralik",
+          "text": "Králík",
+          "hint": "mrkev"
+        },
+        {
+          "id": "prase",
+          "text": "Prase",
+          "hint": "rypák"
+        },
+        {
+          "id": "had",
+          "text": "Had",
+          "hint": "jazyk"
+        },
+        {
+          "id": "zaba",
+          "text": "Žába",
+          "hint": "leknín"
+        },
+        {
+          "id": "surikata",
+          "text": "Surikata",
+          "hint": "hlídka"
+        },
+        {
+          "id": "lemur",
+          "text": "Lemur",
+          "hint": "pruhy"
+        },
+        {
+          "id": "dikobraz",
+          "text": "Dikobraz",
+          "hint": "ostny"
+        },
+        {
+          "id": "krava",
+          "text": "Kráva",
+          "hint": "zvonec"
+        },
+        {
+          "id": "ovce",
+          "text": "Ovce",
+          "hint": "vlna"
+        },
+        {
+          "id": "slepice",
+          "text": "Slepice",
+          "hint": "kurník"
+        },
+        {
+          "id": "zelva",
+          "text": "Želva",
+          "hint": "krunýř"
+        },
+        {
+          "id": "sova",
+          "text": "Sova",
+          "hint": "noc"
+        },
+        {
+          "id": "netopyr",
+          "text": "Netopýr",
+          "hint": "jeskyně"
         }
       ],
       "imagePath": "assets/categories/animals.png"
@@ -288,6 +688,106 @@
           "id": "volejbal",
           "text": "Volejbal",
           "hint": "síť"
+        },
+        {
+          "id": "golf",
+          "text": "Golf",
+          "hint": "jamka"
+        },
+        {
+          "id": "baseball",
+          "text": "Baseball",
+          "hint": "pálka"
+        },
+        {
+          "id": "rugby",
+          "text": "Rugby",
+          "hint": "šiška"
+        },
+        {
+          "id": "sachy",
+          "text": "Šachy",
+          "hint": "král"
+        },
+        {
+          "id": "gymnastika",
+          "text": "Gymnastika",
+          "hint": "kladina"
+        },
+        {
+          "id": "atletika",
+          "text": "Atletika",
+          "hint": "stadion"
+        },
+        {
+          "id": "florbal",
+          "text": "Florbal",
+          "hint": "hokejka"
+        },
+        {
+          "id": "hazena",
+          "text": "Házená",
+          "hint": "branka"
+        },
+        {
+          "id": "badminton",
+          "text": "Badminton",
+          "hint": "košíček"
+        },
+        {
+          "id": "stolni_tenis",
+          "text": "Stolní tenis",
+          "hint": "pingpong"
+        },
+        {
+          "id": "skateboard",
+          "text": "Skateboard",
+          "hint": "prkno"
+        },
+        {
+          "id": "snowboarding",
+          "text": "Snowboarding",
+          "hint": "svah"
+        },
+        {
+          "id": "brusleni",
+          "text": "Bruslení",
+          "hint": "ostří"
+        },
+        {
+          "id": "lukostrelba",
+          "text": "Lukostřelba",
+          "hint": "terč"
+        },
+        {
+          "id": "serm",
+          "text": "Šerm",
+          "hint": "čepel"
+        },
+        {
+          "id": "judo",
+          "text": "Judo",
+          "hint": "kimono"
+        },
+        {
+          "id": "joga",
+          "text": "Jóga",
+          "hint": "podložka"
+        },
+        {
+          "id": "surfovani",
+          "text": "Surfování",
+          "hint": "vlna"
+        },
+        {
+          "id": "lezeni",
+          "text": "Lezení",
+          "hint": "stěna"
+        },
+        {
+          "id": "sipky",
+          "text": "Šipky",
+          "hint": "terč"
         }
       ],
       "imagePath": "assets/categories/sport.png"
