@@ -11,6 +11,8 @@ manifest.json
 cs/categories.json
 en/categories.json
 assets/categories/*.png
+scripts/generate_manifest.py
+.github/workflows/update-manifest.yml
 ```
 
 ## Updating content
@@ -19,9 +21,29 @@ assets/categories/*.png
 2. Add or replace category images in `assets/categories/`.
 3. Keep category `id` stable across locales.
 4. Keep `imagePath` the same in both locale files, for example `assets/categories/food.png`.
-5. Increase `contentVersion` in `manifest.json`.
-6. Update each changed file `sha256` and `sizeBytes` in `manifest.json`.
-7. Push changes. GitHub Pages will publish static files.
+5. Push changes to `master`.
+6. GitHub Actions regenerates `manifest.json`, bumps `contentVersion`, and commits the manifest.
+7. GitHub Pages publishes static files.
+
+## Generate manifest locally
+
+Regenerate hashes without changing the current version:
+
+```bash
+python3 scripts/generate_manifest.py
+```
+
+Bump the version manually:
+
+```bash
+python3 scripts/generate_manifest.py --bump
+```
+
+Set an explicit version:
+
+```bash
+python3 scripts/generate_manifest.py --version 3
+```
 
 ## Pages URL
 
