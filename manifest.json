@@ -1,24 +1,24 @@
 {
   "schemaVersion": 1,
-  "contentVersion": 1,
-  "generatedAt": "2026-07-01T13:43:35Z",
+  "contentVersion": 2,
+  "generatedAt": "2026-07-01T13:58:25Z",
   "minimumAppVersion": "0.7.0",
   "files": [
     {
       "id": "categories-cs",
       "path": "cs/categories.json",
       "url": "https://mcpitris.github.io/bluffword-content/cs/categories.json",
-      "sha256": "cf8bc18552934e883c4ae8fae384052e1c3b26a98efcc8fc1bd72b2d46a8c68f",
+      "sha256": "a0e294e62d346b709c1af2d14279c7c3f69f964cdc64c0492329eba2c5150314",
       "contentType": "application/json",
-      "sizeBytes": 6264
+      "sizeBytes": 16610
     },
     {
       "id": "categories-en",
       "path": "en/categories.json",
       "url": "https://mcpitris.github.io/bluffword-content/en/categories.json",
-      "sha256": "e229ac38ef37f7a4997ee2b2efed223d0ee1439b70535deb0a1125f9fbde8347",
+      "sha256": "bdd5f056f6c27a9ddd6f083ac3bd126b3568f7e8ebf329cbaefb57b42bcaaf92",
       "contentType": "application/json",
-      "sizeBytes": 6179
+      "sizeBytes": 16377
     },
     {
       "id": "category-animals-image",
