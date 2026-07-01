@@ -791,6 +791,164 @@
         }
       ],
       "imagePath": "assets/categories/sport.png"
+    },
+    {
+      "id": "jobs",
+      "name": "Jobs",
+      "description": "Professions, occupations and roles we meet in everyday life.",
+      "words": [
+        {
+          "id": "doctor",
+          "text": "Doctor",
+          "hint": "clinic"
+        },
+        {
+          "id": "teacher",
+          "text": "Teacher",
+          "hint": "bell"
+        },
+        {
+          "id": "firefighter",
+          "text": "Firefighter",
+          "hint": "smoke"
+        },
+        {
+          "id": "police_officer",
+          "text": "Police officer",
+          "hint": "badge"
+        },
+        {
+          "id": "chef",
+          "text": "Chef",
+          "hint": "apron"
+        },
+        {
+          "id": "baker",
+          "text": "Baker",
+          "hint": "dough"
+        },
+        {
+          "id": "waiter",
+          "text": "Waiter",
+          "hint": "tray"
+        },
+        {
+          "id": "farmer",
+          "text": "Farmer",
+          "hint": "barn"
+        },
+        {
+          "id": "driver",
+          "text": "Driver",
+          "hint": "wheel"
+        },
+        {
+          "id": "pilot",
+          "text": "Pilot",
+          "hint": "cockpit"
+        },
+        {
+          "id": "mechanic",
+          "text": "Mechanic",
+          "hint": "overalls"
+        },
+        {
+          "id": "electrician",
+          "text": "Electrician",
+          "hint": "fuses"
+        },
+        {
+          "id": "plumber",
+          "text": "Plumber",
+          "hint": "pipe"
+        },
+        {
+          "id": "carpenter",
+          "text": "Carpenter",
+          "hint": "sawdust"
+        },
+        {
+          "id": "builder",
+          "text": "Builder",
+          "hint": "mortar"
+        },
+        {
+          "id": "hairdresser",
+          "text": "Hairdresser",
+          "hint": "scissors"
+        },
+        {
+          "id": "dentist",
+          "text": "Dentist",
+          "hint": "drill"
+        },
+        {
+          "id": "nurse",
+          "text": "Nurse",
+          "hint": "bandage"
+        },
+        {
+          "id": "lawyer",
+          "text": "Lawyer",
+          "hint": "court"
+        },
+        {
+          "id": "judge",
+          "text": "Judge",
+          "hint": "gavel"
+        },
+        {
+          "id": "actor",
+          "text": "Actor",
+          "hint": "stage"
+        },
+        {
+          "id": "singer",
+          "text": "Singer",
+          "hint": "microphone"
+        },
+        {
+          "id": "photographer",
+          "text": "Photographer",
+          "hint": "lens"
+        },
+        {
+          "id": "journalist",
+          "text": "Journalist",
+          "hint": "interview"
+        },
+        {
+          "id": "programmer",
+          "text": "Programmer",
+          "hint": "code"
+        },
+        {
+          "id": "designer",
+          "text": "Designer",
+          "hint": "draft"
+        },
+        {
+          "id": "scientist",
+          "text": "Scientist",
+          "hint": "laboratory"
+        },
+        {
+          "id": "soldier",
+          "text": "Soldier",
+          "hint": "uniform"
+        },
+        {
+          "id": "cashier",
+          "text": "Cashier",
+          "hint": "receipt"
+        },
+        {
+          "id": "cleaner",
+          "text": "Cleaner",
+          "hint": "mop"
+        }
+      ],
+      "imagePath": "assets/categories/jobs.png"
     }
   ]
 }
