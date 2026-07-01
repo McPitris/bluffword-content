@@ -1,6 +1,6 @@
 {
   "locale": "en",
-  "version": 1,
+  "version": 1.1,
   "categories": [
     {
       "id": "food",
@@ -29,7 +29,7 @@
         },
         {
           "id": "zmrzlina",
-          "text": "Ice cream",
+          "text": "Ice Cream",
           "hint": "scoop"
         },
         {
@@ -56,6 +56,106 @@
           "id": "hranolky",
           "text": "Fries",
           "hint": "ketchup"
+        },
+        {
+          "id": "rizek",
+          "text": "Schnitzel",
+          "hint": "breadcrumbs"
+        },
+        {
+          "id": "testoviny",
+          "text": "Pasta",
+          "hint": "sauce"
+        },
+        {
+          "id": "salat",
+          "text": "Salad",
+          "hint": "dressing"
+        },
+        {
+          "id": "hotdog",
+          "text": "Hotdog",
+          "hint": "mustard"
+        },
+        {
+          "id": "donut",
+          "text": "Donut",
+          "hint": "glaze"
+        },
+        {
+          "id": "popcorn",
+          "text": "Popcorn",
+          "hint": "cinema"
+        },
+        {
+          "id": "cokolada",
+          "text": "Chocolate",
+          "hint": "cocoa"
+        },
+        {
+          "id": "dort",
+          "text": "Cake",
+          "hint": "candle"
+        },
+        {
+          "id": "polevka",
+          "text": "Soup",
+          "hint": "spoon"
+        },
+        {
+          "id": "kava",
+          "text": "Coffee",
+          "hint": "caffeine"
+        },
+        {
+          "id": "caj",
+          "text": "Tea",
+          "hint": "kettle"
+        },
+        {
+          "id": "sendvic",
+          "text": "Sandwich",
+          "hint": "toast"
+        },
+        {
+          "id": "omeleta",
+          "text": "Omelette",
+          "hint": "egg"
+        },
+        {
+          "id": "knedliky",
+          "text": "Dumplings",
+          "hint": "steam"
+        },
+        {
+          "id": "steak",
+          "text": "Steak",
+          "hint": "grill"
+        },
+        {
+          "id": "rizoto",
+          "text": "Risotto",
+          "hint": "rice"
+        },
+        {
+          "id": "tortilla",
+          "text": "Tortilla",
+          "hint": "wrap"
+        },
+        {
+          "id": "strudl",
+          "text": "Strudel",
+          "hint": "apple"
+        },
+        {
+          "id": "vafle",
+          "text": "Waffles",
+          "hint": "grid"
+        },
+        {
+          "id": "med",
+          "text": "Honey",
+          "hint": "hive"
         }
       ],
       "imagePath": "assets/categories/food.png"
@@ -68,7 +168,7 @@
         {
           "id": "komedie",
           "text": "Comedy",
-          "hint": "laughter"
+          "hint": "laugh"
         },
         {
           "id": "horor",
@@ -113,7 +213,107 @@
         {
           "id": "zaporak",
           "text": "Villain",
-          "hint": "plan"
+          "hint": "scheme"
+        },
+        {
+          "id": "reziser",
+          "text": "Director",
+          "hint": "clapboard"
+        },
+        {
+          "id": "herec",
+          "text": "Actor",
+          "hint": "role"
+        },
+        {
+          "id": "kamera",
+          "text": "Camera",
+          "hint": "lens"
+        },
+        {
+          "id": "scenar",
+          "text": "Script",
+          "hint": "dialogue"
+        },
+        {
+          "id": "kino",
+          "text": "Cinema",
+          "hint": "screen"
+        },
+        {
+          "id": "trailer",
+          "text": "Trailer",
+          "hint": "preview"
+        },
+        {
+          "id": "soundtrack",
+          "text": "Soundtrack",
+          "hint": "melody"
+        },
+        {
+          "id": "animak",
+          "text": "Cartoon",
+          "hint": "drawing"
+        },
+        {
+          "id": "western",
+          "text": "Western",
+          "hint": "hat"
+        },
+        {
+          "id": "romance",
+          "text": "Romance",
+          "hint": "kiss"
+        },
+        {
+          "id": "akcni_film",
+          "text": "Action Movie",
+          "hint": "explosion"
+        },
+        {
+          "id": "dokument",
+          "text": "Documentary",
+          "hint": "footage"
+        },
+        {
+          "id": "mimozemstan",
+          "text": "Alien",
+          "hint": "antenna"
+        },
+        {
+          "id": "zombie",
+          "text": "Zombie",
+          "hint": "grave"
+        },
+        {
+          "id": "upir",
+          "text": "Vampire",
+          "hint": "fangs"
+        },
+        {
+          "id": "princezna",
+          "text": "Princess",
+          "hint": "crown"
+        },
+        {
+          "id": "rytir",
+          "text": "Knight",
+          "hint": "armor"
+        },
+        {
+          "id": "duch",
+          "text": "Ghost",
+          "hint": "sheet"
+        },
+        {
+          "id": "komiks",
+          "text": "Comic",
+          "hint": "bubble"
+        },
+        {
+          "id": "oscar",
+          "text": "Oscar",
+          "hint": "statue"
         }
       ],
       "imagePath": "assets/categories/movies.png"
@@ -125,7 +325,7 @@
       "words": [
         {
           "id": "letadlo",
-          "text": "Plane",
+          "text": "Airplane",
           "hint": "wing"
         },
         {
@@ -156,7 +356,7 @@
         {
           "id": "vlak",
           "text": "Train",
-          "hint": "tracks"
+          "hint": "rails"
         },
         {
           "id": "pas",
@@ -172,6 +372,106 @@
           "id": "suvenyr",
           "text": "Souvenir",
           "hint": "magnet"
+        },
+        {
+          "id": "autobus",
+          "text": "Bus",
+          "hint": "stop"
+        },
+        {
+          "id": "lod",
+          "text": "Boat",
+          "hint": "anchor"
+        },
+        {
+          "id": "taxi",
+          "text": "Taxi",
+          "hint": "meter"
+        },
+        {
+          "id": "stan",
+          "text": "Tent",
+          "hint": "peg"
+        },
+        {
+          "id": "batoh",
+          "text": "Backpack",
+          "hint": "strap"
+        },
+        {
+          "id": "letiste",
+          "text": "Airport",
+          "hint": "terminal"
+        },
+        {
+          "id": "vylet",
+          "text": "Trip",
+          "hint": "route"
+        },
+        {
+          "id": "kemp",
+          "text": "Campsite",
+          "hint": "campfire"
+        },
+        {
+          "id": "mesto",
+          "text": "City",
+          "hint": "square"
+        },
+        {
+          "id": "vesnice",
+          "text": "Village",
+          "hint": "chapel"
+        },
+        {
+          "id": "ostrov",
+          "text": "Island",
+          "hint": "coast"
+        },
+        {
+          "id": "zamek",
+          "text": "Chateau",
+          "hint": "tower"
+        },
+        {
+          "id": "hrad",
+          "text": "Castle",
+          "hint": "wall"
+        },
+        {
+          "id": "muzeum",
+          "text": "Museum",
+          "hint": "exhibit"
+        },
+        {
+          "id": "lanovka",
+          "text": "Cable Car",
+          "hint": "cabin"
+        },
+        {
+          "id": "trajekt",
+          "text": "Ferry",
+          "hint": "deck"
+        },
+        {
+          "id": "letenka",
+          "text": "Plane Ticket",
+          "hint": "gate"
+        },
+        {
+          "id": "dalnice",
+          "text": "Highway",
+          "hint": "lane"
+        },
+        {
+          "id": "benzinka",
+          "text": "Gas Station",
+          "hint": "pump"
+        },
+        {
+          "id": "pristav",
+          "text": "Port",
+          "hint": "pier"
         }
       ],
       "imagePath": "assets/categories/travel.png"
@@ -230,6 +530,106 @@
           "id": "kun",
           "text": "Horse",
           "hint": "saddle"
+        },
+        {
+          "id": "medved",
+          "text": "Bear",
+          "hint": "den"
+        },
+        {
+          "id": "vlk",
+          "text": "Wolf",
+          "hint": "pack"
+        },
+        {
+          "id": "liska",
+          "text": "Fox",
+          "hint": "tail"
+        },
+        {
+          "id": "opice",
+          "text": "Monkey",
+          "hint": "banana"
+        },
+        {
+          "id": "krokodyl",
+          "text": "Crocodile",
+          "hint": "jaws"
+        },
+        {
+          "id": "zralok",
+          "text": "Shark",
+          "hint": "fin"
+        },
+        {
+          "id": "lama",
+          "text": "Llama",
+          "hint": "spit"
+        },
+        {
+          "id": "kralik",
+          "text": "Rabbit",
+          "hint": "carrot"
+        },
+        {
+          "id": "prase",
+          "text": "Pig",
+          "hint": "snout"
+        },
+        {
+          "id": "had",
+          "text": "Snake",
+          "hint": "tongue"
+        },
+        {
+          "id": "zaba",
+          "text": "Frog",
+          "hint": "lily"
+        },
+        {
+          "id": "surikata",
+          "text": "Meerkat",
+          "hint": "lookout"
+        },
+        {
+          "id": "lemur",
+          "text": "Lemur",
+          "hint": "stripes"
+        },
+        {
+          "id": "dikobraz",
+          "text": "Porcupine",
+          "hint": "quills"
+        },
+        {
+          "id": "krava",
+          "text": "Cow",
+          "hint": "bell"
+        },
+        {
+          "id": "ovce",
+          "text": "Sheep",
+          "hint": "wool"
+        },
+        {
+          "id": "slepice",
+          "text": "Chicken",
+          "hint": "coop"
+        },
+        {
+          "id": "zelva",
+          "text": "Turtle",
+          "hint": "shell"
+        },
+        {
+          "id": "sova",
+          "text": "Owl",
+          "hint": "night"
+        },
+        {
+          "id": "netopyr",
+          "text": "Bat",
+          "hint": "cave"
         }
       ],
       "imagePath": "assets/categories/animals.png"
@@ -241,7 +641,7 @@
       "words": [
         {
           "id": "fotbal",
-          "text": "Soccer",
+          "text": "Football",
           "hint": "cleat"
         },
         {
@@ -288,6 +688,106 @@
           "id": "volejbal",
           "text": "Volleyball",
           "hint": "net"
+        },
+        {
+          "id": "golf",
+          "text": "Golf",
+          "hint": "hole"
+        },
+        {
+          "id": "baseball",
+          "text": "Baseball",
+          "hint": "bat"
+        },
+        {
+          "id": "rugby",
+          "text": "Rugby",
+          "hint": "oval"
+        },
+        {
+          "id": "sachy",
+          "text": "Chess",
+          "hint": "king"
+        },
+        {
+          "id": "gymnastika",
+          "text": "Gymnastics",
+          "hint": "beam"
+        },
+        {
+          "id": "atletika",
+          "text": "Athletics",
+          "hint": "stadium"
+        },
+        {
+          "id": "florbal",
+          "text": "Floorball",
+          "hint": "stick"
+        },
+        {
+          "id": "hazena",
+          "text": "Handball",
+          "hint": "goal"
+        },
+        {
+          "id": "badminton",
+          "text": "Badminton",
+          "hint": "shuttle"
+        },
+        {
+          "id": "stolni_tenis",
+          "text": "Table Tennis",
+          "hint": "pingpong"
+        },
+        {
+          "id": "skateboard",
+          "text": "Skateboard",
+          "hint": "board"
+        },
+        {
+          "id": "snowboarding",
+          "text": "Snowboarding",
+          "hint": "powder"
+        },
+        {
+          "id": "brusleni",
+          "text": "Skating",
+          "hint": "blade"
+        },
+        {
+          "id": "lukostrelba",
+          "text": "Archery",
+          "hint": "target"
+        },
+        {
+          "id": "serm",
+          "text": "Fencing",
+          "hint": "sabre"
+        },
+        {
+          "id": "judo",
+          "text": "Judo",
+          "hint": "kimono"
+        },
+        {
+          "id": "joga",
+          "text": "Yoga",
+          "hint": "mat"
+        },
+        {
+          "id": "surfovani",
+          "text": "Surfing",
+          "hint": "wave"
+        },
+        {
+          "id": "lezeni",
+          "text": "Climbing",
+          "hint": "wall"
+        },
+        {
+          "id": "sipky",
+          "text": "Darts",
+          "hint": "bullseye"
         }
       ],
       "imagePath": "assets/categories/sport.png"
