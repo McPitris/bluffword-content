@@ -117,6 +117,42 @@ def validate_content_files(root: Path, paths: list[str], categories_by_locale: d
             raise FileNotFoundError(f"Missing category image: {image_path}")
 
 
+def manifest_file_entry(root: Path, path_str: str) -> dict:
+    path = root / path_str
+    return {
+        "id": file_id_for(path_str),
+        "path": path_str,
+        "url": f"{BASE_URL}/{path_str}",
+        "sha256": sha256_file(path),
+        "contentType": content_type_for(path),
+        "sizeBytes": path.stat().st_size,
+    }
+
+
+def validate_version_bump(existing_manifest: dict, content_version: int, files: list[dict]) -> None:
+    if existing_manifest.get("contentVersion") != content_version:
+        return
+
+    existing_files = {file.get("path"): file for file in existing_manifest.get("files", [])}
+    changed_paths = []
+    for file in files:
+        existing = existing_files.get(file["path"])
+        if (
+            existing is None
+            or existing.get("sha256") != file["sha256"]
+            or existing.get("sizeBytes") != file["sizeBytes"]
+        ):
+            changed_paths.append(file["path"])
+
+    if changed_paths:
+        changed = ", ".join(changed_paths)
+        raise ValueError(
+            f"Content changed but version is still {content_version}. "
+            "Increase version in both cs/categories.json and en/categories.json. "
+            f"Changed files: {changed}"
+        )
+
+
 def build_manifest(root: Path, args: argparse.Namespace) -> dict:
     existing = current_manifest(root)
     categories_by_locale = read_category_files(root)
@@ -124,19 +160,8 @@ def build_manifest(root: Path, args: argparse.Namespace) -> dict:
     paths = collected_paths(root)
     validate_content_files(root, paths, categories_by_locale)
 
-    files = []
-    for path_str in paths:
-        path = root / path_str
-        files.append(
-            {
-                "id": file_id_for(path_str),
-                "path": path_str,
-                "url": f"{BASE_URL}/{path_str}",
-                "sha256": sha256_file(path),
-                "contentType": content_type_for(path),
-                "sizeBytes": path.stat().st_size,
-            }
-        )
+    files = [manifest_file_entry(root, path_str) for path_str in paths]
+    validate_version_bump(existing, content_version, files)
 
     return {
         "schemaVersion": SCHEMA_VERSION,
