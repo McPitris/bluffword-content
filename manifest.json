@@ -1,14 +1,14 @@
 {
   "schemaVersion": 1,
-  "contentVersion": 2,
-  "generatedAt": "2026-07-01T14:35:21Z",
+  "contentVersion": 3,
+  "generatedAt": "2026-07-01T14:44:58Z",
   "minimumAppVersion": "0.7.0",
   "files": [
     {
       "id": "categories-cs",
       "path": "cs/categories.json",
       "url": "https://mcpitris.github.io/bluffword-content/cs/categories.json",
-      "sha256": "3609ec35c31e83c5fb86c4b97144a0cd2a60aebb5e1a14bf1fd8e637679ff04a",
+      "sha256": "dae88be702d5d3347c40159fcf787dcd2c8ac44079c66345d8e874a4900cba4d",
       "contentType": "application/json",
       "sizeBytes": 20035
     },
@@ -16,7 +16,7 @@
       "id": "categories-en",
       "path": "en/categories.json",
       "url": "https://mcpitris.github.io/bluffword-content/en/categories.json",
-      "sha256": "adcf287d345dab9a51d1c30321722b04fe9eeb7a3ce43a808a0223e2fcd91c60",
+      "sha256": "07c283c8e11e2a85326650c8c4c309e3a1c05e9e26cdb12937172a18084c3ca3",
       "contentType": "application/json",
       "sizeBytes": 19736
     },
