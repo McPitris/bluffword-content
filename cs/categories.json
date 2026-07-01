@@ -791,6 +791,164 @@
         }
       ],
       "imagePath": "assets/categories/sport.png"
+    },
+    {
+      "id": "jobs",
+      "name": "Povolání",
+      "description": "Profese, zaměstnání a role, které potkáváme v běžném životě.",
+      "words": [
+        {
+          "id": "doctor",
+          "text": "Doktor",
+          "hint": "ordinace"
+        },
+        {
+          "id": "teacher",
+          "text": "Učitel",
+          "hint": "zvonění"
+        },
+        {
+          "id": "firefighter",
+          "text": "Hasič",
+          "hint": "kouř"
+        },
+        {
+          "id": "police_officer",
+          "text": "Policista",
+          "hint": "odznak"
+        },
+        {
+          "id": "chef",
+          "text": "Kuchař",
+          "hint": "zástěra"
+        },
+        {
+          "id": "baker",
+          "text": "Pekař",
+          "hint": "těsto"
+        },
+        {
+          "id": "waiter",
+          "text": "Číšník",
+          "hint": "tác"
+        },
+        {
+          "id": "farmer",
+          "text": "Farmář",
+          "hint": "stodola"
+        },
+        {
+          "id": "driver",
+          "text": "Řidič",
+          "hint": "volant"
+        },
+        {
+          "id": "pilot",
+          "text": "Pilot",
+          "hint": "kokpit"
+        },
+        {
+          "id": "mechanic",
+          "text": "Mechanik",
+          "hint": "montérky"
+        },
+        {
+          "id": "electrician",
+          "text": "Elektrikář",
+          "hint": "pojistky"
+        },
+        {
+          "id": "plumber",
+          "text": "Instalatér",
+          "hint": "trubka"
+        },
+        {
+          "id": "carpenter",
+          "text": "Truhlář",
+          "hint": "piliny"
+        },
+        {
+          "id": "builder",
+          "text": "Zedník",
+          "hint": "malta"
+        },
+        {
+          "id": "hairdresser",
+          "text": "Kadeřník",
+          "hint": "nůžky"
+        },
+        {
+          "id": "dentist",
+          "text": "Zubař",
+          "hint": "vrtačka"
+        },
+        {
+          "id": "nurse",
+          "text": "Zdravotní sestra",
+          "hint": "obvaz"
+        },
+        {
+          "id": "lawyer",
+          "text": "Právník",
+          "hint": "soud"
+        },
+        {
+          "id": "judge",
+          "text": "Soudce",
+          "hint": "kladívko"
+        },
+        {
+          "id": "actor",
+          "text": "Herec",
+          "hint": "scéna"
+        },
+        {
+          "id": "singer",
+          "text": "Zpěvák",
+          "hint": "mikrofon"
+        },
+        {
+          "id": "photographer",
+          "text": "Fotograf",
+          "hint": "objektiv"
+        },
+        {
+          "id": "journalist",
+          "text": "Novinář",
+          "hint": "rozhovor"
+        },
+        {
+          "id": "programmer",
+          "text": "Programátor",
+          "hint": "kód"
+        },
+        {
+          "id": "designer",
+          "text": "Designér",
+          "hint": "návrh"
+        },
+        {
+          "id": "scientist",
+          "text": "Vědec",
+          "hint": "laboratoř"
+        },
+        {
+          "id": "soldier",
+          "text": "Voják",
+          "hint": "uniforma"
+        },
+        {
+          "id": "cashier",
+          "text": "Pokladní",
+          "hint": "účtenka"
+        },
+        {
+          "id": "cleaner",
+          "text": "Uklízeč",
+          "hint": "mop"
+        }
+      ],
+      "imagePath": "assets/categories/jobs.png"
     }
   ]
 }
