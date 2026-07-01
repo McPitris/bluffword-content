@@ -7,7 +7,6 @@ from pathlib import Path
 
 BASE_URL = "https://mcpitris.github.io/bluffword-content"
 SCHEMA_VERSION = 1
-DEFAULT_CONTENT_VERSION = 1
 DEFAULT_MIN_APP_VERSION = "0.7.0"
 
 CONTENT_TYPES = {
@@ -57,15 +56,6 @@ def current_manifest(root: Path) -> dict:
     return json.loads(path.read_text(encoding="utf-8"))
 
 
-def next_content_version(manifest: dict, args: argparse.Namespace) -> int:
-    if args.version is not None:
-        return args.version
-    current = manifest.get("contentVersion", DEFAULT_CONTENT_VERSION)
-    if args.bump:
-        return current + 1
-    return current
-
-
 def collected_paths(root: Path) -> list[str]:
     paths = list(FILES)
     for asset_dir in ASSET_DIRS:
@@ -78,27 +68,50 @@ def collected_paths(root: Path) -> list[str]:
     return paths
 
 
-def validate_content_files(root: Path, paths: list[str]) -> None:
-    for path in paths:
-        if not (root / path).exists():
-            raise FileNotFoundError(f"Missing file: {path}")
-
+def read_category_files(root: Path) -> dict[str, dict]:
     categories_by_locale = {}
     for locale in ("cs", "en"):
-        data = json.loads((root / locale / "categories.json").read_text(encoding="utf-8"))
+        path = root / locale / "categories.json"
+        data = json.loads(path.read_text(encoding="utf-8"))
         if data.get("locale") != locale:
             raise ValueError(f"{locale}/categories.json has invalid locale")
         categories = data.get("categories")
         if not isinstance(categories, list) or not categories:
             raise ValueError(f"{locale}/categories.json must contain categories")
-        categories_by_locale[locale] = categories
+        categories_by_locale[locale] = data
+    return categories_by_locale
 
-    cs_ids = [category.get("id") for category in categories_by_locale["cs"]]
-    en_ids = [category.get("id") for category in categories_by_locale["en"]]
+
+def content_version_from_categories(categories_by_locale: dict[str, dict]) -> int:
+    versions = {locale: data.get("version") for locale, data in categories_by_locale.items()}
+    if versions["cs"] != versions["en"]:
+        raise ValueError("cs/categories.json and en/categories.json must have the same version")
+
+    version = versions["cs"]
+    if isinstance(version, bool) or not isinstance(version, int) or version < 0:
+        raise ValueError(
+            "Category version must be the same non-negative integer in cs/categories.json and en/categories.json"
+        )
+    return version
+
+
+def minimum_app_version(existing_manifest: dict, value: str | None) -> str:
+    return value or existing_manifest.get("minimumAppVersion") or DEFAULT_MIN_APP_VERSION
+
+
+def validate_content_files(root: Path, paths: list[str], categories_by_locale: dict[str, dict]) -> None:
+    for path in paths:
+        if not (root / path).exists():
+            raise FileNotFoundError(f"Missing file: {path}")
+
+    cs_categories = categories_by_locale["cs"]["categories"]
+    en_categories = categories_by_locale["en"]["categories"]
+    cs_ids = [category.get("id") for category in cs_categories]
+    en_ids = [category.get("id") for category in en_categories]
     if cs_ids != en_ids:
         raise ValueError("CS and EN category ids must match in the same order")
 
-    for category in categories_by_locale["cs"] + categories_by_locale["en"]:
+    for category in cs_categories + en_categories:
         image_path = category.get("imagePath")
         if image_path and not (root / image_path).exists():
             raise FileNotFoundError(f"Missing category image: {image_path}")
@@ -106,8 +119,10 @@ def validate_content_files(root: Path, paths: list[str]) -> None:
 
 def build_manifest(root: Path, args: argparse.Namespace) -> dict:
     existing = current_manifest(root)
+    categories_by_locale = read_category_files(root)
+    content_version = content_version_from_categories(categories_by_locale)
     paths = collected_paths(root)
-    validate_content_files(root, paths)
+    validate_content_files(root, paths, categories_by_locale)
 
     files = []
     for path_str in paths:
@@ -125,22 +140,20 @@ def build_manifest(root: Path, args: argparse.Namespace) -> dict:
 
     return {
         "schemaVersion": SCHEMA_VERSION,
-        "contentVersion": next_content_version(existing, args),
+        "contentVersion": content_version,
         "generatedAt": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
-        "minimumAppVersion": args.min_app_version,
+        "minimumAppVersion": minimum_app_version(existing, args.min_app_version),
         "files": files,
     }
 
 
 def main() -> None:
     parser = argparse.ArgumentParser(description="Generate BluffWord remote content manifest.")
-    parser.add_argument("--version", type=int, help="Set an explicit contentVersion.")
-    parser.add_argument("--bump", action="store_true", help="Increment contentVersion from manifest.json.")
-    parser.add_argument("--min-app-version", default=DEFAULT_MIN_APP_VERSION)
+    parser.add_argument(
+        "--min-app-version",
+        help="Override minimumAppVersion. Without this, the existing manifest value is kept.",
+    )
     args = parser.parse_args()
-
-    if args.version is not None and args.version < 0:
-        parser.error("--version must be non-negative")
 
     root = Path.cwd()
     manifest = build_manifest(root, args)

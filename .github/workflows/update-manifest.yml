@@ -27,9 +27,9 @@ jobs:
           python-version: '3.x'
 
       - name: Generate manifest
-        run: python3 scripts/generate_manifest.py --bump
+        run: python3 scripts/generate_manifest.py
 
-      - name: Commit manifest
+      - name: Commit generated manifest
         run: |
           if git diff --quiet -- manifest.json; then
             echo "manifest.json is unchanged"
