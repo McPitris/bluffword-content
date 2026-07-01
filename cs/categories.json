@@ -1,0 +1,296 @@
+{
+  "locale": "cs",
+  "version": 1,
+  "categories": [
+    {
+      "id": "food",
+      "name": "Jídlo",
+      "description": "Jídla, pití a chutě, které zná každá parta.",
+      "words": [
+        {
+          "id": "pizza",
+          "text": "Pizza",
+          "hint": "pec"
+        },
+        {
+          "id": "burger",
+          "text": "Burger",
+          "hint": "houska"
+        },
+        {
+          "id": "sushi",
+          "text": "Sushi",
+          "hint": "řasa"
+        },
+        {
+          "id": "tacos",
+          "text": "Tacos",
+          "hint": "salsa"
+        },
+        {
+          "id": "zmrzlina",
+          "text": "Zmrzlina",
+          "hint": "kopeček"
+        },
+        {
+          "id": "palacinky",
+          "text": "Palačinky",
+          "hint": "marmeláda"
+        },
+        {
+          "id": "kebab",
+          "text": "Kebab",
+          "hint": "špíz"
+        },
+        {
+          "id": "limonada",
+          "text": "Limonáda",
+          "hint": "bublinky"
+        },
+        {
+          "id": "gulas",
+          "text": "Guláš",
+          "hint": "paprika"
+        },
+        {
+          "id": "hranolky",
+          "text": "Hranolky",
+          "hint": "kečup"
+        }
+      ],
+      "imagePath": "assets/categories/food.png"
+    },
+    {
+      "id": "movies",
+      "name": "Filmy",
+      "description": "Žánry, postavy a filmové věci, které se dobře blafují.",
+      "words": [
+        {
+          "id": "komedie",
+          "text": "Komedie",
+          "hint": "smích"
+        },
+        {
+          "id": "horor",
+          "text": "Horor",
+          "hint": "stín"
+        },
+        {
+          "id": "superhrdina",
+          "text": "Superhrdina",
+          "hint": "plášť"
+        },
+        {
+          "id": "detektiv",
+          "text": "Detektiv",
+          "hint": "stopa"
+        },
+        {
+          "id": "robot",
+          "text": "Robot",
+          "hint": "kov"
+        },
+        {
+          "id": "vesmir",
+          "text": "Vesmír",
+          "hint": "galaxie"
+        },
+        {
+          "id": "drak",
+          "text": "Drak",
+          "hint": "šupiny"
+        },
+        {
+          "id": "pirat",
+          "text": "Pirát",
+          "hint": "mapa"
+        },
+        {
+          "id": "kouzelnik",
+          "text": "Kouzelník",
+          "hint": "hůlka"
+        },
+        {
+          "id": "zaporak",
+          "text": "Záporák",
+          "hint": "plán"
+        }
+      ],
+      "imagePath": "assets/categories/movies.png"
+    },
+    {
+      "id": "travel",
+      "name": "Cestování",
+      "description": "Místa, dopravní prostředky a zážitky z cest.",
+      "words": [
+        {
+          "id": "letadlo",
+          "text": "Letadlo",
+          "hint": "křídlo"
+        },
+        {
+          "id": "hotel",
+          "text": "Hotel",
+          "hint": "recepce"
+        },
+        {
+          "id": "plaz",
+          "text": "Pláž",
+          "hint": "ručník"
+        },
+        {
+          "id": "hory",
+          "text": "Hory",
+          "hint": "vrchol"
+        },
+        {
+          "id": "mapa",
+          "text": "Mapa",
+          "hint": "kompas"
+        },
+        {
+          "id": "kufr",
+          "text": "Kufr",
+          "hint": "zip"
+        },
+        {
+          "id": "vlak",
+          "text": "Vlak",
+          "hint": "koleje"
+        },
+        {
+          "id": "pas",
+          "text": "Pas",
+          "hint": "razítko"
+        },
+        {
+          "id": "pamatka",
+          "text": "Památka",
+          "hint": "průvodce"
+        },
+        {
+          "id": "suvenyr",
+          "text": "Suvenýr",
+          "hint": "magnet"
+        }
+      ],
+      "imagePath": "assets/categories/travel.png"
+    },
+    {
+      "id": "animals",
+      "name": "Zvířata",
+      "description": "Domácí mazlíčci, divoká zvířata a tvorové z přírody.",
+      "words": [
+        {
+          "id": "pes",
+          "text": "Pes",
+          "hint": "obojek"
+        },
+        {
+          "id": "kocka",
+          "text": "Kočka",
+          "hint": "vousky"
+        },
+        {
+          "id": "lev",
+          "text": "Lev",
+          "hint": "hříva"
+        },
+        {
+          "id": "slon",
+          "text": "Slon",
+          "hint": "chobot"
+        },
+        {
+          "id": "jezek",
+          "text": "Ježek",
+          "hint": "bodliny"
+        },
+        {
+          "id": "zirafa",
+          "text": "Žirafa",
+          "hint": "krk"
+        },
+        {
+          "id": "tucnak",
+          "text": "Tučňák",
+          "hint": "led"
+        },
+        {
+          "id": "delfin",
+          "text": "Delfín",
+          "hint": "skok"
+        },
+        {
+          "id": "papousek",
+          "text": "Papoušek",
+          "hint": "zobák"
+        },
+        {
+          "id": "kun",
+          "text": "Kůň",
+          "hint": "sedlo"
+        }
+      ],
+      "imagePath": "assets/categories/animals.png"
+    },
+    {
+      "id": "sport",
+      "name": "Sport",
+      "description": "Hry, disciplíny a sportovní věci pro soutěživé hráče.",
+      "words": [
+        {
+          "id": "fotbal",
+          "text": "Fotbal",
+          "hint": "kopačka"
+        },
+        {
+          "id": "hokej",
+          "text": "Hokej",
+          "hint": "mantinel"
+        },
+        {
+          "id": "basketbal",
+          "text": "Basketbal",
+          "hint": "palubovka"
+        },
+        {
+          "id": "tenis",
+          "text": "Tenis",
+          "hint": "antuka"
+        },
+        {
+          "id": "plavani",
+          "text": "Plavání",
+          "hint": "bazén"
+        },
+        {
+          "id": "lyzovani",
+          "text": "Lyžování",
+          "hint": "sjezdovka"
+        },
+        {
+          "id": "cyklistika",
+          "text": "Cyklistika",
+          "hint": "pedál"
+        },
+        {
+          "id": "box",
+          "text": "Box",
+          "hint": "rukavice"
+        },
+        {
+          "id": "beh",
+          "text": "Běh",
+          "hint": "trať"
+        },
+        {
+          "id": "volejbal",
+          "text": "Volejbal",
+          "hint": "síť"
+        }
+      ],
+      "imagePath": "assets/categories/sport.png"
+    }
+  ]
+}

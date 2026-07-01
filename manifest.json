@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "contentVersion": 1,
+  "generatedAt": "2026-07-01T12:52:56Z",
+  "minimumAppVersion": "0.7.0",
+  "files": [
+    {
+      "id": "categories-cs",
+      "path": "cs/categories.json",
+      "url": "https://mcpitris.github.io/bluffword-content/cs/categories.json",
+      "sha256": "cf8bc18552934e883c4ae8fae384052e1c3b26a98efcc8fc1bd72b2d46a8c68f",
+      "contentType": "application/json",
+      "sizeBytes": 6264
+    },
+    {
+      "id": "categories-en",
+      "path": "en/categories.json",
+      "url": "https://mcpitris.github.io/bluffword-content/en/categories.json",
+      "sha256": "e229ac38ef37f7a4997ee2b2efed223d0ee1439b70535deb0a1125f9fbde8347",
+      "contentType": "application/json",
+      "sizeBytes": 6179
+    },
+    {
+      "id": "category-animals-image",
+      "path": "assets/categories/animals.png",
+      "url": "https://mcpitris.github.io/bluffword-content/assets/categories/animals.png",
+      "sha256": "b01fe6dec181c6e9a9fb6665c7c60091b03296fcfc33ee8525df2fb59c2a034b",
+      "contentType": "image/png",
+      "sizeBytes": 2347199
+    },
+    {
+      "id": "category-food-image",
+      "path": "assets/categories/food.png",
+      "url": "https://mcpitris.github.io/bluffword-content/assets/categories/food.png",
+      "sha256": "0d30c9d6d6fb831be8935a528b2a8e18d7a727330971dc4d5c53e018029302ca",
+      "contentType": "image/png",
+      "sizeBytes": 1925682
+    },
+    {
+      "id": "category-movies-image",
+      "path": "assets/categories/movies.png",
+      "url": "https://mcpitris.github.io/bluffword-content/assets/categories/movies.png",
+      "sha256": "b026ab0fd9c5da30fafddb4df096ec6e1987eb39c95675a83313adeb585a8c09",
+      "contentType": "image/png",
+      "sizeBytes": 1929307
+    },
+    {
+      "id": "category-sport-image",
+      "path": "assets/categories/sport.png",
+      "url": "https://mcpitris.github.io/bluffword-content/assets/categories/sport.png",
+      "sha256": "11285d494d6cae839dcb53cf29e03dd455bd5fbb76883b777006a64ceaa0d6a7",
+      "contentType": "image/png",
+      "sizeBytes": 2152321
+    },
+    {
+      "id": "category-travel-image",
+      "path": "assets/categories/travel.png",
+      "url": "https://mcpitris.github.io/bluffword-content/assets/categories/travel.png",
+      "sha256": "26508032c59210a6897543aa3977299dfb53c3cc445f8896bf92bfa9aed81fd5",
+      "contentType": "image/png",
+      "sizeBytes": 2048970
+    }
+  ]
+}

@@ -1,0 +1,296 @@
+{
+  "locale": "en",
+  "version": 1,
+  "categories": [
+    {
+      "id": "food",
+      "name": "Food",
+      "description": "Food, drinks, and flavors every group knows.",
+      "words": [
+        {
+          "id": "pizza",
+          "text": "Pizza",
+          "hint": "oven"
+        },
+        {
+          "id": "burger",
+          "text": "Burger",
+          "hint": "bun"
+        },
+        {
+          "id": "sushi",
+          "text": "Sushi",
+          "hint": "seaweed"
+        },
+        {
+          "id": "tacos",
+          "text": "Tacos",
+          "hint": "salsa"
+        },
+        {
+          "id": "zmrzlina",
+          "text": "Ice cream",
+          "hint": "scoop"
+        },
+        {
+          "id": "palacinky",
+          "text": "Pancakes",
+          "hint": "jam"
+        },
+        {
+          "id": "kebab",
+          "text": "Kebab",
+          "hint": "skewer"
+        },
+        {
+          "id": "limonada",
+          "text": "Lemonade",
+          "hint": "bubbles"
+        },
+        {
+          "id": "gulas",
+          "text": "Goulash",
+          "hint": "paprika"
+        },
+        {
+          "id": "hranolky",
+          "text": "Fries",
+          "hint": "ketchup"
+        }
+      ],
+      "imagePath": "assets/categories/food.png"
+    },
+    {
+      "id": "movies",
+      "name": "Movies",
+      "description": "Genres, characters, and movie things that are easy to bluff.",
+      "words": [
+        {
+          "id": "komedie",
+          "text": "Comedy",
+          "hint": "laughter"
+        },
+        {
+          "id": "horor",
+          "text": "Horror",
+          "hint": "shadow"
+        },
+        {
+          "id": "superhrdina",
+          "text": "Superhero",
+          "hint": "cape"
+        },
+        {
+          "id": "detektiv",
+          "text": "Detective",
+          "hint": "clue"
+        },
+        {
+          "id": "robot",
+          "text": "Robot",
+          "hint": "metal"
+        },
+        {
+          "id": "vesmir",
+          "text": "Space",
+          "hint": "galaxy"
+        },
+        {
+          "id": "drak",
+          "text": "Dragon",
+          "hint": "scales"
+        },
+        {
+          "id": "pirat",
+          "text": "Pirate",
+          "hint": "map"
+        },
+        {
+          "id": "kouzelnik",
+          "text": "Wizard",
+          "hint": "wand"
+        },
+        {
+          "id": "zaporak",
+          "text": "Villain",
+          "hint": "plan"
+        }
+      ],
+      "imagePath": "assets/categories/movies.png"
+    },
+    {
+      "id": "travel",
+      "name": "Travel",
+      "description": "Places, transport, and travel experiences.",
+      "words": [
+        {
+          "id": "letadlo",
+          "text": "Plane",
+          "hint": "wing"
+        },
+        {
+          "id": "hotel",
+          "text": "Hotel",
+          "hint": "reception"
+        },
+        {
+          "id": "plaz",
+          "text": "Beach",
+          "hint": "towel"
+        },
+        {
+          "id": "hory",
+          "text": "Mountains",
+          "hint": "summit"
+        },
+        {
+          "id": "mapa",
+          "text": "Map",
+          "hint": "compass"
+        },
+        {
+          "id": "kufr",
+          "text": "Suitcase",
+          "hint": "zipper"
+        },
+        {
+          "id": "vlak",
+          "text": "Train",
+          "hint": "tracks"
+        },
+        {
+          "id": "pas",
+          "text": "Passport",
+          "hint": "stamp"
+        },
+        {
+          "id": "pamatka",
+          "text": "Landmark",
+          "hint": "guide"
+        },
+        {
+          "id": "suvenyr",
+          "text": "Souvenir",
+          "hint": "magnet"
+        }
+      ],
+      "imagePath": "assets/categories/travel.png"
+    },
+    {
+      "id": "animals",
+      "name": "Animals",
+      "description": "Pets, wild animals, and creatures from nature.",
+      "words": [
+        {
+          "id": "pes",
+          "text": "Dog",
+          "hint": "collar"
+        },
+        {
+          "id": "kocka",
+          "text": "Cat",
+          "hint": "whiskers"
+        },
+        {
+          "id": "lev",
+          "text": "Lion",
+          "hint": "mane"
+        },
+        {
+          "id": "slon",
+          "text": "Elephant",
+          "hint": "trunk"
+        },
+        {
+          "id": "jezek",
+          "text": "Hedgehog",
+          "hint": "spines"
+        },
+        {
+          "id": "zirafa",
+          "text": "Giraffe",
+          "hint": "neck"
+        },
+        {
+          "id": "tucnak",
+          "text": "Penguin",
+          "hint": "ice"
+        },
+        {
+          "id": "delfin",
+          "text": "Dolphin",
+          "hint": "jump"
+        },
+        {
+          "id": "papousek",
+          "text": "Parrot",
+          "hint": "beak"
+        },
+        {
+          "id": "kun",
+          "text": "Horse",
+          "hint": "saddle"
+        }
+      ],
+      "imagePath": "assets/categories/animals.png"
+    },
+    {
+      "id": "sport",
+      "name": "Sports",
+      "description": "Games, disciplines, and sports things for competitive players.",
+      "words": [
+        {
+          "id": "fotbal",
+          "text": "Soccer",
+          "hint": "cleat"
+        },
+        {
+          "id": "hokej",
+          "text": "Hockey",
+          "hint": "boards"
+        },
+        {
+          "id": "basketbal",
+          "text": "Basketball",
+          "hint": "court"
+        },
+        {
+          "id": "tenis",
+          "text": "Tennis",
+          "hint": "clay"
+        },
+        {
+          "id": "plavani",
+          "text": "Swimming",
+          "hint": "pool"
+        },
+        {
+          "id": "lyzovani",
+          "text": "Skiing",
+          "hint": "slope"
+        },
+        {
+          "id": "cyklistika",
+          "text": "Cycling",
+          "hint": "pedal"
+        },
+        {
+          "id": "box",
+          "text": "Boxing",
+          "hint": "gloves"
+        },
+        {
+          "id": "beh",
+          "text": "Running",
+          "hint": "track"
+        },
+        {
+          "id": "volejbal",
+          "text": "Volleyball",
+          "hint": "net"
+        }
+      ],
+      "imagePath": "assets/categories/sport.png"
+    }
+  ]
+}
