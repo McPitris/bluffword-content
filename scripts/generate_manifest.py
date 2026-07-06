@@ -7,7 +7,8 @@ from pathlib import Path
 
 BASE_URL = "https://mcpitris.github.io/bluffword-content"
 SCHEMA_VERSION = 1
-DEFAULT_MIN_APP_VERSION = "0.7.0"
+DEFAULT_MIN_APP_VERSION = "0.9.0"
+DEFAULT_CONTENT_EPOCH = 1
 
 CONTENT_TYPES = {
     ".json": "application/json",
@@ -106,6 +107,13 @@ def minimum_app_version(existing_manifest: dict, value: str | None) -> str:
     return value or existing_manifest.get("minimumAppVersion") or DEFAULT_MIN_APP_VERSION
 
 
+def content_epoch(existing_manifest: dict, value: int | None) -> int:
+    epoch = value or existing_manifest.get("contentEpoch") or DEFAULT_CONTENT_EPOCH
+    if isinstance(epoch, bool) or not isinstance(epoch, int) or epoch <= 0:
+        raise ValueError("contentEpoch must be a positive integer")
+    return epoch
+
+
 def validate_content_files(root: Path, paths: list[str], categories_by_locale: dict[str, dict]) -> None:
     for path in paths:
         if not (root / path).exists():
@@ -153,7 +161,14 @@ def manifest_file_entry(root: Path, path_str: str) -> dict:
     }
 
 
-def validate_version_bump(existing_manifest: dict, content_version: int, files: list[dict]) -> None:
+def validate_version_bump(
+    existing_manifest: dict,
+    content_epoch: int,
+    content_version: int,
+    files: list[dict],
+) -> None:
+    if existing_manifest.get("contentEpoch", DEFAULT_CONTENT_EPOCH) != content_epoch:
+        return
     if existing_manifest.get("contentVersion") != content_version:
         return
 
@@ -180,15 +195,17 @@ def validate_version_bump(existing_manifest: dict, content_version: int, files: 
 def build_manifest(root: Path, args: argparse.Namespace) -> dict:
     existing = current_manifest(root)
     categories_by_locale = read_category_files(root)
+    epoch = content_epoch(existing, args.content_epoch)
     content_version = content_version_from_categories(categories_by_locale)
     paths = collected_paths(root)
     validate_content_files(root, paths, categories_by_locale)
 
     files = [manifest_file_entry(root, path_str) for path_str in paths]
-    validate_version_bump(existing, content_version, files)
+    validate_version_bump(existing, epoch, content_version, files)
 
     return {
         "schemaVersion": SCHEMA_VERSION,
+        "contentEpoch": epoch,
         "contentVersion": content_version,
         "generatedAt": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
         "minimumAppVersion": minimum_app_version(existing, args.min_app_version),
@@ -201,6 +218,11 @@ def main() -> None:
     parser.add_argument(
         "--min-app-version",
         help="Override minimumAppVersion. Without this, the existing manifest value is kept.",
+    )
+    parser.add_argument(
+        "--content-epoch",
+        type=int,
+        help="Override contentEpoch. Increase this when contentVersion should restart from 1.",
     )
     args = parser.parse_args()
 

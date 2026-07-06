@@ -93,6 +93,12 @@ Override `minimumAppVersion` when needed:
 python3 scripts/generate_manifest.py --min-app-version 0.8.0
 ```
 
+Reset content version numbering with a new epoch:
+
+```bash
+python3 scripts/generate_manifest.py --content-epoch 2
+```
+
 ## Pages URL
 
 ```text
@@ -104,5 +110,7 @@ https://mcpitris.github.io/bluffword-content/manifest.json
 `cs/categories.json` and `en/categories.json` are the source of truth. Their `version` must match and must be a non-negative integer. The generator copies that value into `manifest.contentVersion`.
 
 The app displays `manifest.contentVersion`. Use `2`, `3`, `4`... for content releases, not `1.1`, because the manifest model in the app expects an integer. If content files change and the version stays the same, the generator fails so the app cannot miss the update.
+
+`manifest.contentEpoch` lets you restart content version numbering. The app compares `contentEpoch` first, then `contentVersion`. If published content should start again from version `1`, increase `contentEpoch` and set `version` in both category files to `1`.
 
 `minimumAppVersion` is kept from the existing manifest unless you pass `--min-app-version`. The current app treats it as manifest metadata; enforcement must be added in the app if a future content schema requires a newer app.

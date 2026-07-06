@@ -1,6 +1,6 @@
 {
   "locale": "cs",
-  "version": 3,
+  "version": 1,
   "categories": [
     {
       "id": "food",
@@ -949,6 +949,215 @@
         }
       ],
       "imagePath": "assets/categories/jobs.png"
+    },
+    {
+      "id": "lotr",
+      "name": "Pán prstenů",
+      "description": "Postavy, místa a artefakty ze světa Pána prstenů a Hobita.",
+      "imagePath": "assets/categories/lotr.png",
+      "isSpecial": true,
+      "words": [
+        {
+          "id": "frodo",
+          "text": "Frodo",
+          "hint": "břemeno"
+        },
+        {
+          "id": "samwise",
+          "text": "Samvěd",
+          "hint": "věrnost"
+        },
+        {
+          "id": "gandalf",
+          "text": "Gandalf",
+          "hint": "hůl"
+        },
+        {
+          "id": "aragorn",
+          "text": "Aragorn",
+          "hint": "král"
+        },
+        {
+          "id": "legolas",
+          "text": "Legolas",
+          "hint": "luk"
+        },
+        {
+          "id": "gimli",
+          "text": "Gimli",
+          "hint": "sekera"
+        },
+        {
+          "id": "boromir",
+          "text": "Boromir",
+          "hint": "roh"
+        },
+        {
+          "id": "merry",
+          "text": "Smíšek",
+          "hint": "dýmka"
+        },
+        {
+          "id": "pippin",
+          "text": "Pipin",
+          "hint": "zvědavost"
+        },
+        {
+          "id": "gollum",
+          "text": "Glum",
+          "hint": "posedlost"
+        },
+        {
+          "id": "sauron",
+          "text": "Sauron",
+          "hint": "oko"
+        },
+        {
+          "id": "saruman",
+          "text": "Saruman",
+          "hint": "věž"
+        },
+        {
+          "id": "galadriel",
+          "text": "Galadriel",
+          "hint": "zrcadlo"
+        },
+        {
+          "id": "elrond",
+          "text": "Elrond",
+          "hint": "rada"
+        },
+        {
+          "id": "arwen",
+          "text": "Arwen",
+          "hint": "hvězda"
+        },
+        {
+          "id": "bilbo",
+          "text": "Bilbo",
+          "hint": "dobrodružství"
+        },
+        {
+          "id": "thorin",
+          "text": "Thorin",
+          "hint": "dub"
+        },
+        {
+          "id": "smaug",
+          "text": "Šmak",
+          "hint": "zlato"
+        },
+        {
+          "id": "bard",
+          "text": "Bard",
+          "hint": "šíp"
+        },
+        {
+          "id": "beorn",
+          "text": "Medděd",
+          "hint": "medvěd"
+        },
+        {
+          "id": "one_ring",
+          "text": "Prsten",
+          "hint": "osud"
+        },
+        {
+          "id": "shire",
+          "text": "Kraj",
+          "hint": "nora"
+        },
+        {
+          "id": "mordor",
+          "text": "Mordor",
+          "hint": "popel"
+        },
+        {
+          "id": "rivendell",
+          "text": "Roklinka",
+          "hint": "údolí"
+        },
+        {
+          "id": "moria",
+          "text": "Morie",
+          "hint": "doly"
+        },
+        {
+          "id": "helms_deep",
+          "text": "Helmův žleb",
+          "hint": "hradby"
+        },
+        {
+          "id": "rohan",
+          "text": "Rohan",
+          "hint": "koně"
+        },
+        {
+          "id": "gondor",
+          "text": "Gondor",
+          "hint": "strom"
+        },
+        {
+          "id": "erebor",
+          "text": "Erebor",
+          "hint": "hora"
+        },
+        {
+          "id": "arkenstone",
+          "text": "Arcikam",
+          "hint": "drahokam"
+        },
+        {
+          "id": "sting",
+          "text": "Žihadlo",
+          "hint": "čepel"
+        },
+        {
+          "id": "palantir",
+          "text": "Palantír",
+          "hint": "koule"
+        },
+        {
+          "id": "balrog",
+          "text": "Balrog",
+          "hint": "bič"
+        },
+        {
+          "id": "nazgul",
+          "text": "Nazgûl",
+          "hint": "stín"
+        },
+        {
+          "id": "ent",
+          "text": "Ent",
+          "hint": "kůra"
+        },
+        {
+          "id": "orc",
+          "text": "Skřet",
+          "hint": "čepel"
+        },
+        {
+          "id": "hobbit",
+          "text": "Hobit",
+          "hint": "nohy"
+        },
+        {
+          "id": "wizard",
+          "text": "Čaroděj",
+          "hint": "magie"
+        },
+        {
+          "id": "dwarf",
+          "text": "Trpaslík",
+          "hint": "kovárna"
+        },
+        {
+          "id": "elf",
+          "text": "Elf",
+          "hint": "nesmrtelnost"
+        }
+      ]
     }
   ]
 }

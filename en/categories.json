@@ -1,11 +1,11 @@
 {
   "locale": "en",
-  "version": 3,
+  "version": 1,
   "categories": [
     {
       "id": "food",
       "name": "Food",
-      "description": "Food, drinks, and flavors every group knows.",
+      "description": "Meals, drinks and flavors every group knows.",
       "words": [
         {
           "id": "pizza",
@@ -157,13 +157,12 @@
           "text": "Honey",
           "hint": "hive"
         }
-      ],
-      "imagePath": "assets/categories/food.png"
+      ]
     },
     {
       "id": "movies",
       "name": "Movies",
-      "description": "Genres, characters, and movie things that are easy to bluff.",
+      "description": "Genres, characters and movie things that are easy to bluff.",
       "words": [
         {
           "id": "komedie",
@@ -315,13 +314,12 @@
           "text": "Oscar",
           "hint": "statue"
         }
-      ],
-      "imagePath": "assets/categories/movies.png"
+      ]
     },
     {
       "id": "travel",
       "name": "Travel",
-      "description": "Places, transport, and travel experiences.",
+      "description": "Places, transport and experiences from trips.",
       "words": [
         {
           "id": "letadlo",
@@ -473,13 +471,12 @@
           "text": "Port",
           "hint": "pier"
         }
-      ],
-      "imagePath": "assets/categories/travel.png"
+      ]
     },
     {
       "id": "animals",
       "name": "Animals",
-      "description": "Pets, wild animals, and creatures from nature.",
+      "description": "Pets, wild animals and creatures from nature.",
       "words": [
         {
           "id": "pes",
@@ -631,13 +628,12 @@
           "text": "Bat",
           "hint": "cave"
         }
-      ],
-      "imagePath": "assets/categories/animals.png"
+      ]
     },
     {
       "id": "sport",
-      "name": "Sports",
-      "description": "Games, disciplines, and sports things for competitive players.",
+      "name": "Sport",
+      "description": "Games, disciplines and sports things for competitive players.",
       "words": [
         {
           "id": "fotbal",
@@ -789,8 +785,7 @@
           "text": "Darts",
           "hint": "bullseye"
         }
-      ],
-      "imagePath": "assets/categories/sport.png"
+      ]
     },
     {
       "id": "jobs",
@@ -949,6 +944,215 @@
         }
       ],
       "imagePath": "assets/categories/jobs.png"
+    },
+    {
+      "id": "lotr",
+      "name": "The Lord of the Rings",
+      "description": "Characters, places, and artifacts from The Lord of the Rings and The Hobbit.",
+      "imagePath": "assets/categories/lotr.png",
+      "isSpecial": true,
+      "words": [
+        {
+          "id": "frodo",
+          "text": "Frodo",
+          "hint": "burden"
+        },
+        {
+          "id": "samwise",
+          "text": "Samwise",
+          "hint": "loyalty"
+        },
+        {
+          "id": "gandalf",
+          "text": "Gandalf",
+          "hint": "staff"
+        },
+        {
+          "id": "aragorn",
+          "text": "Aragorn",
+          "hint": "king"
+        },
+        {
+          "id": "legolas",
+          "text": "Legolas",
+          "hint": "bow"
+        },
+        {
+          "id": "gimli",
+          "text": "Gimli",
+          "hint": "axe"
+        },
+        {
+          "id": "boromir",
+          "text": "Boromir",
+          "hint": "horn"
+        },
+        {
+          "id": "merry",
+          "text": "Merry",
+          "hint": "pipe"
+        },
+        {
+          "id": "pippin",
+          "text": "Pippin",
+          "hint": "curiosity"
+        },
+        {
+          "id": "gollum",
+          "text": "Gollum",
+          "hint": "obsession"
+        },
+        {
+          "id": "sauron",
+          "text": "Sauron",
+          "hint": "eye"
+        },
+        {
+          "id": "saruman",
+          "text": "Saruman",
+          "hint": "tower"
+        },
+        {
+          "id": "galadriel",
+          "text": "Galadriel",
+          "hint": "mirror"
+        },
+        {
+          "id": "elrond",
+          "text": "Elrond",
+          "hint": "council"
+        },
+        {
+          "id": "arwen",
+          "text": "Arwen",
+          "hint": "star"
+        },
+        {
+          "id": "bilbo",
+          "text": "Bilbo",
+          "hint": "adventure"
+        },
+        {
+          "id": "thorin",
+          "text": "Thorin",
+          "hint": "oak"
+        },
+        {
+          "id": "smaug",
+          "text": "Smaug",
+          "hint": "gold"
+        },
+        {
+          "id": "bard",
+          "text": "Bard",
+          "hint": "arrow"
+        },
+        {
+          "id": "beorn",
+          "text": "Beorn",
+          "hint": "bear"
+        },
+        {
+          "id": "one_ring",
+          "text": "One Ring",
+          "hint": "fate"
+        },
+        {
+          "id": "shire",
+          "text": "Shire",
+          "hint": "burrow"
+        },
+        {
+          "id": "mordor",
+          "text": "Mordor",
+          "hint": "ash"
+        },
+        {
+          "id": "rivendell",
+          "text": "Rivendell",
+          "hint": "valley"
+        },
+        {
+          "id": "moria",
+          "text": "Moria",
+          "hint": "mines"
+        },
+        {
+          "id": "helms_deep",
+          "text": "Helm's Deep",
+          "hint": "walls"
+        },
+        {
+          "id": "rohan",
+          "text": "Rohan",
+          "hint": "horses"
+        },
+        {
+          "id": "gondor",
+          "text": "Gondor",
+          "hint": "tree"
+        },
+        {
+          "id": "erebor",
+          "text": "Erebor",
+          "hint": "mountain"
+        },
+        {
+          "id": "arkenstone",
+          "text": "Arkenstone",
+          "hint": "gem"
+        },
+        {
+          "id": "sting",
+          "text": "Sting",
+          "hint": "blade"
+        },
+        {
+          "id": "palantir",
+          "text": "Palantír",
+          "hint": "sphere"
+        },
+        {
+          "id": "balrog",
+          "text": "Balrog",
+          "hint": "whip"
+        },
+        {
+          "id": "nazgul",
+          "text": "Nazgûl",
+          "hint": "shadow"
+        },
+        {
+          "id": "ent",
+          "text": "Ent",
+          "hint": "bark"
+        },
+        {
+          "id": "orc",
+          "text": "Orc",
+          "hint": "blade"
+        },
+        {
+          "id": "hobbit",
+          "text": "Hobbit",
+          "hint": "feet"
+        },
+        {
+          "id": "wizard",
+          "text": "Wizard",
+          "hint": "magic"
+        },
+        {
+          "id": "dwarf",
+          "text": "Dwarf",
+          "hint": "forge"
+        },
+        {
+          "id": "elf",
+          "text": "Elf",
+          "hint": "immortality"
+        }
+      ]
     }
   ]
 }
