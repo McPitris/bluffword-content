@@ -953,7 +953,7 @@
     {
       "id": "lotr",
       "name": "Pán prstenů",
-      "description": "Postavy, místa a artefakty ze světa Pána prstenů a Hobita.",
+      "description": "Postavy, místa a artefakty ze světa Pána prstenů.",
       "imagePath": "assets/categories/lotr.png",
       "isSpecial": true,
       "words": [
