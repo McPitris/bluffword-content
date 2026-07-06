@@ -948,7 +948,7 @@
     {
       "id": "lotr",
       "name": "The Lord of the Rings",
-      "description": "Characters, places, and artifacts from The Lord of the Rings and The Hobbit.",
+      "description": "Characters, places, and artifacts from LOTR.",
       "imagePath": "assets/categories/lotr.png",
       "isSpecial": true,
       "words": [
