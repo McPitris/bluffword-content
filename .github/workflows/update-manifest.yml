@@ -9,6 +9,12 @@ on:
       - 'en/**'
       - 'assets/**'
   workflow_dispatch:
+    inputs:
+      allow_same_version_changes:
+        description: 'Allow same-version manifest regeneration for an intentional reset'
+        required: false
+        default: false
+        type: boolean
 
 permissions:
   contents: write
@@ -27,7 +33,12 @@ jobs:
           python-version: '3.x'
 
       - name: Generate manifest
-        run: python3 scripts/generate_manifest.py
+        run: |
+          args=""
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ] && [ "${{ inputs.allow_same_version_changes }}" = "true" ]; then
+            args="--allow-same-version-changes"
+          fi
+          python3 scripts/generate_manifest.py $args
 
       - name: Commit generated manifest
         run: |

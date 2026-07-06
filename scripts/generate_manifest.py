@@ -166,7 +166,10 @@ def validate_version_bump(
     content_epoch: int,
     content_version: int,
     files: list[dict],
+    allow_same_version_changes: bool = False,
 ) -> None:
+    if allow_same_version_changes:
+        return
     if existing_manifest.get("contentEpoch", DEFAULT_CONTENT_EPOCH) != content_epoch:
         return
     if existing_manifest.get("contentVersion") != content_version:
@@ -201,7 +204,13 @@ def build_manifest(root: Path, args: argparse.Namespace) -> dict:
     validate_content_files(root, paths, categories_by_locale)
 
     files = [manifest_file_entry(root, path_str) for path_str in paths]
-    validate_version_bump(existing, epoch, content_version, files)
+    validate_version_bump(
+        existing,
+        epoch,
+        content_version,
+        files,
+        allow_same_version_changes=args.allow_same_version_changes,
+    )
 
     return {
         "schemaVersion": SCHEMA_VERSION,
@@ -223,6 +232,14 @@ def main() -> None:
         "--content-epoch",
         type=int,
         help="Override contentEpoch. Increase this when contentVersion should restart from 1.",
+    )
+    parser.add_argument(
+        "--allow-same-version-changes",
+        action="store_true",
+        help=(
+            "Allow regenerating manifest hashes without increasing "
+            "contentVersion. Use only for an intentional baseline reset."
+        ),
     )
     args = parser.parse_args()
 
