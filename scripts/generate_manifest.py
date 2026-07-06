@@ -24,6 +24,7 @@ FILES = [
 
 ASSET_DIRS = [
     "assets/categories",
+    "assets/themes",
 ]
 
 
@@ -46,6 +47,12 @@ def file_id_for(path: str) -> str:
         return "categories-en"
     if path.startswith("assets/categories/"):
         return f"category-{Path(path).stem}-image"
+    if path.startswith("assets/themes/"):
+        parts = Path(path).parts
+        if len(parts) >= 5 and parts[3] == "categories":
+            return f"theme-{parts[2]}-category-{Path(path).stem}-image"
+        if len(parts) >= 5 and parts[3] == "avatars":
+            return f"theme-{parts[2]}-avatar-{Path(path).stem}-image"
     return path.replace("/", "-").replace(".", "-")
 
 
@@ -62,8 +69,8 @@ def collected_paths(root: Path) -> list[str]:
         directory = root / asset_dir
         if not directory.exists():
             continue
-        for file in sorted(directory.iterdir()):
-            if file.is_file():
+        for file in sorted(directory.rglob("*")):
+            if file.is_file() and not file.name.startswith("."):
                 paths.append(file.relative_to(root).as_posix())
     return paths
 
@@ -111,10 +118,27 @@ def validate_content_files(root: Path, paths: list[str], categories_by_locale: d
     if cs_ids != en_ids:
         raise ValueError("CS and EN category ids must match in the same order")
 
+    for cs_category, en_category in zip(cs_categories, en_categories):
+        if bool(cs_category.get("isSpecial", False)) != bool(en_category.get("isSpecial", False)):
+            raise ValueError(
+                f"CS and EN category isSpecial must match for {cs_category.get('id')}"
+            )
+
     for category in cs_categories + en_categories:
+        is_special = category.get("isSpecial")
+        if is_special is not None and not isinstance(is_special, bool):
+            raise ValueError(f"Category isSpecial must be boolean: {category.get('id')}")
         image_path = category.get("imagePath")
         if image_path and not (root / image_path).exists():
             raise FileNotFoundError(f"Missing category image: {image_path}")
+
+    category_ids = set(cs_ids)
+    for path in paths:
+        parts = Path(path).parts
+        if len(parts) >= 5 and parts[0:2] == ("assets", "themes") and parts[3] == "categories":
+            category_id = Path(path).stem
+            if category_id not in category_ids:
+                raise ValueError(f"Theme category image has no matching category id: {path}")
 
 
 def manifest_file_entry(root: Path, path_str: str) -> dict:
