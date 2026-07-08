@@ -1,6 +1,6 @@
 {
   "locale": "en",
-  "version": 1,
+  "version": 2,
   "categories": [
     {
       "id": "food",
@@ -1801,6 +1801,524 @@
           "id": "mithril",
           "text": "Mithril",
           "hint": "shirt"
+        }
+      ]
+    },
+    {
+      "id": "school",
+      "name": "School",
+      "description": "Subjects, places and situations from school life.",
+      "imagePath": "assets/categories/school.png",
+      "isSpecial": false,
+      "words": [
+        {
+          "id": "classroom",
+          "text": "Classroom",
+          "hint": "desk"
+        },
+        {
+          "id": "teacher",
+          "text": "Teacher",
+          "hint": "board"
+        },
+        {
+          "id": "student",
+          "text": "Student",
+          "hint": "notebook"
+        },
+        {
+          "id": "blackboard",
+          "text": "Blackboard",
+          "hint": "chalk"
+        },
+        {
+          "id": "chalk",
+          "text": "Chalk",
+          "hint": "dust"
+        },
+        {
+          "id": "desk",
+          "text": "Desk",
+          "hint": "chair"
+        },
+        {
+          "id": "chair",
+          "text": "Chair",
+          "hint": "sitting"
+        },
+        {
+          "id": "notebook",
+          "text": "Notebook",
+          "hint": "lines"
+        },
+        {
+          "id": "textbook",
+          "text": "Textbook",
+          "hint": "chapter"
+        },
+        {
+          "id": "pencil_case",
+          "text": "Pencil Case",
+          "hint": "zipper"
+        },
+        {
+          "id": "pen",
+          "text": "Pen",
+          "hint": "ink"
+        },
+        {
+          "id": "pencil",
+          "text": "Pencil",
+          "hint": "graphite"
+        },
+        {
+          "id": "eraser",
+          "text": "Eraser",
+          "hint": "rubber"
+        },
+        {
+          "id": "ruler",
+          "text": "Ruler",
+          "hint": "centimeter"
+        },
+        {
+          "id": "compass",
+          "text": "Compass",
+          "hint": "circle"
+        },
+        {
+          "id": "backpack",
+          "text": "Backpack",
+          "hint": "shoulders"
+        },
+        {
+          "id": "homework",
+          "text": "Homework",
+          "hint": "evening"
+        },
+        {
+          "id": "test",
+          "text": "Test",
+          "hint": "grade"
+        },
+        {
+          "id": "exam",
+          "text": "Exam",
+          "hint": "stress"
+        },
+        {
+          "id": "grade",
+          "text": "Grade",
+          "hint": "report"
+        },
+        {
+          "id": "report_card",
+          "text": "Report Card",
+          "hint": "semester"
+        },
+        {
+          "id": "break",
+          "text": "Break",
+          "hint": "hallway"
+        },
+        {
+          "id": "bell",
+          "text": "Bell",
+          "hint": "lesson"
+        },
+        {
+          "id": "lesson",
+          "text": "Lesson",
+          "hint": "lecture"
+        },
+        {
+          "id": "subject",
+          "text": "Subject",
+          "hint": "schedule"
+        },
+        {
+          "id": "schedule",
+          "text": "Schedule",
+          "hint": "monday"
+        },
+        {
+          "id": "math",
+          "text": "Math",
+          "hint": "equation"
+        },
+        {
+          "id": "czech_language",
+          "text": "Czech",
+          "hint": "dictation"
+        },
+        {
+          "id": "english_language",
+          "text": "English",
+          "hint": "vocabulary"
+        },
+        {
+          "id": "history",
+          "text": "History",
+          "hint": "year"
+        },
+        {
+          "id": "geography",
+          "text": "Geography",
+          "hint": "map"
+        },
+        {
+          "id": "biology",
+          "text": "Biology",
+          "hint": "cell"
+        },
+        {
+          "id": "chemistry",
+          "text": "Chemistry",
+          "hint": "testtube"
+        },
+        {
+          "id": "physics",
+          "text": "Physics",
+          "hint": "force"
+        },
+        {
+          "id": "art",
+          "text": "Art",
+          "hint": "paint"
+        },
+        {
+          "id": "music",
+          "text": "Music",
+          "hint": "note"
+        },
+        {
+          "id": "pe",
+          "text": "PE",
+          "hint": "gym"
+        },
+        {
+          "id": "gym",
+          "text": "Gym",
+          "hint": "mat"
+        },
+        {
+          "id": "library",
+          "text": "Library",
+          "hint": "shelf"
+        },
+        {
+          "id": "canteen",
+          "text": "Canteen",
+          "hint": "lunch"
+        },
+        {
+          "id": "locker",
+          "text": "Locker",
+          "hint": "lock"
+        },
+        {
+          "id": "corridor",
+          "text": "Corridor",
+          "hint": "noise"
+        },
+        {
+          "id": "principal",
+          "text": "Principal",
+          "hint": "office"
+        },
+        {
+          "id": "substitute_teacher",
+          "text": "Substitute Teacher",
+          "hint": "change"
+        },
+        {
+          "id": "detention",
+          "text": "Detention",
+          "hint": "punishment"
+        },
+        {
+          "id": "cheating",
+          "text": "Cheating",
+          "hint": "copying"
+        },
+        {
+          "id": "cheat_sheet",
+          "text": "Cheat Sheet",
+          "hint": "paper"
+        },
+        {
+          "id": "graduation",
+          "text": "Graduation Exam",
+          "hint": "finals"
+        },
+        {
+          "id": "school_trip",
+          "text": "School Trip",
+          "hint": "bus"
+        },
+        {
+          "id": "recess_snack",
+          "text": "Snack",
+          "hint": "sandwich"
+        }
+      ]
+    },
+    {
+      "id": "technology",
+      "name": "Technology",
+      "description": "Modern devices, apps and digital things we use every day.",
+      "imagePath": "assets/categories/technology.png",
+      "isSpecial": false,
+      "words": [
+        {
+          "id": "smartphone",
+          "text": "Smartphone",
+          "hint": "touch"
+        },
+        {
+          "id": "laptop",
+          "text": "Laptop",
+          "hint": "keyboard"
+        },
+        {
+          "id": "tablet",
+          "text": "Tablet",
+          "hint": "screen"
+        },
+        {
+          "id": "charger",
+          "text": "Charger",
+          "hint": "cable"
+        },
+        {
+          "id": "headphones",
+          "text": "Headphones",
+          "hint": "ears"
+        },
+        {
+          "id": "keyboard",
+          "text": "Keyboard",
+          "hint": "keys"
+        },
+        {
+          "id": "mouse",
+          "text": "Mouse",
+          "hint": "cursor"
+        },
+        {
+          "id": "monitor",
+          "text": "Monitor",
+          "hint": "image"
+        },
+        {
+          "id": "router",
+          "text": "Router",
+          "hint": "internet"
+        },
+        {
+          "id": "wifi",
+          "text": "Wi-Fi",
+          "hint": "signal"
+        },
+        {
+          "id": "bluetooth",
+          "text": "Bluetooth",
+          "hint": "pairing"
+        },
+        {
+          "id": "power_bank",
+          "text": "Power Bank",
+          "hint": "battery"
+        },
+        {
+          "id": "smartwatch",
+          "text": "Smartwatch",
+          "hint": "wrist"
+        },
+        {
+          "id": "camera",
+          "text": "Camera",
+          "hint": "recording"
+        },
+        {
+          "id": "drone",
+          "text": "Drone",
+          "hint": "propeller"
+        },
+        {
+          "id": "printer",
+          "text": "Printer",
+          "hint": "paper"
+        },
+        {
+          "id": "scanner",
+          "text": "Scanner",
+          "hint": "copy"
+        },
+        {
+          "id": "speaker",
+          "text": "Speaker",
+          "hint": "sound"
+        },
+        {
+          "id": "microphone",
+          "text": "Microphone",
+          "hint": "voice"
+        },
+        {
+          "id": "webcam",
+          "text": "Webcam",
+          "hint": "call"
+        },
+        {
+          "id": "game_console",
+          "text": "Game Console",
+          "hint": "controller"
+        },
+        {
+          "id": "controller",
+          "text": "Controller",
+          "hint": "joystick"
+        },
+        {
+          "id": "vr_headset",
+          "text": "VR Headset",
+          "hint": "reality"
+        },
+        {
+          "id": "robot_vacuum",
+          "text": "Robot Vacuum",
+          "hint": "dust"
+        },
+        {
+          "id": "smart_tv",
+          "text": "Smart TV",
+          "hint": "stream"
+        },
+        {
+          "id": "usb_drive",
+          "text": "USB Drive",
+          "hint": "file"
+        },
+        {
+          "id": "memory_card",
+          "text": "Memory Card",
+          "hint": "storage"
+        },
+        {
+          "id": "hard_drive",
+          "text": "Hard Drive",
+          "hint": "data"
+        },
+        {
+          "id": "cloud",
+          "text": "Cloud",
+          "hint": "online"
+        },
+        {
+          "id": "app",
+          "text": "App",
+          "hint": "icon"
+        },
+        {
+          "id": "password",
+          "text": "Password",
+          "hint": "access"
+        },
+        {
+          "id": "algorithm",
+          "text": "Algorithm",
+          "hint": "process"
+        },
+        {
+          "id": "artificial_intelligence",
+          "text": "Artificial Intelligence",
+          "hint": "model"
+        },
+        {
+          "id": "antivirus",
+          "text": "Antivirus",
+          "hint": "protection"
+        },
+        {
+          "id": "firewall",
+          "text": "Firewall",
+          "hint": "block"
+        },
+        {
+          "id": "browser",
+          "text": "Browser",
+          "hint": "page"
+        },
+        {
+          "id": "search_engine",
+          "text": "Search Engine",
+          "hint": "query"
+        },
+        {
+          "id": "social_network",
+          "text": "Social Network",
+          "hint": "profile"
+        },
+        {
+          "id": "email",
+          "text": "Email",
+          "hint": "inbox"
+        },
+        {
+          "id": "qr_code",
+          "text": "QR Code",
+          "hint": "square"
+        },
+        {
+          "id": "satellite",
+          "text": "Satellite",
+          "hint": "orbit"
+        },
+        {
+          "id": "gps",
+          "text": "GPS",
+          "hint": "location"
+        },
+        {
+          "id": "navigation",
+          "text": "Navigation",
+          "hint": "route"
+        },
+        {
+          "id": "electric_car",
+          "text": "Electric Car",
+          "hint": "plug"
+        },
+        {
+          "id": "three_d_printer",
+          "text": "3D Printer",
+          "hint": "filament"
+        },
+        {
+          "id": "projector",
+          "text": "Projector",
+          "hint": "screen"
+        },
+        {
+          "id": "server",
+          "text": "Server",
+          "hint": "network"
+        },
+        {
+          "id": "database",
+          "text": "Database",
+          "hint": "table"
+        },
+        {
+          "id": "processor",
+          "text": "Processor",
+          "hint": "calculation"
+        },
+        {
+          "id": "motherboard",
+          "text": "Motherboard",
+          "hint": "slot"
         }
       ]
     }

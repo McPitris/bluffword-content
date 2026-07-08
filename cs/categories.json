@@ -1808,6 +1808,524 @@
           "hint": "košile"
         }
       ]
+    },
+    {
+      "id": "school",
+      "name": "Škola",
+      "description": "Předměty, místa a situace ze školního života.",
+      "imagePath": "assets/categories/school.png",
+      "isSpecial": false,
+      "words": [
+        {
+          "id": "classroom",
+          "text": "Třída",
+          "hint": "lavice"
+        },
+        {
+          "id": "teacher",
+          "text": "Učitel",
+          "hint": "katedra"
+        },
+        {
+          "id": "student",
+          "text": "Student",
+          "hint": "sešit"
+        },
+        {
+          "id": "blackboard",
+          "text": "Tabule",
+          "hint": "křída"
+        },
+        {
+          "id": "chalk",
+          "text": "Křída",
+          "hint": "prach"
+        },
+        {
+          "id": "desk",
+          "text": "Lavice",
+          "hint": "židle"
+        },
+        {
+          "id": "chair",
+          "text": "Židle",
+          "hint": "sezení"
+        },
+        {
+          "id": "notebook",
+          "text": "Sešit",
+          "hint": "linka"
+        },
+        {
+          "id": "textbook",
+          "text": "Učebnice",
+          "hint": "kapitola"
+        },
+        {
+          "id": "pencil_case",
+          "text": "Penál",
+          "hint": "zip"
+        },
+        {
+          "id": "pen",
+          "text": "Propiska",
+          "hint": "inkoust"
+        },
+        {
+          "id": "pencil",
+          "text": "Tužka",
+          "hint": "grafit"
+        },
+        {
+          "id": "eraser",
+          "text": "Guma",
+          "hint": "mazání"
+        },
+        {
+          "id": "ruler",
+          "text": "Pravítko",
+          "hint": "centimetr"
+        },
+        {
+          "id": "compass",
+          "text": "Kružítko",
+          "hint": "kruh"
+        },
+        {
+          "id": "backpack",
+          "text": "Aktovka",
+          "hint": "záda"
+        },
+        {
+          "id": "homework",
+          "text": "Domácí úkol",
+          "hint": "večer"
+        },
+        {
+          "id": "test",
+          "text": "Test",
+          "hint": "známka"
+        },
+        {
+          "id": "exam",
+          "text": "Zkouška",
+          "hint": "nervy"
+        },
+        {
+          "id": "grade",
+          "text": "Známka",
+          "hint": "vysvědčení"
+        },
+        {
+          "id": "report_card",
+          "text": "Vysvědčení",
+          "hint": "pololetí"
+        },
+        {
+          "id": "break",
+          "text": "Přestávka",
+          "hint": "chodba"
+        },
+        {
+          "id": "bell",
+          "text": "Zvonění",
+          "hint": "hodina"
+        },
+        {
+          "id": "lesson",
+          "text": "Hodina",
+          "hint": "výklad"
+        },
+        {
+          "id": "subject",
+          "text": "Předmět",
+          "hint": "rozvrh"
+        },
+        {
+          "id": "schedule",
+          "text": "Rozvrh",
+          "hint": "pondělí"
+        },
+        {
+          "id": "math",
+          "text": "Matematika",
+          "hint": "rovnice"
+        },
+        {
+          "id": "czech_language",
+          "text": "Čeština",
+          "hint": "diktát"
+        },
+        {
+          "id": "english_language",
+          "text": "Angličtina",
+          "hint": "slovíčka"
+        },
+        {
+          "id": "history",
+          "text": "Dějepis",
+          "hint": "letopočet"
+        },
+        {
+          "id": "geography",
+          "text": "Zeměpis",
+          "hint": "mapa"
+        },
+        {
+          "id": "biology",
+          "text": "Biologie",
+          "hint": "buňka"
+        },
+        {
+          "id": "chemistry",
+          "text": "Chemie",
+          "hint": "zkumavka"
+        },
+        {
+          "id": "physics",
+          "text": "Fyzika",
+          "hint": "síla"
+        },
+        {
+          "id": "art",
+          "text": "Výtvarná výchova",
+          "hint": "barvy"
+        },
+        {
+          "id": "music",
+          "text": "Hudební výchova",
+          "hint": "nota"
+        },
+        {
+          "id": "pe",
+          "text": "Tělocvik",
+          "hint": "tělocvična"
+        },
+        {
+          "id": "gym",
+          "text": "Tělocvična",
+          "hint": "žíněnka"
+        },
+        {
+          "id": "library",
+          "text": "Knihovna",
+          "hint": "police"
+        },
+        {
+          "id": "canteen",
+          "text": "Jídelna",
+          "hint": "oběd"
+        },
+        {
+          "id": "locker",
+          "text": "Skříňka",
+          "hint": "zámek"
+        },
+        {
+          "id": "corridor",
+          "text": "Chodba",
+          "hint": "hluk"
+        },
+        {
+          "id": "principal",
+          "text": "Ředitel",
+          "hint": "kancelář"
+        },
+        {
+          "id": "substitute_teacher",
+          "text": "Suplování",
+          "hint": "změna"
+        },
+        {
+          "id": "detention",
+          "text": "Poznámka",
+          "hint": "žákovská"
+        },
+        {
+          "id": "cheating",
+          "text": "Opisování",
+          "hint": "tahák"
+        },
+        {
+          "id": "cheat_sheet",
+          "text": "Tahák",
+          "hint": "papírek"
+        },
+        {
+          "id": "graduation",
+          "text": "Maturita",
+          "hint": "zkoušení"
+        },
+        {
+          "id": "school_trip",
+          "text": "Školní výlet",
+          "hint": "autobus"
+        },
+        {
+          "id": "recess_snack",
+          "text": "Svačina",
+          "hint": "rohlík"
+        }
+      ]
+    },
+    {
+      "id": "technology",
+      "name": "Technologie",
+      "description": "Moderní zařízení, aplikace a digitální věci, které používáme každý den.",
+      "imagePath": "assets/categories/technology.png",
+      "isSpecial": false,
+      "words": [
+        {
+          "id": "smartphone",
+          "text": "Mobil",
+          "hint": "dotyk"
+        },
+        {
+          "id": "laptop",
+          "text": "Notebook",
+          "hint": "klávesnice"
+        },
+        {
+          "id": "tablet",
+          "text": "Tablet",
+          "hint": "displej"
+        },
+        {
+          "id": "charger",
+          "text": "Nabíječka",
+          "hint": "kabel"
+        },
+        {
+          "id": "headphones",
+          "text": "Sluchátka",
+          "hint": "uši"
+        },
+        {
+          "id": "keyboard",
+          "text": "Klávesnice",
+          "hint": "tlačítka"
+        },
+        {
+          "id": "mouse",
+          "text": "Myš",
+          "hint": "kurzor"
+        },
+        {
+          "id": "monitor",
+          "text": "Monitor",
+          "hint": "obraz"
+        },
+        {
+          "id": "router",
+          "text": "Router",
+          "hint": "internet"
+        },
+        {
+          "id": "wifi",
+          "text": "Wi-Fi",
+          "hint": "signál"
+        },
+        {
+          "id": "bluetooth",
+          "text": "Bluetooth",
+          "hint": "párování"
+        },
+        {
+          "id": "power_bank",
+          "text": "Powerbanka",
+          "hint": "baterie"
+        },
+        {
+          "id": "smartwatch",
+          "text": "Chytré hodinky",
+          "hint": "zápěstí"
+        },
+        {
+          "id": "camera",
+          "text": "Kamera",
+          "hint": "záznam"
+        },
+        {
+          "id": "drone",
+          "text": "Dron",
+          "hint": "vrtule"
+        },
+        {
+          "id": "printer",
+          "text": "Tiskárna",
+          "hint": "papír"
+        },
+        {
+          "id": "scanner",
+          "text": "Skener",
+          "hint": "kopie"
+        },
+        {
+          "id": "speaker",
+          "text": "Reproduktor",
+          "hint": "zvuk"
+        },
+        {
+          "id": "microphone",
+          "text": "Mikrofon",
+          "hint": "hlas"
+        },
+        {
+          "id": "webcam",
+          "text": "Webkamera",
+          "hint": "hovor"
+        },
+        {
+          "id": "game_console",
+          "text": "Herní konzole",
+          "hint": "ovladač"
+        },
+        {
+          "id": "controller",
+          "text": "Ovladač",
+          "hint": "joystick"
+        },
+        {
+          "id": "vr_headset",
+          "text": "VR brýle",
+          "hint": "realita"
+        },
+        {
+          "id": "robot_vacuum",
+          "text": "Robotický vysavač",
+          "hint": "prach"
+        },
+        {
+          "id": "smart_tv",
+          "text": "Chytrá televize",
+          "hint": "stream"
+        },
+        {
+          "id": "usb_drive",
+          "text": "Flash disk",
+          "hint": "soubor"
+        },
+        {
+          "id": "memory_card",
+          "text": "Paměťová karta",
+          "hint": "úložiště"
+        },
+        {
+          "id": "hard_drive",
+          "text": "Pevný disk",
+          "hint": "data"
+        },
+        {
+          "id": "cloud",
+          "text": "Cloud",
+          "hint": "online"
+        },
+        {
+          "id": "app",
+          "text": "Aplikace",
+          "hint": "ikona"
+        },
+        {
+          "id": "password",
+          "text": "Heslo",
+          "hint": "přístup"
+        },
+        {
+          "id": "algorithm",
+          "text": "Algoritmus",
+          "hint": "postup"
+        },
+        {
+          "id": "artificial_intelligence",
+          "text": "Umělá inteligence",
+          "hint": "model"
+        },
+        {
+          "id": "antivirus",
+          "text": "Antivir",
+          "hint": "ochrana"
+        },
+        {
+          "id": "firewall",
+          "text": "Firewall",
+          "hint": "blokace"
+        },
+        {
+          "id": "browser",
+          "text": "Prohlížeč",
+          "hint": "stránka"
+        },
+        {
+          "id": "search_engine",
+          "text": "Vyhledávač",
+          "hint": "dotaz"
+        },
+        {
+          "id": "social_network",
+          "text": "Sociální síť",
+          "hint": "profil"
+        },
+        {
+          "id": "email",
+          "text": "E-mail",
+          "hint": "schránka"
+        },
+        {
+          "id": "qr_code",
+          "text": "QR kód",
+          "hint": "čtverec"
+        },
+        {
+          "id": "satellite",
+          "text": "Satelit",
+          "hint": "oběžná"
+        },
+        {
+          "id": "gps",
+          "text": "GPS",
+          "hint": "poloha"
+        },
+        {
+          "id": "navigation",
+          "text": "Navigace",
+          "hint": "trasa"
+        },
+        {
+          "id": "electric_car",
+          "text": "Elektromobil",
+          "hint": "zásuvka"
+        },
+        {
+          "id": "three_d_printer",
+          "text": "3D tiskárna",
+          "hint": "filament"
+        },
+        {
+          "id": "projector",
+          "text": "Projektor",
+          "hint": "plátno"
+        },
+        {
+          "id": "server",
+          "text": "Server",
+          "hint": "síť"
+        },
+        {
+          "id": "database",
+          "text": "Databáze",
+          "hint": "tabulka"
+        },
+        {
+          "id": "processor",
+          "text": "Procesor",
+          "hint": "výpočet"
+        },
+        {
+          "id": "motherboard",
+          "text": "Základní deska",
+          "hint": "slot"
+        }
+      ]
     }
   ]
 }
