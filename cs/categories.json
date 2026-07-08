@@ -258,7 +258,7 @@
           "hint": "pecka"
         }
       ],
-      "imagePath": "assets/images/category/food.png"
+      "imagePath": "assets/categories/food.png"
     },
     {
       "id": "movies",
@@ -516,7 +516,7 @@
           "hint": "porota"
         }
       ],
-      "imagePath": "assets/images/category/movies.png"
+      "imagePath": "assets/categories/movies.png"
     },
     {
       "id": "travel",
@@ -774,7 +774,7 @@
           "hint": "nocleh"
         }
       ],
-      "imagePath": "assets/images/category/travel.png"
+      "imagePath": "assets/categories/travel.png"
     },
     {
       "id": "animals",
@@ -1032,7 +1032,7 @@
           "hint": "mraveniště"
         }
       ],
-      "imagePath": "assets/images/category/animals.png"
+      "imagePath": "assets/categories/animals.png"
     },
     {
       "id": "sport",
@@ -1290,7 +1290,7 @@
           "hint": "sedlo"
         }
       ],
-      "imagePath": "assets/images/category/sport.png"
+      "imagePath": "assets/categories/sport.png"
     },
     {
       "id": "jobs",
@@ -1548,13 +1548,13 @@
           "hint": "paluba"
         }
       ],
-      "imagePath": "assets/images/category/jobs.png"
+      "imagePath": "assets/categories/jobs.png"
     },
     {
       "id": "lotr",
       "name": "Pán prstenů",
       "description": "Postavy, místa a artefakty ze světa Pána prstenů.",
-      "imagePath": "assets/images/category/lotr.png",
+      "imagePath": "assets/categories/lotr.png",
       "isSpecial": true,
       "words": [
         {
