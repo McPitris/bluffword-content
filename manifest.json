@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "contentEpoch": 1,
   "contentVersion": 1,
-  "generatedAt": "2026-07-08T12:31:47Z",
+  "generatedAt": "2026-07-08T12:34:15Z",
   "minimumAppVersion": "0.9.0",
   "files": [
     {
@@ -76,14 +76,6 @@
       "sha256": "26508032c59210a6897543aa3977299dfb53c3cc445f8896bf92bfa9aed81fd5",
       "contentType": "image/png",
       "sizeBytes": 2048970
-    },
-    {
-      "id": "theme-lotr-category-jobs-image",
-      "path": "assets/themes/lotr/categories/jobs.png",
-      "url": "https://mcpitris.github.io/bluffword-content/assets/themes/lotr/categories/jobs.png",
-      "sha256": "f2af4f8a5dc73199f4ae8f22f2cb48b8df266cc2c18b663eed89a3e8d0d19020",
-      "contentType": "image/png",
-      "sizeBytes": 2462520
     }
   ]
 }
