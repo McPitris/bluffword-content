@@ -2,6 +2,7 @@
 import argparse
 import hashlib
 import json
+import shutil
 from datetime import datetime, timezone
 from pathlib import Path
 
@@ -9,6 +10,8 @@ BASE_URL = "https://mcpitris.github.io/bluffword-content"
 SCHEMA_VERSION = 1
 DEFAULT_MIN_APP_VERSION = "1.0.0"
 DEFAULT_CONTENT_EPOCH = 1
+CONFIG_FILE = "content_config.json"
+RELEASES_DIR = "releases"
 
 CONTENT_TYPES = {
     ".json": "application/json",
@@ -64,6 +67,16 @@ def current_manifest(root: Path) -> dict:
     return json.loads(path.read_text(encoding="utf-8"))
 
 
+def content_config(root: Path) -> dict:
+    path = root / CONFIG_FILE
+    if not path.exists():
+        return {}
+    config = json.loads(path.read_text(encoding="utf-8"))
+    if not isinstance(config, dict):
+        raise ValueError(f"{CONFIG_FILE} must contain an object")
+    return config
+
+
 def collected_paths(root: Path) -> list[str]:
     paths = list(FILES)
     for asset_dir in ASSET_DIRS:
@@ -90,7 +103,7 @@ def read_category_files(root: Path) -> dict[str, dict]:
     return categories_by_locale
 
 
-def content_version_from_categories(categories_by_locale: dict[str, dict]) -> int:
+def category_version(categories_by_locale: dict[str, dict]) -> int:
     versions = {locale: data.get("version") for locale, data in categories_by_locale.items()}
     if versions["cs"] != versions["en"]:
         raise ValueError("cs/categories.json and en/categories.json must have the same version")
@@ -103,15 +116,91 @@ def content_version_from_categories(categories_by_locale: dict[str, dict]) -> in
     return version
 
 
-def minimum_app_version(existing_manifest: dict, value: str | None) -> str:
-    return value or existing_manifest.get("minimumAppVersion") or DEFAULT_MIN_APP_VERSION
+def minimum_app_version(
+    existing_manifest: dict,
+    config: dict,
+    value: str | None,
+) -> str:
+    configured = config.get("minimumAppVersion")
+    if configured is not None and not isinstance(configured, str):
+        raise ValueError("content_config.minimumAppVersion must be a string")
+    return value or configured or existing_manifest.get("minimumAppVersion") or DEFAULT_MIN_APP_VERSION
 
 
-def content_epoch(existing_manifest: dict, value: int | None) -> int:
-    epoch = value or existing_manifest.get("contentEpoch") or DEFAULT_CONTENT_EPOCH
+def content_epoch(existing_manifest: dict, config: dict, value: int | None) -> int:
+    configured = config.get("contentEpoch")
+    if configured is not None and (isinstance(configured, bool) or not isinstance(configured, int)):
+        raise ValueError("content_config.contentEpoch must be an integer")
+    epoch = value or configured or existing_manifest.get("contentEpoch") or DEFAULT_CONTENT_EPOCH
     if isinstance(epoch, bool) or not isinstance(epoch, int) or epoch <= 0:
         raise ValueError("contentEpoch must be a positive integer")
     return epoch
+
+
+def write_category_versions(root: Path, categories_by_locale: dict[str, dict], version: int) -> None:
+    for locale, data in categories_by_locale.items():
+        data["version"] = version
+        path = root / locale / "categories.json"
+        path.write_text(
+            json.dumps(data, ensure_ascii=False, indent=2) + "\n",
+            encoding="utf-8",
+        )
+
+
+def source_file_entries(root: Path, paths: list[str]) -> list[dict]:
+    entries = []
+    for path_str in paths:
+        path = root / path_str
+        entries.append(
+            {
+                "path": path_str,
+                "sha256": sha256_file(path),
+                "sizeBytes": path.stat().st_size,
+            }
+        )
+    return entries
+
+
+def source_changed(existing_manifest: dict, content_epoch: int, source_files: list[dict]) -> bool:
+    if not existing_manifest:
+        return True
+    if existing_manifest.get("contentEpoch", DEFAULT_CONTENT_EPOCH) != content_epoch:
+        return True
+
+    existing_files = {file.get("path"): file for file in existing_manifest.get("files", [])}
+    for file in source_files:
+        existing = existing_files.get(file["path"])
+        if (
+            existing is None
+            or existing.get("sha256") != file["sha256"]
+            or existing.get("sizeBytes") != file["sizeBytes"]
+        ):
+            return True
+
+    return False
+
+
+def next_content_version(
+    existing_manifest: dict,
+    categories_by_locale: dict[str, dict],
+    content_epoch: int,
+    source_files: list[dict],
+    min_app_version: str,
+) -> int:
+    existing_version = existing_manifest.get("contentVersion")
+    if isinstance(existing_version, bool) or not isinstance(existing_version, int):
+        return category_version(categories_by_locale)
+
+    existing_min_app_version = existing_manifest.get("minimumAppVersion")
+    if (
+        source_changed(existing_manifest, content_epoch, source_files)
+        or existing_min_app_version != min_app_version
+    ):
+        if existing_manifest.get("contentEpoch", DEFAULT_CONTENT_EPOCH) != content_epoch:
+            return 1
+        return existing_version + 1
+
+    return existing_version
 
 
 def validate_content_files(root: Path, paths: list[str], categories_by_locale: dict[str, dict]) -> None:
@@ -149,75 +238,110 @@ def validate_content_files(root: Path, paths: list[str], categories_by_locale: d
                 raise ValueError(f"Theme category image has no matching category id: {path}")
 
 
-def manifest_file_entry(root: Path, path_str: str) -> dict:
+def release_directory(epoch: int, version: int) -> Path:
+    return Path(RELEASES_DIR) / f"e{epoch}" / f"v{version}"
+
+
+def release_manifest_path(epoch: int, version: int) -> Path:
+    return release_directory(epoch, version) / "manifest.json"
+
+
+def manifest_file_entry(root: Path, path_str: str, release_dir: Path) -> dict:
     path = root / path_str
     return {
         "id": file_id_for(path_str),
         "path": path_str,
-        "url": f"{BASE_URL}/{path_str}",
+        "url": f"{BASE_URL}/{release_dir.as_posix()}/{path_str}",
         "sha256": sha256_file(path),
         "contentType": content_type_for(path),
         "sizeBytes": path.stat().st_size,
     }
 
 
-def validate_version_bump(
-    existing_manifest: dict,
-    content_epoch: int,
-    content_version: int,
-    files: list[dict],
-    allow_same_version_changes: bool = False,
-) -> None:
-    if allow_same_version_changes:
-        return
-    if existing_manifest.get("contentEpoch", DEFAULT_CONTENT_EPOCH) != content_epoch:
-        return
-    if existing_manifest.get("contentVersion") != content_version:
-        return
+def copy_release_files(root: Path, release_dir: Path, paths: list[str]) -> None:
+    destination_root = root / release_dir
+    if destination_root.exists():
+        shutil.rmtree(destination_root)
 
-    existing_files = {file.get("path"): file for file in existing_manifest.get("files", [])}
-    changed_paths = []
-    for file in files:
-        existing = existing_files.get(file["path"])
-        if (
-            existing is None
-            or existing.get("sha256") != file["sha256"]
-            or existing.get("sizeBytes") != file["sizeBytes"]
-        ):
-            changed_paths.append(file["path"])
+    for path_str in paths:
+        source = root / path_str
+        destination = destination_root / path_str
+        destination.parent.mkdir(parents=True, exist_ok=True)
+        shutil.copy2(source, destination)
 
-    if changed_paths:
-        changed = ", ".join(changed_paths)
-        raise ValueError(
-            f"Content changed but version is still {content_version}. "
-            "Increase version in both cs/categories.json and en/categories.json. "
-            f"Changed files: {changed}"
-        )
+
+def write_manifest(path: Path, manifest: dict) -> None:
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text(
+        json.dumps(manifest, ensure_ascii=False, indent=2) + "\n",
+        encoding="utf-8",
+    )
+
+
+def manifest_index_entry(manifest: dict, manifest_path: Path) -> dict:
+    return {
+        "url": f"{BASE_URL}/{manifest_path.as_posix()}",
+        "contentEpoch": manifest["contentEpoch"],
+        "contentVersion": manifest["contentVersion"],
+        "minimumAppVersion": manifest["minimumAppVersion"],
+    }
+
+
+def manifest_index(
+    root: Path,
+    current_manifest: dict,
+    current_manifest_path: Path,
+) -> dict:
+    entries_by_key = {}
+    for path in sorted((root / RELEASES_DIR).glob("e*/v*/manifest.json")):
+        manifest = json.loads(path.read_text(encoding="utf-8"))
+        key = (manifest.get("contentEpoch"), manifest.get("contentVersion"))
+        entries_by_key[key] = manifest_index_entry(manifest, path.relative_to(root))
+
+    current_key = (
+        current_manifest["contentEpoch"],
+        current_manifest["contentVersion"],
+    )
+    entries_by_key[current_key] = manifest_index_entry(
+        current_manifest,
+        current_manifest_path,
+    )
+    entries = sorted(
+        entries_by_key.values(),
+        key=lambda entry: (entry["contentEpoch"], entry["contentVersion"]),
+        reverse=True,
+    )
+
+    return {"manifests": entries}
 
 
 def build_manifest(root: Path, args: argparse.Namespace) -> dict:
     existing = current_manifest(root)
+    config = content_config(root)
     categories_by_locale = read_category_files(root)
-    epoch = content_epoch(existing, args.content_epoch)
-    content_version = content_version_from_categories(categories_by_locale)
+    epoch = content_epoch(existing, config, args.content_epoch)
+    min_app_version = minimum_app_version(existing, config, args.min_app_version)
     paths = collected_paths(root)
     validate_content_files(root, paths, categories_by_locale)
-
-    files = [manifest_file_entry(root, path_str) for path_str in paths]
-    validate_version_bump(
+    content_version = next_content_version(
         existing,
+        categories_by_locale,
         epoch,
-        content_version,
-        files,
-        allow_same_version_changes=args.allow_same_version_changes,
+        source_file_entries(root, paths),
+        min_app_version,
     )
+    write_category_versions(root, categories_by_locale, content_version)
+    categories_by_locale = read_category_files(root)
+
+    release_dir = release_directory(epoch, content_version)
+    files = [manifest_file_entry(root, path_str, release_dir) for path_str in paths]
 
     return {
         "schemaVersion": SCHEMA_VERSION,
         "contentEpoch": epoch,
         "contentVersion": content_version,
         "generatedAt": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
-        "minimumAppVersion": minimum_app_version(existing, args.min_app_version),
+        "minimumAppVersion": min_app_version,
         "files": files,
     }
 
@@ -233,23 +357,24 @@ def main() -> None:
         type=int,
         help="Override contentEpoch. Increase this when contentVersion should restart from 1.",
     )
-    parser.add_argument(
-        "--allow-same-version-changes",
-        action="store_true",
-        help=(
-            "Allow regenerating manifest hashes without increasing "
-            "contentVersion. Use only for an intentional baseline reset."
-        ),
-    )
     args = parser.parse_args()
 
     root = Path.cwd()
     manifest = build_manifest(root, args)
-    (root / "manifest.json").write_text(
-        json.dumps(manifest, ensure_ascii=False, indent=2) + "\n",
-        encoding="utf-8",
+    release_dir = release_directory(manifest["contentEpoch"], manifest["contentVersion"])
+    paths = [file["path"] for file in manifest["files"]]
+    copy_release_files(root, release_dir, paths)
+    release_path = release_manifest_path(
+        manifest["contentEpoch"],
+        manifest["contentVersion"],
     )
-    print(f"Generated manifest.json with contentVersion {manifest['contentVersion']}")
+    write_manifest(root / release_path, manifest)
+    write_manifest(root / "manifest.json", manifest)
+    write_manifest(root / "manifest_index.json", manifest_index(root, manifest, release_path))
+    print(
+        "Generated manifest.json, manifest_index.json, "
+        f"and {release_path.as_posix()}"
+    )
 
 
 if __name__ == "__main__":
