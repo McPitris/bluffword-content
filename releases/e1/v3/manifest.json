@@ -1,0 +1,113 @@
+{
+  "schemaVersion": 1,
+  "contentEpoch": 1,
+  "contentVersion": 3,
+  "generatedAt": "2026-07-08T16:08:23Z",
+  "minimumAppVersion": "1.1.0",
+  "files": [
+    {
+      "id": "categories-cs",
+      "path": "cs/categories.json",
+      "url": "https://mcpitris.github.io/bluffword-content/releases/e1/v3/cs/categories.json",
+      "sha256": "dad1103172e5de749d207a6f21115fa36f8913e459d2d3cc43834298a753c6b1",
+      "contentType": "application/json",
+      "sizeBytes": 49451
+    },
+    {
+      "id": "categories-en",
+      "path": "en/categories.json",
+      "url": "https://mcpitris.github.io/bluffword-content/releases/e1/v3/en/categories.json",
+      "sha256": "f1fd2200280c7aa45c7635c3b3798de21046afa37173a81a75e130e84a5ea66c",
+      "contentType": "application/json",
+      "sizeBytes": 48515
+    },
+    {
+      "id": "category-animals-image",
+      "path": "assets/categories/animals.png",
+      "url": "https://mcpitris.github.io/bluffword-content/releases/e1/v3/assets/categories/animals.png",
+      "sha256": "b01fe6dec181c6e9a9fb6665c7c60091b03296fcfc33ee8525df2fb59c2a034b",
+      "contentType": "image/png",
+      "sizeBytes": 2347199
+    },
+    {
+      "id": "category-food-image",
+      "path": "assets/categories/food.png",
+      "url": "https://mcpitris.github.io/bluffword-content/releases/e1/v3/assets/categories/food.png",
+      "sha256": "0d30c9d6d6fb831be8935a528b2a8e18d7a727330971dc4d5c53e018029302ca",
+      "contentType": "image/png",
+      "sizeBytes": 1925682
+    },
+    {
+      "id": "category-jobs-image",
+      "path": "assets/categories/jobs.png",
+      "url": "https://mcpitris.github.io/bluffword-content/releases/e1/v3/assets/categories/jobs.png",
+      "sha256": "b59237451cb733017f06135f3ec198dc4bc1ed70d9d98a1166c442dd0c67337a",
+      "contentType": "image/png",
+      "sizeBytes": 2163360
+    },
+    {
+      "id": "category-lotr-image",
+      "path": "assets/categories/lotr.png",
+      "url": "https://mcpitris.github.io/bluffword-content/releases/e1/v3/assets/categories/lotr.png",
+      "sha256": "40fe3af63dbbc8248aa3e639d41e067af45ff1f4015bb0325ac5ae0505de38d9",
+      "contentType": "image/png",
+      "sizeBytes": 2465988
+    },
+    {
+      "id": "category-movies-image",
+      "path": "assets/categories/movies.png",
+      "url": "https://mcpitris.github.io/bluffword-content/releases/e1/v3/assets/categories/movies.png",
+      "sha256": "b026ab0fd9c5da30fafddb4df096ec6e1987eb39c95675a83313adeb585a8c09",
+      "contentType": "image/png",
+      "sizeBytes": 1929307
+    },
+    {
+      "id": "category-school-image",
+      "path": "assets/categories/school.png",
+      "url": "https://mcpitris.github.io/bluffword-content/releases/e1/v3/assets/categories/school.png",
+      "sha256": "82b3b36deb82a09d2125f8a92294f3bc11ce4b0edcacb11551ecc50385e6452b",
+      "contentType": "image/png",
+      "sizeBytes": 2197322
+    },
+    {
+      "id": "category-sport-image",
+      "path": "assets/categories/sport.png",
+      "url": "https://mcpitris.github.io/bluffword-content/releases/e1/v3/assets/categories/sport.png",
+      "sha256": "11285d494d6cae839dcb53cf29e03dd455bd5fbb76883b777006a64ceaa0d6a7",
+      "contentType": "image/png",
+      "sizeBytes": 2152321
+    },
+    {
+      "id": "category-technology-image",
+      "path": "assets/categories/technology.png",
+      "url": "https://mcpitris.github.io/bluffword-content/releases/e1/v3/assets/categories/technology.png",
+      "sha256": "f13222a603d9e5310b7ff65157736e719fe1053b6cafcec701dea5695271f225",
+      "contentType": "image/png",
+      "sizeBytes": 2003363
+    },
+    {
+      "id": "category-travel-image",
+      "path": "assets/categories/travel.png",
+      "url": "https://mcpitris.github.io/bluffword-content/releases/e1/v3/assets/categories/travel.png",
+      "sha256": "26508032c59210a6897543aa3977299dfb53c3cc445f8896bf92bfa9aed81fd5",
+      "contentType": "image/png",
+      "sizeBytes": 2048970
+    },
+    {
+      "id": "theme-lotr-category-school-image",
+      "path": "assets/themes/lotr/categories/school.png",
+      "url": "https://mcpitris.github.io/bluffword-content/releases/e1/v3/assets/themes/lotr/categories/school.png",
+      "sha256": "32e71138a784c500cce06ad2e3786008ab36f86063b110baf22907ef9d33acf1",
+      "contentType": "image/png",
+      "sizeBytes": 2677315
+    },
+    {
+      "id": "theme-lotr-category-technology-image",
+      "path": "assets/themes/lotr/categories/technology.png",
+      "url": "https://mcpitris.github.io/bluffword-content/releases/e1/v3/assets/themes/lotr/categories/technology.png",
+      "sha256": "647fede31cd1eb1bf36feb1845556ef3b2d86e9778526a014c227ba57b896b84",
+      "contentType": "image/png",
+      "sizeBytes": 2726580
+    }
+  ]
+}
