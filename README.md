@@ -118,7 +118,8 @@ https://mcpitris.github.io/bluffword-content/manifest_index.json
 ```json
 {
   "minimumAppVersion": "1.0.0",
-  "contentEpoch": 1
+  "contentEpoch": 1,
+  "legacyManifestAppVersion": "1.0.0"
 }
 ```
 
@@ -130,4 +131,4 @@ The app displays `manifest.contentVersion`. It is always a whole number: `2`, `3
 
 `minimumAppVersion` is read from `content_config.json` unless you pass `--min-app-version` locally. The app uses `manifest_index.json` to choose the newest release where `minimumAppVersion` is less than or equal to the current app version. For example, app `1.0.0` will skip a release with `minimumAppVersion: "1.0.1"` and use the newest release still marked for `1.0.0`.
 
-The root `manifest.json` is the latest release. Older compatible releases must remain available under `releases/e<epoch>/v<version>/`, because archived manifests point at those immutable release files instead of the mutable top-level `cs/`, `en/`, and `assets/` files.
+The root `manifest.json` is kept for older app builds that do not know `manifest_index.json`. It points to the newest release compatible with `legacyManifestAppVersion`. New app builds use `manifest_index.json`. Older compatible releases must remain available under `releases/e<epoch>/v<version>/`, because archived manifests point at those immutable release files instead of the mutable top-level `cs/`, `en/`, and `assets/` files.

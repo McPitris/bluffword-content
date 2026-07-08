@@ -12,6 +12,7 @@ DEFAULT_MIN_APP_VERSION = "1.0.0"
 DEFAULT_CONTENT_EPOCH = 1
 CONFIG_FILE = "content_config.json"
 RELEASES_DIR = "releases"
+DEFAULT_LEGACY_MANIFEST_APP_VERSION = "1.0.0"
 
 CONTENT_TYPES = {
     ".json": "application/json",
@@ -60,7 +61,27 @@ def file_id_for(path: str) -> str:
     return path.replace("/", "-").replace(".", "-")
 
 
+def release_manifests(root: Path) -> list[tuple[dict, Path]]:
+    manifests = []
+    for path in sorted((root / RELEASES_DIR).glob("e*/v*/manifest.json")):
+        manifest = json.loads(path.read_text(encoding="utf-8"))
+        manifests.append((manifest, path.relative_to(root)))
+
+    return sorted(
+        manifests,
+        key=lambda entry: (
+            entry[0].get("contentEpoch", DEFAULT_CONTENT_EPOCH),
+            entry[0].get("contentVersion", 0),
+        ),
+        reverse=True,
+    )
+
+
 def current_manifest(root: Path) -> dict:
+    manifests = release_manifests(root)
+    if manifests:
+        return manifests[0][0]
+
     path = root / "manifest.json"
     if not path.exists():
         return {}
@@ -75,6 +96,13 @@ def content_config(root: Path) -> dict:
     if not isinstance(config, dict):
         raise ValueError(f"{CONFIG_FILE} must contain an object")
     return config
+
+
+def legacy_manifest_app_version(config: dict) -> str:
+    configured = config.get("legacyManifestAppVersion")
+    if configured is not None and not isinstance(configured, str):
+        raise ValueError("content_config.legacyManifestAppVersion must be a string")
+    return configured or DEFAULT_LEGACY_MANIFEST_APP_VERSION
 
 
 def collected_paths(root: Path) -> list[str]:
@@ -135,6 +163,26 @@ def content_epoch(existing_manifest: dict, config: dict, value: int | None) -> i
     if isinstance(epoch, bool) or not isinstance(epoch, int) or epoch <= 0:
         raise ValueError("contentEpoch must be a positive integer")
     return epoch
+
+
+def parse_app_version(version: str) -> tuple[int, int, int]:
+    parts = version.split("+", 1)[0].split("-", 1)[0].split(".")
+    if not parts or len(parts) > 3:
+        raise ValueError(f"Invalid app version: {version}")
+
+    parsed = []
+    for part in parts:
+        if not part.isdigit():
+            raise ValueError(f"Invalid app version: {version}")
+        parsed.append(int(part))
+    while len(parsed) < 3:
+        parsed.append(0)
+
+    return tuple(parsed)
+
+
+def is_app_version_compatible(app_version: str, minimum_app_version: str) -> bool:
+    return parse_app_version(app_version) >= parse_app_version(minimum_app_version)
 
 
 def write_category_versions(root: Path, categories_by_locale: dict[str, dict], version: int) -> None:
@@ -220,6 +268,24 @@ def validate_content_files(root: Path, paths: list[str], categories_by_locale: d
             raise ValueError(
                 f"CS and EN category isSpecial must match for {cs_category.get('id')}"
             )
+        cs_word_ids = [word.get("id") for word in cs_category.get("words", [])]
+        en_word_ids = [word.get("id") for word in en_category.get("words", [])]
+        if cs_word_ids != en_word_ids:
+            raise ValueError(
+                f"CS and EN word ids must match for category {cs_category.get('id')}"
+            )
+
+    for locale, categories in (("cs", cs_categories), ("en", en_categories)):
+        word_category_by_id = {}
+        for category in categories:
+            for word in category.get("words", []):
+                word_id = word.get("id")
+                if word_id in word_category_by_id:
+                    raise ValueError(
+                        f"Duplicate word id in {locale}: {word_id} "
+                        f"({word_category_by_id[word_id]} and {category.get('id')})"
+                    )
+                word_category_by_id[word_id] = category.get("id")
 
     for category in cs_categories + en_categories:
         is_special = category.get("isSpecial")
@@ -287,32 +353,22 @@ def manifest_index_entry(manifest: dict, manifest_path: Path) -> dict:
     }
 
 
-def manifest_index(
-    root: Path,
-    current_manifest: dict,
-    current_manifest_path: Path,
-) -> dict:
-    entries_by_key = {}
-    for path in sorted((root / RELEASES_DIR).glob("e*/v*/manifest.json")):
-        manifest = json.loads(path.read_text(encoding="utf-8"))
-        key = (manifest.get("contentEpoch"), manifest.get("contentVersion"))
-        entries_by_key[key] = manifest_index_entry(manifest, path.relative_to(root))
+def manifest_index(manifests: list[tuple[dict, Path]]) -> dict:
+    return {
+        "manifests": [
+            manifest_index_entry(manifest, path) for manifest, path in manifests
+        ]
+    }
 
-    current_key = (
-        current_manifest["contentEpoch"],
-        current_manifest["contentVersion"],
-    )
-    entries_by_key[current_key] = manifest_index_entry(
-        current_manifest,
-        current_manifest_path,
-    )
-    entries = sorted(
-        entries_by_key.values(),
-        key=lambda entry: (entry["contentEpoch"], entry["contentVersion"]),
-        reverse=True,
-    )
 
-    return {"manifests": entries}
+def legacy_root_manifest(manifests: list[tuple[dict, Path]], app_version: str) -> dict:
+    for manifest, _ in manifests:
+        if is_app_version_compatible(app_version, manifest["minimumAppVersion"]):
+            return manifest
+
+    if not manifests:
+        raise ValueError("Cannot write manifest.json without any release manifests")
+    return manifests[-1][0]
 
 
 def build_manifest(root: Path, args: argparse.Namespace) -> dict:
@@ -360,6 +416,7 @@ def main() -> None:
     args = parser.parse_args()
 
     root = Path.cwd()
+    config = content_config(root)
     manifest = build_manifest(root, args)
     release_dir = release_directory(manifest["contentEpoch"], manifest["contentVersion"])
     paths = [file["path"] for file in manifest["files"]]
@@ -369,8 +426,12 @@ def main() -> None:
         manifest["contentVersion"],
     )
     write_manifest(root / release_path, manifest)
-    write_manifest(root / "manifest.json", manifest)
-    write_manifest(root / "manifest_index.json", manifest_index(root, manifest, release_path))
+    manifests = release_manifests(root)
+    write_manifest(root / "manifest_index.json", manifest_index(manifests))
+    write_manifest(
+        root / "manifest.json",
+        legacy_root_manifest(manifests, legacy_manifest_app_version(config)),
+    )
     print(
         "Generated manifest.json, manifest_index.json, "
         f"and {release_path.as_posix()}"
