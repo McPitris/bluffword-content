@@ -7,7 +7,7 @@ from pathlib import Path
 
 BASE_URL = "https://mcpitris.github.io/bluffword-content"
 SCHEMA_VERSION = 1
-DEFAULT_MIN_APP_VERSION = "0.9.0"
+DEFAULT_MIN_APP_VERSION = "1.0.0"
 DEFAULT_CONTENT_EPOCH = 1
 
 CONTENT_TYPES = {
