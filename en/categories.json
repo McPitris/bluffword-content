@@ -1817,7 +1817,7 @@
           "hint": "desk"
         },
         {
-          "id": "teacher",
+          "id": "school_teacher",
           "text": "Teacher",
           "hint": "board"
         },
