@@ -156,6 +156,106 @@
           "id": "med",
           "text": "Honey",
           "hint": "hive"
+        },
+        {
+          "id": "ramen",
+          "text": "Ramen",
+          "hint": "broth"
+        },
+        {
+          "id": "lasagne",
+          "text": "Lasagna",
+          "hint": "layers"
+        },
+        {
+          "id": "bageta",
+          "text": "Baguette",
+          "hint": "crust"
+        },
+        {
+          "id": "tiramisu",
+          "text": "Tiramisu",
+          "hint": "mascarpone"
+        },
+        {
+          "id": "hummus",
+          "text": "Hummus",
+          "hint": "chickpea"
+        },
+        {
+          "id": "falafel",
+          "text": "Falafel",
+          "hint": "ball"
+        },
+        {
+          "id": "svickova",
+          "text": "Svíčková",
+          "hint": "cream"
+        },
+        {
+          "id": "pecene_kure",
+          "text": "Roast Chicken",
+          "hint": "skin"
+        },
+        {
+          "id": "bramborak",
+          "text": "Potato Pancake",
+          "hint": "marjoram"
+        },
+        {
+          "id": "chlebicek",
+          "text": "Open Sandwich",
+          "hint": "topping"
+        },
+        {
+          "id": "syr",
+          "text": "Cheese",
+          "hint": "milk"
+        },
+        {
+          "id": "jogurt",
+          "text": "Yogurt",
+          "hint": "spoon"
+        },
+        {
+          "id": "croissant",
+          "text": "Croissant",
+          "hint": "butter"
+        },
+        {
+          "id": "muffin",
+          "text": "Muffin",
+          "hint": "wrapper"
+        },
+        {
+          "id": "curry",
+          "text": "Curry",
+          "hint": "spice"
+        },
+        {
+          "id": "pad_thai",
+          "text": "Pad Thai",
+          "hint": "noodles"
+        },
+        {
+          "id": "losos",
+          "text": "Salmon",
+          "hint": "fillet"
+        },
+        {
+          "id": "vejce",
+          "text": "Egg",
+          "hint": "shell"
+        },
+        {
+          "id": "pudink",
+          "text": "Pudding",
+          "hint": "vanilla"
+        },
+        {
+          "id": "meloun",
+          "text": "Watermelon",
+          "hint": "seed"
         }
       ]
     },
@@ -313,6 +413,106 @@
           "id": "oscar",
           "text": "Oscar",
           "hint": "statue"
+        },
+        {
+          "id": "thriller",
+          "text": "Thriller",
+          "hint": "tension"
+        },
+        {
+          "id": "fantasy",
+          "text": "Fantasy",
+          "hint": "realm"
+        },
+        {
+          "id": "sci_fi",
+          "text": "Sci-fi",
+          "hint": "technology"
+        },
+        {
+          "id": "muzikal",
+          "text": "Musical",
+          "hint": "singing"
+        },
+        {
+          "id": "pohadka",
+          "text": "Fairy Tale",
+          "hint": "magic"
+        },
+        {
+          "id": "serial",
+          "text": "Series",
+          "hint": "season"
+        },
+        {
+          "id": "epizoda",
+          "text": "Episode",
+          "hint": "chapter"
+        },
+        {
+          "id": "kaskader",
+          "text": "Stuntman",
+          "hint": "fall"
+        },
+        {
+          "id": "dabing",
+          "text": "Dubbing",
+          "hint": "voice"
+        },
+        {
+          "id": "titulky",
+          "text": "Subtitles",
+          "hint": "line"
+        },
+        {
+          "id": "premiera",
+          "text": "Premiere",
+          "hint": "carpet"
+        },
+        {
+          "id": "pokracovani",
+          "text": "Sequel",
+          "hint": "second"
+        },
+        {
+          "id": "prequel",
+          "text": "Prequel",
+          "hint": "beginning"
+        },
+        {
+          "id": "remake",
+          "text": "Remake",
+          "hint": "new"
+        },
+        {
+          "id": "specialni_efekty",
+          "text": "Special Effects",
+          "hint": "trick"
+        },
+        {
+          "id": "kostym",
+          "text": "Costume",
+          "hint": "fabric"
+        },
+        {
+          "id": "masker",
+          "text": "Makeup Artist",
+          "hint": "makeup"
+        },
+        {
+          "id": "strihac",
+          "text": "Editor",
+          "hint": "cut"
+        },
+        {
+          "id": "dejovy_zvrat",
+          "text": "Plot Twist",
+          "hint": "shock"
+        },
+        {
+          "id": "filmovy_festival",
+          "text": "Film Festival",
+          "hint": "jury"
         }
       ]
     },
@@ -470,6 +670,106 @@
           "id": "pristav",
           "text": "Port",
           "hint": "pier"
+        },
+        {
+          "id": "apartman",
+          "text": "Apartment",
+          "hint": "key"
+        },
+        {
+          "id": "hostel",
+          "text": "Hostel",
+          "hint": "bunk"
+        },
+        {
+          "id": "pruvodce",
+          "text": "Tour Guide",
+          "hint": "story"
+        },
+        {
+          "id": "turista",
+          "text": "Tourist",
+          "hint": "camera"
+        },
+        {
+          "id": "vyhlidka",
+          "text": "Lookout",
+          "hint": "panorama"
+        },
+        {
+          "id": "jeskyne",
+          "text": "Cave",
+          "hint": "stalactite"
+        },
+        {
+          "id": "vodopad",
+          "text": "Waterfall",
+          "hint": "stream"
+        },
+        {
+          "id": "poust",
+          "text": "Desert",
+          "hint": "dune"
+        },
+        {
+          "id": "dzungle",
+          "text": "Jungle",
+          "hint": "vine"
+        },
+        {
+          "id": "karavan",
+          "text": "Caravan",
+          "hint": "trailer"
+        },
+        {
+          "id": "metro",
+          "text": "Metro",
+          "hint": "tunnel"
+        },
+        {
+          "id": "tramvaj",
+          "text": "Tram",
+          "hint": "rail"
+        },
+        {
+          "id": "skutr",
+          "text": "Scooter",
+          "hint": "helmet"
+        },
+        {
+          "id": "plavky",
+          "text": "Swimsuit",
+          "hint": "pool"
+        },
+        {
+          "id": "opalovaci_krem",
+          "text": "Sunscreen",
+          "hint": "factor"
+        },
+        {
+          "id": "jizdenka",
+          "text": "Ticket",
+          "hint": "inspector"
+        },
+        {
+          "id": "hranice",
+          "text": "Border",
+          "hint": "control"
+        },
+        {
+          "id": "celnik",
+          "text": "Customs Officer",
+          "hint": "declaration"
+        },
+        {
+          "id": "majak",
+          "text": "Lighthouse",
+          "hint": "light"
+        },
+        {
+          "id": "batuzkar",
+          "text": "Backpacker",
+          "hint": "hostel"
         }
       ]
     },
@@ -627,6 +927,106 @@
           "id": "netopyr",
           "text": "Bat",
           "hint": "cave"
+        },
+        {
+          "id": "tygr",
+          "text": "Tiger",
+          "hint": "stripes"
+        },
+        {
+          "id": "panda",
+          "text": "Panda",
+          "hint": "bamboo"
+        },
+        {
+          "id": "zebra",
+          "text": "Zebra",
+          "hint": "savanna"
+        },
+        {
+          "id": "velbloud",
+          "text": "Camel",
+          "hint": "hump"
+        },
+        {
+          "id": "nosorozec",
+          "text": "Rhino",
+          "hint": "horn"
+        },
+        {
+          "id": "hroch",
+          "text": "Hippo",
+          "hint": "mud"
+        },
+        {
+          "id": "klokan",
+          "text": "Kangaroo",
+          "hint": "pouch"
+        },
+        {
+          "id": "koala",
+          "text": "Koala",
+          "hint": "eucalyptus"
+        },
+        {
+          "id": "orel",
+          "text": "Eagle",
+          "hint": "talon"
+        },
+        {
+          "id": "labut",
+          "text": "Swan",
+          "hint": "lake"
+        },
+        {
+          "id": "jesterka",
+          "text": "Lizard",
+          "hint": "stone"
+        },
+        {
+          "id": "chobotnice",
+          "text": "Octopus",
+          "hint": "tentacle"
+        },
+        {
+          "id": "krab",
+          "text": "Crab",
+          "hint": "claw"
+        },
+        {
+          "id": "velryba",
+          "text": "Whale",
+          "hint": "ocean"
+        },
+        {
+          "id": "tulen",
+          "text": "Seal",
+          "hint": "flipper"
+        },
+        {
+          "id": "sob",
+          "text": "Reindeer",
+          "hint": "antlers"
+        },
+        {
+          "id": "jelen",
+          "text": "Deer",
+          "hint": "forest"
+        },
+        {
+          "id": "veverka",
+          "text": "Squirrel",
+          "hint": "nut"
+        },
+        {
+          "id": "mys",
+          "text": "Mouse",
+          "hint": "hole"
+        },
+        {
+          "id": "mravenec",
+          "text": "Ant",
+          "hint": "anthill"
         }
       ]
     },
@@ -784,6 +1184,106 @@
           "id": "sipky",
           "text": "Darts",
           "hint": "bullseye"
+        },
+        {
+          "id": "formula_1",
+          "text": "Formula 1",
+          "hint": "car"
+        },
+        {
+          "id": "motokros",
+          "text": "Motocross",
+          "hint": "mud"
+        },
+        {
+          "id": "biatlon",
+          "text": "Biathlon",
+          "hint": "target"
+        },
+        {
+          "id": "karate",
+          "text": "Karate",
+          "hint": "strike"
+        },
+        {
+          "id": "taekwondo",
+          "text": "Taekwondo",
+          "hint": "kick"
+        },
+        {
+          "id": "mma",
+          "text": "MMA",
+          "hint": "cage"
+        },
+        {
+          "id": "zapas",
+          "text": "Wrestling",
+          "hint": "mat"
+        },
+        {
+          "id": "veslovani",
+          "text": "Rowing",
+          "hint": "oar"
+        },
+        {
+          "id": "kanoistika",
+          "text": "Canoeing",
+          "hint": "paddle"
+        },
+        {
+          "id": "parkour",
+          "text": "Parkour",
+          "hint": "obstacle"
+        },
+        {
+          "id": "triatlon",
+          "text": "Triathlon",
+          "hint": "trio"
+        },
+        {
+          "id": "maraton",
+          "text": "Marathon",
+          "hint": "endurance"
+        },
+        {
+          "id": "curling",
+          "text": "Curling",
+          "hint": "stone"
+        },
+        {
+          "id": "kriket",
+          "text": "Cricket",
+          "hint": "wicket"
+        },
+        {
+          "id": "squash",
+          "text": "Squash",
+          "hint": "wall"
+        },
+        {
+          "id": "padel",
+          "text": "Padel",
+          "hint": "glass"
+        },
+        {
+          "id": "americky_fotbal",
+          "text": "American Football",
+          "hint": "helmet"
+        },
+        {
+          "id": "sportovni_strelba",
+          "text": "Sport Shooting",
+          "hint": "sight"
+        },
+        {
+          "id": "potapeni",
+          "text": "Diving",
+          "hint": "tank"
+        },
+        {
+          "id": "jezdectvi",
+          "text": "Equestrian",
+          "hint": "saddle"
         }
       ]
     },
@@ -941,15 +1441,115 @@
           "id": "cleaner",
           "text": "Cleaner",
           "hint": "mop"
+        },
+        {
+          "id": "architect",
+          "text": "Architect",
+          "hint": "blueprint"
+        },
+        {
+          "id": "accountant",
+          "text": "Accountant",
+          "hint": "invoice"
+        },
+        {
+          "id": "veterinarian",
+          "text": "Veterinarian",
+          "hint": "clinic"
+        },
+        {
+          "id": "pharmacist",
+          "text": "Pharmacist",
+          "hint": "prescription"
+        },
+        {
+          "id": "psychologist",
+          "text": "Psychologist",
+          "hint": "conversation"
+        },
+        {
+          "id": "receptionist",
+          "text": "Receptionist",
+          "hint": "key"
+        },
+        {
+          "id": "manager",
+          "text": "Manager",
+          "hint": "meeting"
+        },
+        {
+          "id": "marketer",
+          "text": "Marketer",
+          "hint": "campaign"
+        },
+        {
+          "id": "translator",
+          "text": "Translator",
+          "hint": "language"
+        },
+        {
+          "id": "librarian",
+          "text": "Librarian",
+          "hint": "shelf"
+        },
+        {
+          "id": "postman",
+          "text": "Postman",
+          "hint": "envelope"
+        },
+        {
+          "id": "courier",
+          "text": "Courier",
+          "hint": "parcel"
+        },
+        {
+          "id": "gardener",
+          "text": "Gardener",
+          "hint": "flowerbed"
+        },
+        {
+          "id": "security_guard",
+          "text": "Security Guard",
+          "hint": "camera"
+        },
+        {
+          "id": "influencer",
+          "text": "Influencer",
+          "hint": "followers"
+        },
+        {
+          "id": "streamer",
+          "text": "Streamer",
+          "hint": "chat"
+        },
+        {
+          "id": "youtuber",
+          "text": "Youtuber",
+          "hint": "subscribe"
+        },
+        {
+          "id": "paramedic",
+          "text": "Paramedic",
+          "hint": "siren"
+        },
+        {
+          "id": "miner",
+          "text": "Miner",
+          "hint": "shaft"
+        },
+        {
+          "id": "sailor",
+          "text": "Sailor",
+          "hint": "deck"
         }
       ],
-      "imagePath": "assets/categories/jobs.png"
+      "imagePath": "assets/images/category/jobs.png"
     },
     {
       "id": "lotr",
       "name": "The Lord of the Rings",
       "description": "Characters, places, and artifacts from LOTR.",
-      "imagePath": "assets/categories/lotr.png",
+      "imagePath": "assets/images/category/lotr.png",
       "isSpecial": true,
       "words": [
         {
@@ -1151,6 +1751,56 @@
           "id": "elf",
           "text": "Elf",
           "hint": "immortality"
+        },
+        {
+          "id": "theoden",
+          "text": "Théoden",
+          "hint": "riders"
+        },
+        {
+          "id": "eowyn",
+          "text": "Éowyn",
+          "hint": "blade"
+        },
+        {
+          "id": "faramir",
+          "text": "Faramir",
+          "hint": "brother"
+        },
+        {
+          "id": "shelob",
+          "text": "Shelob",
+          "hint": "web"
+        },
+        {
+          "id": "treebeard",
+          "text": "Treebeard",
+          "hint": "shepherd"
+        },
+        {
+          "id": "lothlorien",
+          "text": "Lothlórien",
+          "hint": "gold"
+        },
+        {
+          "id": "minas_tirith",
+          "text": "Minas Tirith",
+          "hint": "white"
+        },
+        {
+          "id": "osgiliath",
+          "text": "Osgiliath",
+          "hint": "bridge"
+        },
+        {
+          "id": "lembas",
+          "text": "Lembas",
+          "hint": "bread"
+        },
+        {
+          "id": "mithril",
+          "text": "Mithril",
+          "hint": "shirt"
         }
       ]
     }
