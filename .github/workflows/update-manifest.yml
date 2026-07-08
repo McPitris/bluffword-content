@@ -8,13 +8,9 @@ on:
       - 'cs/**'
       - 'en/**'
       - 'assets/**'
+      - 'content_config.json'
+      - 'scripts/generate_manifest.py'
   workflow_dispatch:
-    inputs:
-      allow_same_version_changes:
-        description: 'Allow same-version manifest regeneration for an intentional reset'
-        required: false
-        default: false
-        type: boolean
 
 permissions:
   contents: write
@@ -33,21 +29,16 @@ jobs:
           python-version: '3.x'
 
       - name: Generate manifest
-        run: |
-          args=""
-          if [ "${{ github.event_name }}" = "workflow_dispatch" ] && [ "${{ inputs.allow_same_version_changes }}" = "true" ]; then
-            args="--allow-same-version-changes"
-          fi
-          python3 scripts/generate_manifest.py $args
+        run: python3 scripts/generate_manifest.py
 
       - name: Commit generated manifest
         run: |
-          if git diff --quiet -- manifest.json; then
-            echo "manifest.json is unchanged"
+          if [ -z "$(git status --porcelain -- cs en manifest.json manifest_index.json releases)" ]; then
+            echo "generated content manifest files are unchanged"
             exit 0
           fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add manifest.json
+          git add cs en manifest.json manifest_index.json releases
           git commit -m "Update content manifest"
           git push

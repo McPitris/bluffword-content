@@ -2,17 +2,23 @@
 
 Static content for BluffWord remote updates.
 
-Published by GitHub Pages. The app reads `manifest.json`, downloads changed files, validates them, and keeps the last valid local content.
+Published by GitHub Pages. The app reads `manifest_index.json`, picks the newest manifest compatible with the current app version, downloads changed files, validates them, and keeps the last valid local content. Older app versions fall back to the newest release whose `minimumAppVersion` they support.
 
 ## Structure
 
 ```text
 manifest.json
+manifest_index.json
+content_config.json
 cs/categories.json
 en/categories.json
 assets/categories/*.png
 assets/themes/<theme-id>/categories/*.png
 assets/themes/<theme-id>/avatars/*.png
+releases/e<epoch>/v<version>/manifest.json
+releases/e<epoch>/v<version>/cs/categories.json
+releases/e<epoch>/v<version>/en/categories.json
+releases/e<epoch>/v<version>/assets/**
 scripts/generate_manifest.py
 .github/workflows/update-manifest.yml
 ```
@@ -20,13 +26,13 @@ scripts/generate_manifest.py
 ## Updating content
 
 1. Edit `cs/categories.json` and `en/categories.json`.
-2. Increase `version` in both category JSON files to the same whole number.
-3. Add or replace category images in `assets/categories/` when needed.
-4. Add optional theme overrides in `assets/themes/<theme-id>/`.
-5. Keep category `id` stable across locales.
-6. Keep `imagePath` the same in both locale files, for example `assets/categories/food.png`.
+2. Add or replace category images in `assets/categories/` when needed.
+3. Add optional theme overrides in `assets/themes/<theme-id>/`.
+4. Keep category `id` stable across locales.
+5. Keep `imagePath` the same in both locale files, for example `assets/categories/food.png`.
+6. If the content needs a newer app, update `minimumAppVersion` in `content_config.json`.
 7. Push changes to `master`.
-8. GitHub Actions regenerates `manifest.json` from the category JSON version, hashes, and file sizes.
+8. GitHub Actions regenerates category `version`, `manifest.json`, `manifest_index.json`, and a release snapshot under `releases/e<epoch>/v<version>/`.
 9. GitHub Pages publishes static files.
 
 ## Theme images
@@ -76,18 +82,17 @@ Rules:
 
 - keep the same `id` and `isSpecial` value in `cs/categories.json` and `en/categories.json`
 - add the image to `assets/categories/lotr.png`
-- increase `version` in both locale files
-- regenerate `manifest.json`
+- push to `master`; GitHub Actions updates the generated files
 
 ## Generate manifest locally
 
-Regenerate hashes and `manifest.contentVersion` from `cs/categories.json` and `en/categories.json`:
+Regenerate category `version`, hashes, `manifest.contentVersion`, `manifest_index.json`, and the immutable release snapshot from `cs/categories.json`, `en/categories.json`, and assets:
 
 ```bash
 python3 scripts/generate_manifest.py
 ```
 
-Override `minimumAppVersion` when needed:
+Override `minimumAppVersion` for local testing when needed:
 
 ```bash
 python3 scripts/generate_manifest.py --min-app-version 0.8.0
@@ -103,14 +108,26 @@ python3 scripts/generate_manifest.py --content-epoch 2
 
 ```text
 https://mcpitris.github.io/bluffword-content/manifest.json
+https://mcpitris.github.io/bluffword-content/manifest_index.json
 ```
 
 ## Version fields
 
-`cs/categories.json` and `en/categories.json` are the source of truth. Their `version` must match and must be a non-negative integer. The generator copies that value into `manifest.contentVersion`.
+`content_config.json` stores release-level settings:
 
-The app displays `manifest.contentVersion`. Use `2`, `3`, `4`... for content releases, not `1.1`, because the manifest model in the app expects an integer. If content files change and the version stays the same, the generator fails so the app cannot miss the update.
+```json
+{
+  "minimumAppVersion": "1.0.0",
+  "contentEpoch": 1
+}
+```
 
-`manifest.contentEpoch` lets you restart content version numbering. The app compares `contentEpoch` first, then `contentVersion`. If published content should start again from version `1`, increase `contentEpoch` and set `version` in both category files to `1`.
+`cs/categories.json` and `en/categories.json` keep a generated `version` field for the app validator. Do not bump it by hand. The generator compares current source files with the latest manifest and increments `manifest.contentVersion` when content or `minimumAppVersion` changed.
 
-`minimumAppVersion` is kept from the existing manifest unless you pass `--min-app-version`. The current app treats it as manifest metadata; enforcement must be added in the app if a future content schema requires a newer app.
+The app displays `manifest.contentVersion`. It is always a whole number: `2`, `3`, `4`...
+
+`manifest.contentEpoch` lets you restart content version numbering. The app compares `contentEpoch` first, then `contentVersion`. If published content should start again from version `1`, increase `contentEpoch` in `content_config.json`.
+
+`minimumAppVersion` is read from `content_config.json` unless you pass `--min-app-version` locally. The app uses `manifest_index.json` to choose the newest release where `minimumAppVersion` is less than or equal to the current app version. For example, app `1.0.0` will skip a release with `minimumAppVersion: "1.0.1"` and use the newest release still marked for `1.0.0`.
+
+The root `manifest.json` is the latest release. Older compatible releases must remain available under `releases/e<epoch>/v<version>/`, because archived manifests point at those immutable release files instead of the mutable top-level `cs/`, `en/`, and `assets/` files.
