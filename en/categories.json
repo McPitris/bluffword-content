@@ -1543,13 +1543,13 @@
           "hint": "deck"
         }
       ],
-      "imagePath": "assets/images/category/jobs.png"
+      "imagePath": "assets/categories/jobs.png"
     },
     {
       "id": "lotr",
       "name": "The Lord of the Rings",
       "description": "Characters, places, and artifacts from LOTR.",
-      "imagePath": "assets/images/category/lotr.png",
+      "imagePath": "assets/categories/lotr.png",
       "isSpecial": true,
       "words": [
         {
