@@ -1,26 +1,26 @@
 {
-  "locale": "cs",
+  "locale": "en",
   "version": 2,
   "categories": [
     {
       "id": "food",
-      "name": "Jídlo",
-      "description": "Jídla, pití a chutě, které zná každá parta.",
+      "name": "Food",
+      "description": "Meals, drinks and flavors every group knows.",
       "words": [
         {
           "id": "pizza",
           "text": "Pizza",
-          "hint": "pec"
+          "hint": "oven"
         },
         {
           "id": "burger",
           "text": "Burger",
-          "hint": "houska"
+          "hint": "bun"
         },
         {
           "id": "sushi",
           "text": "Sushi",
-          "hint": "řasa"
+          "hint": "seaweed"
         },
         {
           "id": "tacos",
@@ -29,148 +29,148 @@
         },
         {
           "id": "zmrzlina",
-          "text": "Zmrzlina",
-          "hint": "kopeček"
+          "text": "Ice Cream",
+          "hint": "scoop"
         },
         {
           "id": "palacinky",
-          "text": "Palačinky",
-          "hint": "marmeláda"
+          "text": "Pancakes",
+          "hint": "jam"
         },
         {
           "id": "kebab",
           "text": "Kebab",
-          "hint": "špíz"
+          "hint": "skewer"
         },
         {
           "id": "limonada",
-          "text": "Limonáda",
-          "hint": "bublinky"
+          "text": "Lemonade",
+          "hint": "bubbles"
         },
         {
           "id": "gulas",
-          "text": "Guláš",
+          "text": "Goulash",
           "hint": "paprika"
         },
         {
           "id": "hranolky",
-          "text": "Hranolky",
-          "hint": "kečup"
+          "text": "Fries",
+          "hint": "ketchup"
         },
         {
           "id": "rizek",
-          "text": "Řízek",
-          "hint": "strouhanka"
+          "text": "Schnitzel",
+          "hint": "breadcrumbs"
         },
         {
           "id": "testoviny",
-          "text": "Těstoviny",
-          "hint": "omáčka"
+          "text": "Pasta",
+          "hint": "sauce"
         },
         {
           "id": "salat",
-          "text": "Salát",
-          "hint": "zálivka"
+          "text": "Salad",
+          "hint": "dressing"
         },
         {
           "id": "hotdog",
           "text": "Hotdog",
-          "hint": "hořčice"
+          "hint": "mustard"
         },
         {
           "id": "donut",
           "text": "Donut",
-          "hint": "poleva"
+          "hint": "glaze"
         },
         {
           "id": "popcorn",
           "text": "Popcorn",
-          "hint": "kino"
+          "hint": "cinema"
         },
         {
           "id": "cokolada",
-          "text": "Čokoláda",
-          "hint": "kakao"
+          "text": "Chocolate",
+          "hint": "cocoa"
         },
         {
           "id": "dort",
-          "text": "Dort",
-          "hint": "svíčka"
+          "text": "Cake",
+          "hint": "candle"
         },
         {
           "id": "polevka",
-          "text": "Polévka",
-          "hint": "lžíce"
+          "text": "Soup",
+          "hint": "spoon"
         },
         {
           "id": "kava",
-          "text": "Káva",
-          "hint": "kofein"
+          "text": "Coffee",
+          "hint": "caffeine"
         },
         {
           "id": "caj",
-          "text": "Čaj",
-          "hint": "konvice"
+          "text": "Tea",
+          "hint": "kettle"
         },
         {
           "id": "sendvic",
-          "text": "Sendvič",
+          "text": "Sandwich",
           "hint": "toast"
         },
         {
           "id": "omeleta",
-          "text": "Omeleta",
-          "hint": "vejce"
+          "text": "Omelette",
+          "hint": "egg"
         },
         {
           "id": "knedliky",
-          "text": "Knedlíky",
-          "hint": "pára"
+          "text": "Dumplings",
+          "hint": "steam"
         },
         {
           "id": "steak",
           "text": "Steak",
-          "hint": "gril"
+          "hint": "grill"
         },
         {
           "id": "rizoto",
-          "text": "Rizoto",
-          "hint": "rýže"
+          "text": "Risotto",
+          "hint": "rice"
         },
         {
           "id": "tortilla",
           "text": "Tortilla",
-          "hint": "placka"
+          "hint": "wrap"
         },
         {
           "id": "strudl",
-          "text": "Štrúdl",
-          "hint": "jablko"
+          "text": "Strudel",
+          "hint": "apple"
         },
         {
           "id": "vafle",
-          "text": "Vafle",
-          "hint": "mřížka"
+          "text": "Waffles",
+          "hint": "grid"
         },
         {
           "id": "med",
-          "text": "Med",
-          "hint": "úl"
+          "text": "Honey",
+          "hint": "hive"
         },
         {
           "id": "ramen",
           "text": "Ramen",
-          "hint": "vývar"
+          "hint": "broth"
         },
         {
           "id": "lasagne",
-          "text": "Lasagne",
-          "hint": "vrstvy"
+          "text": "Lasagna",
+          "hint": "layers"
         },
         {
           "id": "bageta",
-          "text": "Bageta",
-          "hint": "kůrka"
+          "text": "Baguette",
+          "hint": "crust"
         },
         {
           "id": "tiramisu",
@@ -180,766 +180,763 @@
         {
           "id": "hummus",
           "text": "Hummus",
-          "hint": "cizrna"
+          "hint": "chickpea"
         },
         {
           "id": "falafel",
           "text": "Falafel",
-          "hint": "kulička"
+          "hint": "ball"
         },
         {
           "id": "svickova",
           "text": "Svíčková",
-          "hint": "smetana"
+          "hint": "cream"
         },
         {
           "id": "pecene_kure",
-          "text": "Pečené kuře",
-          "hint": "kůže"
+          "text": "Roast Chicken",
+          "hint": "skin"
         },
         {
           "id": "bramborak",
-          "text": "Bramborák",
-          "hint": "majoránka"
+          "text": "Potato Pancake",
+          "hint": "marjoram"
         },
         {
           "id": "chlebicek",
-          "text": "Chlebíček",
-          "hint": "obloha"
+          "text": "Open Sandwich",
+          "hint": "topping"
         },
         {
           "id": "syr",
-          "text": "Sýr",
-          "hint": "mléko"
+          "text": "Cheese",
+          "hint": "milk"
         },
         {
           "id": "jogurt",
-          "text": "Jogurt",
-          "hint": "lžička"
+          "text": "Yogurt",
+          "hint": "spoon"
         },
         {
           "id": "croissant",
           "text": "Croissant",
-          "hint": "máslo"
+          "hint": "butter"
         },
         {
           "id": "muffin",
           "text": "Muffin",
-          "hint": "papírek"
+          "hint": "wrapper"
         },
         {
           "id": "curry",
           "text": "Curry",
-          "hint": "koření"
+          "hint": "spice"
         },
         {
           "id": "pad_thai",
           "text": "Pad Thai",
-          "hint": "nudle"
+          "hint": "noodles"
         },
         {
           "id": "losos",
-          "text": "Losos",
-          "hint": "filet"
+          "text": "Salmon",
+          "hint": "fillet"
         },
         {
           "id": "vejce",
-          "text": "Vejce",
-          "hint": "skořápka"
+          "text": "Egg",
+          "hint": "shell"
         },
         {
           "id": "pudink",
-          "text": "Pudink",
-          "hint": "vanilka"
+          "text": "Pudding",
+          "hint": "vanilla"
         },
         {
           "id": "meloun",
-          "text": "Meloun",
-          "hint": "pecka"
+          "text": "Watermelon",
+          "hint": "seed"
         }
-      ],
-      "imagePath": "assets/categories/food.png"
+      ]
     },
     {
       "id": "movies",
-      "name": "Filmy",
-      "description": "Žánry, postavy a filmové věci, které se dobře blafují.",
+      "name": "Movies",
+      "description": "Genres, characters and movie things that are easy to bluff.",
       "words": [
         {
           "id": "komedie",
-          "text": "Komedie",
-          "hint": "smích"
+          "text": "Comedy",
+          "hint": "laugh"
         },
         {
           "id": "horor",
-          "text": "Horor",
-          "hint": "stín"
+          "text": "Horror",
+          "hint": "shadow"
         },
         {
           "id": "superhrdina",
-          "text": "Superhrdina",
-          "hint": "plášť"
+          "text": "Superhero",
+          "hint": "cape"
         },
         {
           "id": "detektiv",
-          "text": "Detektiv",
-          "hint": "stopa"
+          "text": "Detective",
+          "hint": "clue"
         },
         {
           "id": "robot",
           "text": "Robot",
-          "hint": "kov"
+          "hint": "metal"
         },
         {
           "id": "vesmir",
-          "text": "Vesmír",
-          "hint": "galaxie"
+          "text": "Space",
+          "hint": "galaxy"
         },
         {
           "id": "drak",
-          "text": "Drak",
-          "hint": "šupiny"
+          "text": "Dragon",
+          "hint": "scales"
         },
         {
           "id": "pirat",
-          "text": "Pirát",
-          "hint": "mapa"
+          "text": "Pirate",
+          "hint": "map"
         },
         {
           "id": "kouzelnik",
-          "text": "Kouzelník",
-          "hint": "hůlka"
+          "text": "Wizard",
+          "hint": "wand"
         },
         {
           "id": "zaporak",
-          "text": "Záporák",
-          "hint": "plán"
+          "text": "Villain",
+          "hint": "scheme"
         },
         {
           "id": "reziser",
-          "text": "Režisér",
-          "hint": "klapka"
+          "text": "Director",
+          "hint": "clapboard"
         },
         {
           "id": "herec",
-          "text": "Herec",
+          "text": "Actor",
           "hint": "role"
         },
         {
           "id": "kamera",
-          "text": "Kamera",
-          "hint": "objektiv"
+          "text": "Camera",
+          "hint": "lens"
         },
         {
           "id": "scenar",
-          "text": "Scénář",
-          "hint": "dialog"
+          "text": "Script",
+          "hint": "dialogue"
         },
         {
           "id": "kino",
-          "text": "Kino",
-          "hint": "plátno"
+          "text": "Cinema",
+          "hint": "screen"
         },
         {
           "id": "trailer",
           "text": "Trailer",
-          "hint": "ukázka"
+          "hint": "preview"
         },
         {
           "id": "soundtrack",
           "text": "Soundtrack",
-          "hint": "melodie"
+          "hint": "melody"
         },
         {
           "id": "animak",
-          "text": "Animák",
-          "hint": "kresba"
+          "text": "Cartoon",
+          "hint": "drawing"
         },
         {
           "id": "western",
           "text": "Western",
-          "hint": "klobouk"
+          "hint": "hat"
         },
         {
           "id": "romance",
           "text": "Romance",
-          "hint": "polibek"
+          "hint": "kiss"
         },
         {
           "id": "akcni_film",
-          "text": "Akční film",
-          "hint": "výbuch"
+          "text": "Action Movie",
+          "hint": "explosion"
         },
         {
           "id": "dokument",
-          "text": "Dokument",
-          "hint": "kamera"
+          "text": "Documentary",
+          "hint": "footage"
         },
         {
           "id": "mimozemstan",
-          "text": "Mimozemšťan",
-          "hint": "anténa"
+          "text": "Alien",
+          "hint": "antenna"
         },
         {
           "id": "zombie",
           "text": "Zombie",
-          "hint": "hrob"
+          "hint": "grave"
         },
         {
           "id": "upir",
-          "text": "Upír",
-          "hint": "tesáky"
+          "text": "Vampire",
+          "hint": "fangs"
         },
         {
           "id": "princezna",
-          "text": "Princezna",
-          "hint": "koruna"
+          "text": "Princess",
+          "hint": "crown"
         },
         {
           "id": "rytir",
-          "text": "Rytíř",
-          "hint": "brnění"
+          "text": "Knight",
+          "hint": "armor"
         },
         {
           "id": "duch",
-          "text": "Duch",
-          "hint": "prostěradlo"
+          "text": "Ghost",
+          "hint": "sheet"
         },
         {
           "id": "komiks",
-          "text": "Komiks",
-          "hint": "bublina"
+          "text": "Comic",
+          "hint": "bubble"
         },
         {
           "id": "oscar",
           "text": "Oscar",
-          "hint": "soška"
+          "hint": "statue"
         },
         {
           "id": "thriller",
           "text": "Thriller",
-          "hint": "napětí"
+          "hint": "tension"
         },
         {
           "id": "fantasy",
           "text": "Fantasy",
-          "hint": "svět"
+          "hint": "realm"
         },
         {
           "id": "sci_fi",
           "text": "Sci-fi",
-          "hint": "technologie"
+          "hint": "technology"
         },
         {
           "id": "muzikal",
-          "text": "Muzikál",
-          "hint": "zpěv"
+          "text": "Musical",
+          "hint": "singing"
         },
         {
           "id": "pohadka",
-          "text": "Pohádka",
-          "hint": "kouzlo"
+          "text": "Fairy Tale",
+          "hint": "magic"
         },
         {
           "id": "serial",
-          "text": "Seriál",
-          "hint": "řada"
+          "text": "Series",
+          "hint": "season"
         },
         {
           "id": "epizoda",
-          "text": "Epizoda",
-          "hint": "díl"
+          "text": "Episode",
+          "hint": "chapter"
         },
         {
           "id": "kaskader",
-          "text": "Kaskadér",
-          "hint": "pád"
+          "text": "Stuntman",
+          "hint": "fall"
         },
         {
           "id": "dabing",
-          "text": "Dabing",
-          "hint": "hlas"
+          "text": "Dubbing",
+          "hint": "voice"
         },
         {
           "id": "titulky",
-          "text": "Titulky",
-          "hint": "řádek"
+          "text": "Subtitles",
+          "hint": "line"
         },
         {
           "id": "premiera",
-          "text": "Premiéra",
-          "hint": "koberec"
+          "text": "Premiere",
+          "hint": "carpet"
         },
         {
           "id": "pokracovani",
-          "text": "Pokračování",
-          "hint": "dvojka"
+          "text": "Sequel",
+          "hint": "second"
         },
         {
           "id": "prequel",
           "text": "Prequel",
-          "hint": "začátek"
+          "hint": "beginning"
         },
         {
           "id": "remake",
           "text": "Remake",
-          "hint": "novinka"
+          "hint": "new"
         },
         {
           "id": "specialni_efekty",
-          "text": "Speciální efekty",
-          "hint": "trik"
+          "text": "Special Effects",
+          "hint": "trick"
         },
         {
           "id": "kostym",
-          "text": "Kostým",
-          "hint": "látka"
+          "text": "Costume",
+          "hint": "fabric"
         },
         {
           "id": "masker",
-          "text": "Maskér",
-          "hint": "líčení"
+          "text": "Makeup Artist",
+          "hint": "makeup"
         },
         {
           "id": "strihac",
-          "text": "Střihač",
-          "hint": "nůžky"
+          "text": "Editor",
+          "hint": "cut"
         },
         {
           "id": "dejovy_zvrat",
-          "text": "Dějový zvrat",
-          "hint": "šok"
+          "text": "Plot Twist",
+          "hint": "shock"
         },
         {
           "id": "filmovy_festival",
-          "text": "Filmový festival",
-          "hint": "porota"
+          "text": "Film Festival",
+          "hint": "jury"
         }
-      ],
-      "imagePath": "assets/categories/movies.png"
+      ]
     },
     {
       "id": "travel",
-      "name": "Cestování",
-      "description": "Místa, dopravní prostředky a zážitky z cest.",
+      "name": "Travel",
+      "description": "Places, transport and experiences from trips.",
       "words": [
         {
           "id": "letadlo",
-          "text": "Letadlo",
-          "hint": "křídlo"
+          "text": "Airplane",
+          "hint": "wing"
         },
         {
           "id": "hotel",
           "text": "Hotel",
-          "hint": "recepce"
+          "hint": "reception"
         },
         {
           "id": "plaz",
-          "text": "Pláž",
-          "hint": "ručník"
+          "text": "Beach",
+          "hint": "towel"
         },
         {
           "id": "hory",
-          "text": "Hory",
-          "hint": "vrchol"
+          "text": "Mountains",
+          "hint": "summit"
         },
         {
           "id": "mapa",
-          "text": "Mapa",
-          "hint": "kompas"
+          "text": "Map",
+          "hint": "compass"
         },
         {
           "id": "kufr",
-          "text": "Kufr",
-          "hint": "zip"
+          "text": "Suitcase",
+          "hint": "zipper"
         },
         {
           "id": "vlak",
-          "text": "Vlak",
-          "hint": "koleje"
+          "text": "Train",
+          "hint": "rails"
         },
         {
           "id": "pas",
-          "text": "Pas",
-          "hint": "razítko"
+          "text": "Passport",
+          "hint": "stamp"
         },
         {
           "id": "pamatka",
-          "text": "Památka",
-          "hint": "průvodce"
+          "text": "Landmark",
+          "hint": "guide"
         },
         {
           "id": "suvenyr",
-          "text": "Suvenýr",
+          "text": "Souvenir",
           "hint": "magnet"
         },
         {
           "id": "autobus",
-          "text": "Autobus",
-          "hint": "zastávka"
+          "text": "Bus",
+          "hint": "stop"
         },
         {
           "id": "lod",
-          "text": "Loď",
-          "hint": "kotva"
+          "text": "Boat",
+          "hint": "anchor"
         },
         {
           "id": "taxi",
           "text": "Taxi",
-          "hint": "taxametr"
+          "hint": "meter"
         },
         {
           "id": "stan",
-          "text": "Stan",
-          "hint": "kolík"
+          "text": "Tent",
+          "hint": "peg"
         },
         {
           "id": "batoh",
-          "text": "Batoh",
-          "hint": "popruh"
+          "text": "Backpack",
+          "hint": "strap"
         },
         {
           "id": "letiste",
-          "text": "Letiště",
-          "hint": "terminál"
+          "text": "Airport",
+          "hint": "terminal"
         },
         {
           "id": "vylet",
-          "text": "Výlet",
-          "hint": "trasa"
+          "text": "Trip",
+          "hint": "route"
         },
         {
           "id": "kemp",
-          "text": "Kemp",
-          "hint": "ohniště"
+          "text": "Campsite",
+          "hint": "campfire"
         },
         {
           "id": "mesto",
-          "text": "Město",
-          "hint": "náměstí"
+          "text": "City",
+          "hint": "square"
         },
         {
           "id": "vesnice",
-          "text": "Vesnice",
-          "hint": "náves"
+          "text": "Village",
+          "hint": "chapel"
         },
         {
           "id": "ostrov",
-          "text": "Ostrov",
-          "hint": "pobřeží"
+          "text": "Island",
+          "hint": "coast"
         },
         {
           "id": "zamek",
-          "text": "Zámek",
-          "hint": "věž"
+          "text": "Chateau",
+          "hint": "tower"
         },
         {
           "id": "hrad",
-          "text": "Hrad",
-          "hint": "hradba"
+          "text": "Castle",
+          "hint": "wall"
         },
         {
           "id": "muzeum",
-          "text": "Muzeum",
-          "hint": "exponát"
+          "text": "Museum",
+          "hint": "exhibit"
         },
         {
           "id": "lanovka",
-          "text": "Lanovka",
-          "hint": "kabina"
+          "text": "Cable Car",
+          "hint": "cabin"
         },
         {
           "id": "trajekt",
-          "text": "Trajekt",
-          "hint": "paluba"
+          "text": "Ferry",
+          "hint": "deck"
         },
         {
           "id": "letenka",
-          "text": "Letenka",
-          "hint": "brána"
+          "text": "Plane Ticket",
+          "hint": "gate"
         },
         {
           "id": "dalnice",
-          "text": "Dálnice",
-          "hint": "pruh"
+          "text": "Highway",
+          "hint": "lane"
         },
         {
           "id": "benzinka",
-          "text": "Benzínka",
-          "hint": "stojan"
+          "text": "Gas Station",
+          "hint": "pump"
         },
         {
           "id": "pristav",
-          "text": "Přístav",
-          "hint": "molo"
+          "text": "Port",
+          "hint": "pier"
         },
         {
           "id": "apartman",
-          "text": "Apartmán",
-          "hint": "klíč"
+          "text": "Apartment",
+          "hint": "key"
         },
         {
           "id": "hostel",
           "text": "Hostel",
-          "hint": "palanda"
+          "hint": "bunk"
         },
         {
           "id": "pruvodce",
-          "text": "Průvodce",
-          "hint": "výklad"
+          "text": "Tour Guide",
+          "hint": "story"
         },
         {
           "id": "turista",
-          "text": "Turista",
-          "hint": "foťák"
+          "text": "Tourist",
+          "hint": "camera"
         },
         {
           "id": "vyhlidka",
-          "text": "Vyhlídka",
+          "text": "Lookout",
           "hint": "panorama"
         },
         {
           "id": "jeskyne",
-          "text": "Jeskyně",
-          "hint": "krápník"
+          "text": "Cave",
+          "hint": "stalactite"
         },
         {
           "id": "vodopad",
-          "text": "Vodopád",
-          "hint": "proud"
+          "text": "Waterfall",
+          "hint": "stream"
         },
         {
           "id": "poust",
-          "text": "Poušť",
-          "hint": "duna"
+          "text": "Desert",
+          "hint": "dune"
         },
         {
           "id": "dzungle",
-          "text": "Džungle",
-          "hint": "liána"
+          "text": "Jungle",
+          "hint": "vine"
         },
         {
           "id": "karavan",
-          "text": "Karavan",
-          "hint": "přívěs"
+          "text": "Caravan",
+          "hint": "trailer"
         },
         {
           "id": "metro",
           "text": "Metro",
-          "hint": "tunel"
+          "hint": "tunnel"
         },
         {
           "id": "tramvaj",
-          "text": "Tramvaj",
-          "hint": "kolej"
+          "text": "Tram",
+          "hint": "rail"
         },
         {
           "id": "skutr",
-          "text": "Skútr",
-          "hint": "helma"
+          "text": "Scooter",
+          "hint": "helmet"
         },
         {
           "id": "plavky",
-          "text": "Plavky",
-          "hint": "bazén"
+          "text": "Swimsuit",
+          "hint": "pool"
         },
         {
           "id": "opalovaci_krem",
-          "text": "Opalovací krém",
-          "hint": "faktor"
+          "text": "Sunscreen",
+          "hint": "factor"
         },
         {
           "id": "jizdenka",
-          "text": "Jízdenka",
-          "hint": "revizor"
+          "text": "Ticket",
+          "hint": "inspector"
         },
         {
           "id": "hranice",
-          "text": "Hranice",
-          "hint": "kontrola"
+          "text": "Border",
+          "hint": "control"
         },
         {
           "id": "celnik",
-          "text": "Celník",
-          "hint": "deklarace"
+          "text": "Customs Officer",
+          "hint": "declaration"
         },
         {
           "id": "majak",
-          "text": "Maják",
-          "hint": "světlo"
+          "text": "Lighthouse",
+          "hint": "light"
         },
         {
           "id": "batuzkar",
-          "text": "Baťůžkář",
-          "hint": "nocleh"
+          "text": "Backpacker",
+          "hint": "hostel"
         }
-      ],
-      "imagePath": "assets/categories/travel.png"
+      ]
     },
     {
       "id": "animals",
-      "name": "Zvířata",
-      "description": "Domácí mazlíčci, divoká zvířata a tvorové z přírody.",
+      "name": "Animals",
+      "description": "Pets, wild animals and creatures from nature.",
       "words": [
         {
           "id": "pes",
-          "text": "Pes",
-          "hint": "obojek"
+          "text": "Dog",
+          "hint": "collar"
         },
         {
           "id": "kocka",
-          "text": "Kočka",
-          "hint": "vousky"
+          "text": "Cat",
+          "hint": "whiskers"
         },
         {
           "id": "lev",
-          "text": "Lev",
-          "hint": "hříva"
+          "text": "Lion",
+          "hint": "mane"
         },
         {
           "id": "slon",
-          "text": "Slon",
-          "hint": "chobot"
+          "text": "Elephant",
+          "hint": "trunk"
         },
         {
           "id": "jezek",
-          "text": "Ježek",
-          "hint": "bodliny"
+          "text": "Hedgehog",
+          "hint": "spines"
         },
         {
           "id": "zirafa",
-          "text": "Žirafa",
-          "hint": "krk"
+          "text": "Giraffe",
+          "hint": "neck"
         },
         {
           "id": "tucnak",
-          "text": "Tučňák",
-          "hint": "led"
+          "text": "Penguin",
+          "hint": "ice"
         },
         {
           "id": "delfin",
-          "text": "Delfín",
-          "hint": "skok"
+          "text": "Dolphin",
+          "hint": "jump"
         },
         {
           "id": "papousek",
-          "text": "Papoušek",
-          "hint": "zobák"
+          "text": "Parrot",
+          "hint": "beak"
         },
         {
           "id": "kun",
-          "text": "Kůň",
-          "hint": "sedlo"
+          "text": "Horse",
+          "hint": "saddle"
         },
         {
           "id": "medved",
-          "text": "Medvěd",
-          "hint": "brloh"
+          "text": "Bear",
+          "hint": "den"
         },
         {
           "id": "vlk",
-          "text": "Vlk",
-          "hint": "smečka"
+          "text": "Wolf",
+          "hint": "pack"
         },
         {
           "id": "liska",
-          "text": "Liška",
-          "hint": "ocas"
+          "text": "Fox",
+          "hint": "tail"
         },
         {
           "id": "opice",
-          "text": "Opice",
-          "hint": "banán"
+          "text": "Monkey",
+          "hint": "banana"
         },
         {
           "id": "krokodyl",
-          "text": "Krokodýl",
-          "hint": "čelisti"
+          "text": "Crocodile",
+          "hint": "jaws"
         },
         {
           "id": "zralok",
-          "text": "Žralok",
-          "hint": "ploutev"
+          "text": "Shark",
+          "hint": "fin"
         },
         {
           "id": "lama",
-          "text": "Lama",
-          "hint": "plivnutí"
+          "text": "Llama",
+          "hint": "spit"
         },
         {
           "id": "kralik",
-          "text": "Králík",
-          "hint": "mrkev"
+          "text": "Rabbit",
+          "hint": "carrot"
         },
         {
           "id": "prase",
-          "text": "Prase",
-          "hint": "rypák"
+          "text": "Pig",
+          "hint": "snout"
         },
         {
           "id": "had",
-          "text": "Had",
-          "hint": "jazyk"
+          "text": "Snake",
+          "hint": "tongue"
         },
         {
           "id": "zaba",
-          "text": "Žába",
-          "hint": "leknín"
+          "text": "Frog",
+          "hint": "lily"
         },
         {
           "id": "surikata",
-          "text": "Surikata",
-          "hint": "hlídka"
+          "text": "Meerkat",
+          "hint": "lookout"
         },
         {
           "id": "lemur",
           "text": "Lemur",
-          "hint": "pruhy"
+          "hint": "stripes"
         },
         {
           "id": "dikobraz",
-          "text": "Dikobraz",
-          "hint": "ostny"
+          "text": "Porcupine",
+          "hint": "quills"
         },
         {
           "id": "krava",
-          "text": "Kráva",
-          "hint": "zvonec"
+          "text": "Cow",
+          "hint": "bell"
         },
         {
           "id": "ovce",
-          "text": "Ovce",
-          "hint": "vlna"
+          "text": "Sheep",
+          "hint": "wool"
         },
         {
           "id": "slepice",
-          "text": "Slepice",
-          "hint": "kurník"
+          "text": "Chicken",
+          "hint": "coop"
         },
         {
           "id": "zelva",
-          "text": "Želva",
-          "hint": "krunýř"
+          "text": "Turtle",
+          "hint": "shell"
         },
         {
           "id": "sova",
-          "text": "Sova",
-          "hint": "noc"
+          "text": "Owl",
+          "hint": "night"
         },
         {
           "id": "netopyr",
-          "text": "Netopýr",
-          "hint": "jeskyně"
+          "text": "Bat",
+          "hint": "cave"
         },
         {
           "id": "tygr",
-          "text": "Tygr",
-          "hint": "pruhy"
+          "text": "Tiger",
+          "hint": "stripes"
         },
         {
           "id": "panda",
           "text": "Panda",
-          "hint": "bambus"
+          "hint": "bamboo"
         },
         {
           "id": "zebra",
@@ -948,221 +945,220 @@
         },
         {
           "id": "velbloud",
-          "text": "Velbloud",
-          "hint": "hrb"
+          "text": "Camel",
+          "hint": "hump"
         },
         {
           "id": "nosorozec",
-          "text": "Nosorožec",
-          "hint": "roh"
+          "text": "Rhino",
+          "hint": "horn"
         },
         {
           "id": "hroch",
-          "text": "Hroch",
-          "hint": "bahno"
+          "text": "Hippo",
+          "hint": "mud"
         },
         {
           "id": "klokan",
-          "text": "Klokan",
-          "hint": "vak"
+          "text": "Kangaroo",
+          "hint": "pouch"
         },
         {
           "id": "koala",
           "text": "Koala",
-          "hint": "eukalyptus"
+          "hint": "eucalyptus"
         },
         {
           "id": "orel",
-          "text": "Orel",
-          "hint": "pařát"
+          "text": "Eagle",
+          "hint": "talon"
         },
         {
           "id": "labut",
-          "text": "Labuť",
-          "hint": "jezero"
+          "text": "Swan",
+          "hint": "lake"
         },
         {
           "id": "jesterka",
-          "text": "Ještěrka",
-          "hint": "kámen"
+          "text": "Lizard",
+          "hint": "stone"
         },
         {
           "id": "chobotnice",
-          "text": "Chobotnice",
-          "hint": "chapadlo"
+          "text": "Octopus",
+          "hint": "tentacle"
         },
         {
           "id": "krab",
-          "text": "Krab",
-          "hint": "klepeto"
+          "text": "Crab",
+          "hint": "claw"
         },
         {
           "id": "velryba",
-          "text": "Velryba",
-          "hint": "oceán"
+          "text": "Whale",
+          "hint": "ocean"
         },
         {
           "id": "tulen",
-          "text": "Tuleň",
-          "hint": "ploutev"
+          "text": "Seal",
+          "hint": "flipper"
         },
         {
           "id": "sob",
-          "text": "Sob",
-          "hint": "parohy"
+          "text": "Reindeer",
+          "hint": "antlers"
         },
         {
           "id": "jelen",
-          "text": "Jelen",
-          "hint": "les"
+          "text": "Deer",
+          "hint": "forest"
         },
         {
           "id": "veverka",
-          "text": "Veverka",
-          "hint": "oříšek"
+          "text": "Squirrel",
+          "hint": "nut"
         },
         {
           "id": "mys",
-          "text": "Myš",
-          "hint": "díra"
+          "text": "Mouse",
+          "hint": "hole"
         },
         {
           "id": "mravenec",
-          "text": "Mravenec",
-          "hint": "mraveniště"
+          "text": "Ant",
+          "hint": "anthill"
         }
-      ],
-      "imagePath": "assets/categories/animals.png"
+      ]
     },
     {
       "id": "sport",
       "name": "Sport",
-      "description": "Hry, disciplíny a sportovní věci pro soutěživé hráče.",
+      "description": "Games, disciplines and sports things for competitive players.",
       "words": [
         {
           "id": "fotbal",
-          "text": "Fotbal",
-          "hint": "kopačka"
+          "text": "Football",
+          "hint": "cleat"
         },
         {
           "id": "hokej",
-          "text": "Hokej",
-          "hint": "mantinel"
+          "text": "Hockey",
+          "hint": "boards"
         },
         {
           "id": "basketbal",
-          "text": "Basketbal",
-          "hint": "palubovka"
+          "text": "Basketball",
+          "hint": "court"
         },
         {
           "id": "tenis",
-          "text": "Tenis",
-          "hint": "antuka"
+          "text": "Tennis",
+          "hint": "clay"
         },
         {
           "id": "plavani",
-          "text": "Plavání",
-          "hint": "bazén"
+          "text": "Swimming",
+          "hint": "pool"
         },
         {
           "id": "lyzovani",
-          "text": "Lyžování",
-          "hint": "sjezdovka"
+          "text": "Skiing",
+          "hint": "slope"
         },
         {
           "id": "cyklistika",
-          "text": "Cyklistika",
-          "hint": "pedál"
+          "text": "Cycling",
+          "hint": "pedal"
         },
         {
           "id": "box",
-          "text": "Box",
-          "hint": "rukavice"
+          "text": "Boxing",
+          "hint": "gloves"
         },
         {
           "id": "beh",
-          "text": "Běh",
-          "hint": "trať"
+          "text": "Running",
+          "hint": "track"
         },
         {
           "id": "volejbal",
-          "text": "Volejbal",
-          "hint": "síť"
+          "text": "Volleyball",
+          "hint": "net"
         },
         {
           "id": "golf",
           "text": "Golf",
-          "hint": "jamka"
+          "hint": "hole"
         },
         {
           "id": "baseball",
           "text": "Baseball",
-          "hint": "pálka"
+          "hint": "bat"
         },
         {
           "id": "rugby",
           "text": "Rugby",
-          "hint": "šiška"
+          "hint": "oval"
         },
         {
           "id": "sachy",
-          "text": "Šachy",
-          "hint": "král"
+          "text": "Chess",
+          "hint": "king"
         },
         {
           "id": "gymnastika",
-          "text": "Gymnastika",
-          "hint": "kladina"
+          "text": "Gymnastics",
+          "hint": "beam"
         },
         {
           "id": "atletika",
-          "text": "Atletika",
-          "hint": "stadion"
+          "text": "Athletics",
+          "hint": "stadium"
         },
         {
           "id": "florbal",
-          "text": "Florbal",
-          "hint": "hokejka"
+          "text": "Floorball",
+          "hint": "stick"
         },
         {
           "id": "hazena",
-          "text": "Házená",
-          "hint": "branka"
+          "text": "Handball",
+          "hint": "goal"
         },
         {
           "id": "badminton",
           "text": "Badminton",
-          "hint": "košíček"
+          "hint": "shuttle"
         },
         {
           "id": "stolni_tenis",
-          "text": "Stolní tenis",
+          "text": "Table Tennis",
           "hint": "pingpong"
         },
         {
           "id": "skateboard",
           "text": "Skateboard",
-          "hint": "prkno"
+          "hint": "board"
         },
         {
           "id": "snowboarding",
           "text": "Snowboarding",
-          "hint": "svah"
+          "hint": "powder"
         },
         {
           "id": "brusleni",
-          "text": "Bruslení",
-          "hint": "ostří"
+          "text": "Skating",
+          "hint": "blade"
         },
         {
           "id": "lukostrelba",
-          "text": "Lukostřelba",
-          "hint": "terč"
+          "text": "Archery",
+          "hint": "target"
         },
         {
           "id": "serm",
-          "text": "Šerm",
-          "hint": "čepel"
+          "text": "Fencing",
+          "hint": "sabre"
         },
         {
           "id": "judo",
@@ -1171,356 +1167,355 @@
         },
         {
           "id": "joga",
-          "text": "Jóga",
-          "hint": "podložka"
+          "text": "Yoga",
+          "hint": "mat"
         },
         {
           "id": "surfovani",
-          "text": "Surfování",
-          "hint": "vlna"
+          "text": "Surfing",
+          "hint": "wave"
         },
         {
           "id": "lezeni",
-          "text": "Lezení",
-          "hint": "stěna"
+          "text": "Climbing",
+          "hint": "wall"
         },
         {
           "id": "sipky",
-          "text": "Šipky",
-          "hint": "terč"
+          "text": "Darts",
+          "hint": "bullseye"
         },
         {
           "id": "formula_1",
-          "text": "Formule 1",
-          "hint": "monopost"
+          "text": "Formula 1",
+          "hint": "car"
         },
         {
           "id": "motokros",
-          "text": "Motokros",
-          "hint": "bláto"
+          "text": "Motocross",
+          "hint": "mud"
         },
         {
           "id": "biatlon",
-          "text": "Biatlon",
-          "hint": "terč"
+          "text": "Biathlon",
+          "hint": "target"
         },
         {
           "id": "karate",
           "text": "Karate",
-          "hint": "úder"
+          "hint": "strike"
         },
         {
           "id": "taekwondo",
           "text": "Taekwondo",
-          "hint": "kop"
+          "hint": "kick"
         },
         {
           "id": "mma",
           "text": "MMA",
-          "hint": "klec"
+          "hint": "cage"
         },
         {
           "id": "zapas",
-          "text": "Zápas",
-          "hint": "žíněnka"
+          "text": "Wrestling",
+          "hint": "mat"
         },
         {
           "id": "veslovani",
-          "text": "Veslování",
-          "hint": "veslo"
+          "text": "Rowing",
+          "hint": "oar"
         },
         {
           "id": "kanoistika",
-          "text": "Kanoistika",
-          "hint": "pádlo"
+          "text": "Canoeing",
+          "hint": "paddle"
         },
         {
           "id": "parkour",
           "text": "Parkour",
-          "hint": "překážka"
+          "hint": "obstacle"
         },
         {
           "id": "triatlon",
-          "text": "Triatlon",
-          "hint": "trojice"
+          "text": "Triathlon",
+          "hint": "trio"
         },
         {
           "id": "maraton",
-          "text": "Maraton",
-          "hint": "výdrž"
+          "text": "Marathon",
+          "hint": "endurance"
         },
         {
           "id": "curling",
           "text": "Curling",
-          "hint": "kámen"
+          "hint": "stone"
         },
         {
           "id": "kriket",
-          "text": "Kriket",
-          "hint": "branka"
+          "text": "Cricket",
+          "hint": "wicket"
         },
         {
           "id": "squash",
           "text": "Squash",
-          "hint": "stěna"
+          "hint": "wall"
         },
         {
           "id": "padel",
           "text": "Padel",
-          "hint": "sklo"
+          "hint": "glass"
         },
         {
           "id": "americky_fotbal",
-          "text": "Americký fotbal",
-          "hint": "helma"
+          "text": "American Football",
+          "hint": "helmet"
         },
         {
           "id": "sportovni_strelba",
-          "text": "Sportovní střelba",
-          "hint": "muška"
+          "text": "Sport Shooting",
+          "hint": "sight"
         },
         {
           "id": "potapeni",
-          "text": "Potápění",
-          "hint": "láhev"
+          "text": "Diving",
+          "hint": "tank"
         },
         {
           "id": "jezdectvi",
-          "text": "Jezdectví",
-          "hint": "sedlo"
+          "text": "Equestrian",
+          "hint": "saddle"
         }
-      ],
-      "imagePath": "assets/categories/sport.png"
+      ]
     },
     {
       "id": "jobs",
-      "name": "Povolání",
-      "description": "Profese, zaměstnání a role, které potkáváme v běžném životě.",
+      "name": "Jobs",
+      "description": "Professions, occupations and roles we meet in everyday life.",
       "words": [
         {
           "id": "doctor",
-          "text": "Doktor",
-          "hint": "ordinace"
+          "text": "Doctor",
+          "hint": "clinic"
         },
         {
           "id": "teacher",
-          "text": "Učitel",
-          "hint": "zvonění"
+          "text": "Teacher",
+          "hint": "bell"
         },
         {
           "id": "firefighter",
-          "text": "Hasič",
-          "hint": "kouř"
+          "text": "Firefighter",
+          "hint": "smoke"
         },
         {
           "id": "police_officer",
-          "text": "Policista",
-          "hint": "odznak"
+          "text": "Police officer",
+          "hint": "badge"
         },
         {
           "id": "chef",
-          "text": "Kuchař",
-          "hint": "zástěra"
+          "text": "Chef",
+          "hint": "apron"
         },
         {
           "id": "baker",
-          "text": "Pekař",
-          "hint": "těsto"
+          "text": "Baker",
+          "hint": "dough"
         },
         {
           "id": "waiter",
-          "text": "Číšník",
-          "hint": "tác"
+          "text": "Waiter",
+          "hint": "tray"
         },
         {
           "id": "farmer",
-          "text": "Farmář",
-          "hint": "stodola"
+          "text": "Farmer",
+          "hint": "barn"
         },
         {
           "id": "driver",
-          "text": "Řidič",
-          "hint": "volant"
+          "text": "Driver",
+          "hint": "wheel"
         },
         {
           "id": "pilot",
           "text": "Pilot",
-          "hint": "kokpit"
+          "hint": "cockpit"
         },
         {
           "id": "mechanic",
-          "text": "Mechanik",
-          "hint": "montérky"
+          "text": "Mechanic",
+          "hint": "overalls"
         },
         {
           "id": "electrician",
-          "text": "Elektrikář",
-          "hint": "pojistky"
+          "text": "Electrician",
+          "hint": "fuses"
         },
         {
           "id": "plumber",
-          "text": "Instalatér",
-          "hint": "trubka"
+          "text": "Plumber",
+          "hint": "pipe"
         },
         {
           "id": "carpenter",
-          "text": "Truhlář",
-          "hint": "piliny"
+          "text": "Carpenter",
+          "hint": "sawdust"
         },
         {
           "id": "builder",
-          "text": "Zedník",
-          "hint": "malta"
+          "text": "Builder",
+          "hint": "mortar"
         },
         {
           "id": "hairdresser",
-          "text": "Kadeřník",
-          "hint": "nůžky"
+          "text": "Hairdresser",
+          "hint": "scissors"
         },
         {
           "id": "dentist",
-          "text": "Zubař",
-          "hint": "vrtačka"
+          "text": "Dentist",
+          "hint": "drill"
         },
         {
           "id": "nurse",
-          "text": "Zdravotní sestra",
-          "hint": "obvaz"
+          "text": "Nurse",
+          "hint": "bandage"
         },
         {
           "id": "lawyer",
-          "text": "Právník",
-          "hint": "soud"
+          "text": "Lawyer",
+          "hint": "court"
         },
         {
           "id": "judge",
-          "text": "Soudce",
-          "hint": "kladívko"
+          "text": "Judge",
+          "hint": "gavel"
         },
         {
           "id": "actor",
-          "text": "Herec",
-          "hint": "scéna"
+          "text": "Actor",
+          "hint": "stage"
         },
         {
           "id": "singer",
-          "text": "Zpěvák",
-          "hint": "mikrofon"
+          "text": "Singer",
+          "hint": "microphone"
         },
         {
           "id": "photographer",
-          "text": "Fotograf",
-          "hint": "objektiv"
+          "text": "Photographer",
+          "hint": "lens"
         },
         {
           "id": "journalist",
-          "text": "Novinář",
-          "hint": "rozhovor"
+          "text": "Journalist",
+          "hint": "interview"
         },
         {
           "id": "programmer",
-          "text": "Programátor",
-          "hint": "kód"
+          "text": "Programmer",
+          "hint": "code"
         },
         {
           "id": "designer",
-          "text": "Designér",
-          "hint": "návrh"
+          "text": "Designer",
+          "hint": "draft"
         },
         {
           "id": "scientist",
-          "text": "Vědec",
-          "hint": "laboratoř"
+          "text": "Scientist",
+          "hint": "laboratory"
         },
         {
           "id": "soldier",
-          "text": "Voják",
-          "hint": "uniforma"
+          "text": "Soldier",
+          "hint": "uniform"
         },
         {
           "id": "cashier",
-          "text": "Pokladní",
-          "hint": "účtenka"
+          "text": "Cashier",
+          "hint": "receipt"
         },
         {
           "id": "cleaner",
-          "text": "Uklízeč",
+          "text": "Cleaner",
           "hint": "mop"
         },
         {
           "id": "architect",
-          "text": "Architekt",
-          "hint": "plán"
+          "text": "Architect",
+          "hint": "blueprint"
         },
         {
           "id": "accountant",
-          "text": "Účetní",
-          "hint": "faktura"
+          "text": "Accountant",
+          "hint": "invoice"
         },
         {
           "id": "veterinarian",
-          "text": "Veterinář",
-          "hint": "ordinace"
+          "text": "Veterinarian",
+          "hint": "clinic"
         },
         {
           "id": "pharmacist",
-          "text": "Lékárník",
-          "hint": "recept"
+          "text": "Pharmacist",
+          "hint": "prescription"
         },
         {
           "id": "psychologist",
-          "text": "Psycholog",
-          "hint": "rozhovor"
+          "text": "Psychologist",
+          "hint": "conversation"
         },
         {
           "id": "receptionist",
-          "text": "Recepční",
-          "hint": "klíč"
+          "text": "Receptionist",
+          "hint": "key"
         },
         {
           "id": "manager",
-          "text": "Manažer",
-          "hint": "porada"
+          "text": "Manager",
+          "hint": "meeting"
         },
         {
           "id": "marketer",
-          "text": "Marketér",
-          "hint": "kampaň"
+          "text": "Marketer",
+          "hint": "campaign"
         },
         {
           "id": "translator",
-          "text": "Překladatel",
-          "hint": "jazyk"
+          "text": "Translator",
+          "hint": "language"
         },
         {
           "id": "librarian",
-          "text": "Knihovník",
-          "hint": "regál"
+          "text": "Librarian",
+          "hint": "shelf"
         },
         {
           "id": "postman",
-          "text": "Pošťák",
-          "hint": "obálka"
+          "text": "Postman",
+          "hint": "envelope"
         },
         {
           "id": "courier",
-          "text": "Kurýr",
-          "hint": "balík"
+          "text": "Courier",
+          "hint": "parcel"
         },
         {
           "id": "gardener",
-          "text": "Zahradník",
-          "hint": "záhon"
+          "text": "Gardener",
+          "hint": "flowerbed"
         },
         {
           "id": "security_guard",
-          "text": "Ochranka",
-          "hint": "kamera"
+          "text": "Security Guard",
+          "hint": "camera"
         },
         {
           "id": "influencer",
           "text": "Influencer",
-          "hint": "sledující"
+          "hint": "followers"
         },
         {
           "id": "streamer",
@@ -1530,590 +1525,590 @@
         {
           "id": "youtuber",
           "text": "Youtuber",
-          "hint": "odběr"
+          "hint": "subscribe"
         },
         {
           "id": "paramedic",
-          "text": "Záchranář",
-          "hint": "siréna"
+          "text": "Paramedic",
+          "hint": "siren"
         },
         {
           "id": "miner",
-          "text": "Horník",
-          "hint": "šachta"
+          "text": "Miner",
+          "hint": "shaft"
         },
         {
           "id": "sailor",
-          "text": "Námořník",
-          "hint": "paluba"
+          "text": "Sailor",
+          "hint": "deck"
         }
       ],
       "imagePath": "assets/categories/jobs.png"
     },
     {
       "id": "lotr",
-      "name": "Pán prstenů",
-      "description": "Postavy, místa a artefakty ze světa Pána prstenů.",
+      "name": "The Lord of the Rings",
+      "description": "Characters, places, and artifacts from LOTR.",
       "imagePath": "assets/categories/lotr.png",
       "isSpecial": true,
       "words": [
         {
           "id": "frodo",
           "text": "Frodo",
-          "hint": "břemeno"
+          "hint": "burden"
         },
         {
           "id": "samwise",
-          "text": "Samvěd",
-          "hint": "věrnost"
+          "text": "Samwise",
+          "hint": "loyalty"
         },
         {
           "id": "gandalf",
           "text": "Gandalf",
-          "hint": "hůl"
+          "hint": "staff"
         },
         {
           "id": "aragorn",
           "text": "Aragorn",
-          "hint": "král"
+          "hint": "king"
         },
         {
           "id": "legolas",
           "text": "Legolas",
-          "hint": "luk"
+          "hint": "bow"
         },
         {
           "id": "gimli",
           "text": "Gimli",
-          "hint": "sekera"
+          "hint": "axe"
         },
         {
           "id": "boromir",
           "text": "Boromir",
-          "hint": "roh"
+          "hint": "horn"
         },
         {
           "id": "merry",
-          "text": "Smíšek",
-          "hint": "dýmka"
+          "text": "Merry",
+          "hint": "pipe"
         },
         {
           "id": "pippin",
-          "text": "Pipin",
-          "hint": "zvědavost"
+          "text": "Pippin",
+          "hint": "curiosity"
         },
         {
           "id": "gollum",
-          "text": "Glum",
-          "hint": "posedlost"
+          "text": "Gollum",
+          "hint": "obsession"
         },
         {
           "id": "sauron",
           "text": "Sauron",
-          "hint": "oko"
+          "hint": "eye"
         },
         {
           "id": "saruman",
           "text": "Saruman",
-          "hint": "věž"
+          "hint": "tower"
         },
         {
           "id": "galadriel",
           "text": "Galadriel",
-          "hint": "zrcadlo"
+          "hint": "mirror"
         },
         {
           "id": "elrond",
           "text": "Elrond",
-          "hint": "rada"
+          "hint": "council"
         },
         {
           "id": "arwen",
           "text": "Arwen",
-          "hint": "hvězda"
+          "hint": "star"
         },
         {
           "id": "bilbo",
           "text": "Bilbo",
-          "hint": "dobrodružství"
+          "hint": "adventure"
         },
         {
           "id": "thorin",
           "text": "Thorin",
-          "hint": "dub"
+          "hint": "oak"
         },
         {
           "id": "smaug",
-          "text": "Šmak",
-          "hint": "zlato"
+          "text": "Smaug",
+          "hint": "gold"
         },
         {
           "id": "bard",
           "text": "Bard",
-          "hint": "šíp"
+          "hint": "arrow"
         },
         {
           "id": "beorn",
-          "text": "Medděd",
-          "hint": "medvěd"
+          "text": "Beorn",
+          "hint": "bear"
         },
         {
           "id": "one_ring",
-          "text": "Prsten",
-          "hint": "osud"
+          "text": "One Ring",
+          "hint": "fate"
         },
         {
           "id": "shire",
-          "text": "Kraj",
-          "hint": "nora"
+          "text": "Shire",
+          "hint": "burrow"
         },
         {
           "id": "mordor",
           "text": "Mordor",
-          "hint": "popel"
+          "hint": "ash"
         },
         {
           "id": "rivendell",
-          "text": "Roklinka",
-          "hint": "údolí"
+          "text": "Rivendell",
+          "hint": "valley"
         },
         {
           "id": "moria",
-          "text": "Morie",
-          "hint": "doly"
+          "text": "Moria",
+          "hint": "mines"
         },
         {
           "id": "helms_deep",
-          "text": "Helmův žleb",
-          "hint": "hradby"
+          "text": "Helm's Deep",
+          "hint": "walls"
         },
         {
           "id": "rohan",
           "text": "Rohan",
-          "hint": "koně"
+          "hint": "horses"
         },
         {
           "id": "gondor",
           "text": "Gondor",
-          "hint": "strom"
+          "hint": "tree"
         },
         {
           "id": "erebor",
           "text": "Erebor",
-          "hint": "hora"
+          "hint": "mountain"
         },
         {
           "id": "arkenstone",
-          "text": "Arcikam",
-          "hint": "drahokam"
+          "text": "Arkenstone",
+          "hint": "gem"
         },
         {
           "id": "sting",
-          "text": "Žihadlo",
-          "hint": "čepel"
+          "text": "Sting",
+          "hint": "blade"
         },
         {
           "id": "palantir",
           "text": "Palantír",
-          "hint": "koule"
+          "hint": "sphere"
         },
         {
           "id": "balrog",
           "text": "Balrog",
-          "hint": "bič"
+          "hint": "whip"
         },
         {
           "id": "nazgul",
           "text": "Nazgûl",
-          "hint": "stín"
+          "hint": "shadow"
         },
         {
           "id": "ent",
           "text": "Ent",
-          "hint": "kůra"
+          "hint": "bark"
         },
         {
           "id": "orc",
-          "text": "Skřet",
-          "hint": "čepel"
+          "text": "Orc",
+          "hint": "blade"
         },
         {
           "id": "hobbit",
-          "text": "Hobit",
-          "hint": "nohy"
+          "text": "Hobbit",
+          "hint": "feet"
         },
         {
           "id": "wizard",
-          "text": "Čaroděj",
-          "hint": "magie"
+          "text": "Wizard",
+          "hint": "magic"
         },
         {
           "id": "dwarf",
-          "text": "Trpaslík",
-          "hint": "kovárna"
+          "text": "Dwarf",
+          "hint": "forge"
         },
         {
           "id": "elf",
           "text": "Elf",
-          "hint": "nesmrtelnost"
+          "hint": "immortality"
         },
         {
           "id": "theoden",
           "text": "Théoden",
-          "hint": "jízda"
+          "hint": "riders"
         },
         {
           "id": "eowyn",
           "text": "Éowyn",
-          "hint": "čepel"
+          "hint": "blade"
         },
         {
           "id": "faramir",
           "text": "Faramir",
-          "hint": "bratr"
+          "hint": "brother"
         },
         {
           "id": "shelob",
-          "text": "Odula",
-          "hint": "pavučina"
+          "text": "Shelob",
+          "hint": "web"
         },
         {
           "id": "treebeard",
-          "text": "Stromovous",
-          "hint": "pastýř"
+          "text": "Treebeard",
+          "hint": "shepherd"
         },
         {
           "id": "lothlorien",
           "text": "Lothlórien",
-          "hint": "zlato"
+          "hint": "gold"
         },
         {
           "id": "minas_tirith",
           "text": "Minas Tirith",
-          "hint": "bílá"
+          "hint": "white"
         },
         {
           "id": "osgiliath",
           "text": "Osgiliath",
-          "hint": "most"
+          "hint": "bridge"
         },
         {
           "id": "lembas",
           "text": "Lembas",
-          "hint": "chléb"
+          "hint": "bread"
         },
         {
           "id": "mithril",
           "text": "Mithril",
-          "hint": "košile"
+          "hint": "shirt"
         }
       ]
     },
     {
       "id": "school",
-      "name": "Škola",
-      "description": "Předměty, místa a situace ze školního života.",
+      "name": "School",
+      "description": "Subjects, places and situations from school life.",
       "imagePath": "assets/categories/school.png",
       "isSpecial": false,
       "words": [
         {
           "id": "classroom",
-          "text": "Třída",
-          "hint": "lavice"
+          "text": "Classroom",
+          "hint": "desk"
         },
         {
           "id": "teacher",
-          "text": "Učitel",
-          "hint": "katedra"
+          "text": "Teacher",
+          "hint": "board"
         },
         {
           "id": "student",
           "text": "Student",
-          "hint": "sešit"
+          "hint": "notebook"
         },
         {
           "id": "blackboard",
-          "text": "Tabule",
-          "hint": "křída"
+          "text": "Blackboard",
+          "hint": "chalk"
         },
         {
           "id": "chalk",
-          "text": "Křída",
-          "hint": "prach"
+          "text": "Chalk",
+          "hint": "dust"
         },
         {
           "id": "desk",
-          "text": "Lavice",
-          "hint": "židle"
+          "text": "Desk",
+          "hint": "chair"
         },
         {
           "id": "chair",
-          "text": "Židle",
-          "hint": "sezení"
+          "text": "Chair",
+          "hint": "sitting"
         },
         {
           "id": "notebook",
-          "text": "Sešit",
-          "hint": "linka"
+          "text": "Notebook",
+          "hint": "lines"
         },
         {
           "id": "textbook",
-          "text": "Učebnice",
-          "hint": "kapitola"
+          "text": "Textbook",
+          "hint": "chapter"
         },
         {
           "id": "pencil_case",
-          "text": "Penál",
-          "hint": "zip"
+          "text": "Pencil Case",
+          "hint": "zipper"
         },
         {
           "id": "pen",
-          "text": "Propiska",
-          "hint": "inkoust"
+          "text": "Pen",
+          "hint": "ink"
         },
         {
           "id": "pencil",
-          "text": "Tužka",
-          "hint": "grafit"
+          "text": "Pencil",
+          "hint": "graphite"
         },
         {
           "id": "eraser",
-          "text": "Guma",
-          "hint": "mazání"
+          "text": "Eraser",
+          "hint": "rubber"
         },
         {
           "id": "ruler",
-          "text": "Pravítko",
-          "hint": "centimetr"
+          "text": "Ruler",
+          "hint": "centimeter"
         },
         {
           "id": "compass",
-          "text": "Kružítko",
-          "hint": "kruh"
+          "text": "Compass",
+          "hint": "circle"
         },
         {
           "id": "backpack",
-          "text": "Aktovka",
-          "hint": "záda"
+          "text": "Backpack",
+          "hint": "shoulders"
         },
         {
           "id": "homework",
-          "text": "Domácí úkol",
-          "hint": "večer"
+          "text": "Homework",
+          "hint": "evening"
         },
         {
           "id": "test",
           "text": "Test",
-          "hint": "známka"
+          "hint": "grade"
         },
         {
           "id": "exam",
-          "text": "Zkouška",
-          "hint": "nervy"
+          "text": "Exam",
+          "hint": "stress"
         },
         {
           "id": "grade",
-          "text": "Známka",
-          "hint": "vysvědčení"
+          "text": "Grade",
+          "hint": "report"
         },
         {
           "id": "report_card",
-          "text": "Vysvědčení",
-          "hint": "pololetí"
+          "text": "Report Card",
+          "hint": "semester"
         },
         {
           "id": "break",
-          "text": "Přestávka",
-          "hint": "chodba"
+          "text": "Break",
+          "hint": "hallway"
         },
         {
           "id": "bell",
-          "text": "Zvonění",
-          "hint": "hodina"
+          "text": "Bell",
+          "hint": "lesson"
         },
         {
           "id": "lesson",
-          "text": "Hodina",
-          "hint": "výklad"
+          "text": "Lesson",
+          "hint": "lecture"
         },
         {
           "id": "subject",
-          "text": "Předmět",
-          "hint": "rozvrh"
+          "text": "Subject",
+          "hint": "schedule"
         },
         {
           "id": "schedule",
-          "text": "Rozvrh",
-          "hint": "pondělí"
+          "text": "Schedule",
+          "hint": "monday"
         },
         {
           "id": "math",
-          "text": "Matematika",
-          "hint": "rovnice"
+          "text": "Math",
+          "hint": "equation"
         },
         {
           "id": "czech_language",
-          "text": "Čeština",
-          "hint": "diktát"
+          "text": "Czech",
+          "hint": "dictation"
         },
         {
           "id": "english_language",
-          "text": "Angličtina",
-          "hint": "slovíčka"
+          "text": "English",
+          "hint": "vocabulary"
         },
         {
           "id": "history",
-          "text": "Dějepis",
-          "hint": "letopočet"
+          "text": "History",
+          "hint": "year"
         },
         {
           "id": "geography",
-          "text": "Zeměpis",
-          "hint": "mapa"
+          "text": "Geography",
+          "hint": "map"
         },
         {
           "id": "biology",
-          "text": "Biologie",
-          "hint": "buňka"
+          "text": "Biology",
+          "hint": "cell"
         },
         {
           "id": "chemistry",
-          "text": "Chemie",
-          "hint": "zkumavka"
+          "text": "Chemistry",
+          "hint": "testtube"
         },
         {
           "id": "physics",
-          "text": "Fyzika",
-          "hint": "síla"
+          "text": "Physics",
+          "hint": "force"
         },
         {
           "id": "art",
-          "text": "Výtvarná výchova",
-          "hint": "barvy"
+          "text": "Art",
+          "hint": "paint"
         },
         {
           "id": "music",
-          "text": "Hudební výchova",
-          "hint": "nota"
+          "text": "Music",
+          "hint": "note"
         },
         {
           "id": "pe",
-          "text": "Tělocvik",
-          "hint": "tělocvična"
+          "text": "PE",
+          "hint": "gym"
         },
         {
           "id": "gym",
-          "text": "Tělocvična",
-          "hint": "žíněnka"
+          "text": "Gym",
+          "hint": "mat"
         },
         {
           "id": "library",
-          "text": "Knihovna",
-          "hint": "police"
+          "text": "Library",
+          "hint": "shelf"
         },
         {
           "id": "canteen",
-          "text": "Jídelna",
-          "hint": "oběd"
+          "text": "Canteen",
+          "hint": "lunch"
         },
         {
           "id": "locker",
-          "text": "Skříňka",
-          "hint": "zámek"
+          "text": "Locker",
+          "hint": "lock"
         },
         {
           "id": "corridor",
-          "text": "Chodba",
-          "hint": "hluk"
+          "text": "Corridor",
+          "hint": "noise"
         },
         {
           "id": "principal",
-          "text": "Ředitel",
-          "hint": "kancelář"
+          "text": "Principal",
+          "hint": "office"
         },
         {
           "id": "substitute_teacher",
-          "text": "Suplování",
-          "hint": "změna"
+          "text": "Substitute Teacher",
+          "hint": "change"
         },
         {
           "id": "detention",
-          "text": "Poznámka",
-          "hint": "žákovská"
+          "text": "Detention",
+          "hint": "punishment"
         },
         {
           "id": "cheating",
-          "text": "Opisování",
-          "hint": "tahák"
+          "text": "Cheating",
+          "hint": "copying"
         },
         {
           "id": "cheat_sheet",
-          "text": "Tahák",
-          "hint": "papírek"
+          "text": "Cheat Sheet",
+          "hint": "paper"
         },
         {
           "id": "graduation",
-          "text": "Maturita",
-          "hint": "zkoušení"
+          "text": "Graduation Exam",
+          "hint": "finals"
         },
         {
           "id": "school_trip",
-          "text": "Školní výlet",
-          "hint": "autobus"
+          "text": "School Trip",
+          "hint": "bus"
         },
         {
           "id": "recess_snack",
-          "text": "Svačina",
-          "hint": "rohlík"
+          "text": "Snack",
+          "hint": "sandwich"
         }
       ]
     },
     {
       "id": "technology",
-      "name": "Technologie",
-      "description": "Moderní zařízení, aplikace a digitální věci, které používáme každý den.",
+      "name": "Technology",
+      "description": "Modern devices, apps and digital things we use every day.",
       "imagePath": "assets/categories/technology.png",
       "isSpecial": false,
       "words": [
         {
           "id": "smartphone",
-          "text": "Mobil",
-          "hint": "dotyk"
+          "text": "Smartphone",
+          "hint": "touch"
         },
         {
           "id": "laptop",
-          "text": "Notebook",
-          "hint": "klávesnice"
+          "text": "Laptop",
+          "hint": "keyboard"
         },
         {
           "id": "tablet",
           "text": "Tablet",
-          "hint": "displej"
+          "hint": "screen"
         },
         {
           "id": "charger",
-          "text": "Nabíječka",
-          "hint": "kabel"
+          "text": "Charger",
+          "hint": "cable"
         },
         {
           "id": "headphones",
-          "text": "Sluchátka",
-          "hint": "uši"
+          "text": "Headphones",
+          "hint": "ears"
         },
         {
           "id": "keyboard",
-          "text": "Klávesnice",
-          "hint": "tlačítka"
+          "text": "Keyboard",
+          "hint": "keys"
         },
         {
           "id": "mouse",
-          "text": "Myš",
-          "hint": "kurzor"
+          "text": "Mouse",
+          "hint": "cursor"
         },
         {
           "id": "monitor",
           "text": "Monitor",
-          "hint": "obraz"
+          "hint": "image"
         },
         {
           "id": "router",
@@ -2123,96 +2118,96 @@
         {
           "id": "wifi",
           "text": "Wi-Fi",
-          "hint": "signál"
+          "hint": "signal"
         },
         {
           "id": "bluetooth",
           "text": "Bluetooth",
-          "hint": "párování"
+          "hint": "pairing"
         },
         {
           "id": "power_bank",
-          "text": "Powerbanka",
-          "hint": "baterie"
+          "text": "Power Bank",
+          "hint": "battery"
         },
         {
           "id": "smartwatch",
-          "text": "Chytré hodinky",
-          "hint": "zápěstí"
+          "text": "Smartwatch",
+          "hint": "wrist"
         },
         {
           "id": "camera",
-          "text": "Kamera",
-          "hint": "záznam"
+          "text": "Camera",
+          "hint": "recording"
         },
         {
           "id": "drone",
-          "text": "Dron",
-          "hint": "vrtule"
+          "text": "Drone",
+          "hint": "propeller"
         },
         {
           "id": "printer",
-          "text": "Tiskárna",
-          "hint": "papír"
+          "text": "Printer",
+          "hint": "paper"
         },
         {
           "id": "scanner",
-          "text": "Skener",
-          "hint": "kopie"
+          "text": "Scanner",
+          "hint": "copy"
         },
         {
           "id": "speaker",
-          "text": "Reproduktor",
-          "hint": "zvuk"
+          "text": "Speaker",
+          "hint": "sound"
         },
         {
           "id": "microphone",
-          "text": "Mikrofon",
-          "hint": "hlas"
+          "text": "Microphone",
+          "hint": "voice"
         },
         {
           "id": "webcam",
-          "text": "Webkamera",
-          "hint": "hovor"
+          "text": "Webcam",
+          "hint": "call"
         },
         {
           "id": "game_console",
-          "text": "Herní konzole",
-          "hint": "ovladač"
+          "text": "Game Console",
+          "hint": "controller"
         },
         {
           "id": "controller",
-          "text": "Ovladač",
+          "text": "Controller",
           "hint": "joystick"
         },
         {
           "id": "vr_headset",
-          "text": "VR brýle",
-          "hint": "realita"
+          "text": "VR Headset",
+          "hint": "reality"
         },
         {
           "id": "robot_vacuum",
-          "text": "Robotický vysavač",
-          "hint": "prach"
+          "text": "Robot Vacuum",
+          "hint": "dust"
         },
         {
           "id": "smart_tv",
-          "text": "Chytrá televize",
+          "text": "Smart TV",
           "hint": "stream"
         },
         {
           "id": "usb_drive",
-          "text": "Flash disk",
-          "hint": "soubor"
+          "text": "USB Drive",
+          "hint": "file"
         },
         {
           "id": "memory_card",
-          "text": "Paměťová karta",
-          "hint": "úložiště"
+          "text": "Memory Card",
+          "hint": "storage"
         },
         {
           "id": "hard_drive",
-          "text": "Pevný disk",
+          "text": "Hard Drive",
           "hint": "data"
         },
         {
@@ -2222,107 +2217,107 @@
         },
         {
           "id": "app",
-          "text": "Aplikace",
-          "hint": "ikona"
+          "text": "App",
+          "hint": "icon"
         },
         {
           "id": "password",
-          "text": "Heslo",
-          "hint": "přístup"
+          "text": "Password",
+          "hint": "access"
         },
         {
           "id": "algorithm",
-          "text": "Algoritmus",
-          "hint": "postup"
+          "text": "Algorithm",
+          "hint": "process"
         },
         {
           "id": "artificial_intelligence",
-          "text": "Umělá inteligence",
+          "text": "Artificial Intelligence",
           "hint": "model"
         },
         {
           "id": "antivirus",
-          "text": "Antivir",
-          "hint": "ochrana"
+          "text": "Antivirus",
+          "hint": "protection"
         },
         {
           "id": "firewall",
           "text": "Firewall",
-          "hint": "blokace"
+          "hint": "block"
         },
         {
           "id": "browser",
-          "text": "Prohlížeč",
-          "hint": "stránka"
+          "text": "Browser",
+          "hint": "page"
         },
         {
           "id": "search_engine",
-          "text": "Vyhledávač",
-          "hint": "dotaz"
+          "text": "Search Engine",
+          "hint": "query"
         },
         {
           "id": "social_network",
-          "text": "Sociální síť",
-          "hint": "profil"
+          "text": "Social Network",
+          "hint": "profile"
         },
         {
           "id": "email",
-          "text": "E-mail",
-          "hint": "schránka"
+          "text": "Email",
+          "hint": "inbox"
         },
         {
           "id": "qr_code",
-          "text": "QR kód",
-          "hint": "čtverec"
+          "text": "QR Code",
+          "hint": "square"
         },
         {
           "id": "satellite",
-          "text": "Satelit",
-          "hint": "oběžná"
+          "text": "Satellite",
+          "hint": "orbit"
         },
         {
           "id": "gps",
           "text": "GPS",
-          "hint": "poloha"
+          "hint": "location"
         },
         {
           "id": "navigation",
-          "text": "Navigace",
-          "hint": "trasa"
+          "text": "Navigation",
+          "hint": "route"
         },
         {
           "id": "electric_car",
-          "text": "Elektromobil",
-          "hint": "zásuvka"
+          "text": "Electric Car",
+          "hint": "plug"
         },
         {
           "id": "three_d_printer",
-          "text": "3D tiskárna",
+          "text": "3D Printer",
           "hint": "filament"
         },
         {
           "id": "projector",
-          "text": "Projektor",
-          "hint": "plátno"
+          "text": "Projector",
+          "hint": "screen"
         },
         {
           "id": "server",
           "text": "Server",
-          "hint": "síť"
+          "hint": "network"
         },
         {
           "id": "database",
-          "text": "Databáze",
-          "hint": "tabulka"
+          "text": "Database",
+          "hint": "table"
         },
         {
           "id": "processor",
-          "text": "Procesor",
-          "hint": "výpočet"
+          "text": "Processor",
+          "hint": "calculation"
         },
         {
           "id": "motherboard",
-          "text": "Základní deska",
+          "text": "Motherboard",
           "hint": "slot"
         }
       ]
