@@ -2326,6 +2326,265 @@
           "hint": "slot"
         }
       ]
+    },
+    {
+      "id": "harry_potter",
+      "name": "Harry Potter",
+      "description": "Postavy, místa, kouzla a předměty ze světa Harryho Pottera.",
+      "imagePath": "assets/categories/hp.png",
+      "isSpecial": true,
+      "words": [
+        {
+          "id": "harry_potter",
+          "text": "Harry Potter",
+          "hint": "jizva"
+        },
+        {
+          "id": "ron_weasley",
+          "text": "Ron Weasley",
+          "hint": "šachy"
+        },
+        {
+          "id": "hermione_granger",
+          "text": "Hermiona Grangerová",
+          "hint": "knihy"
+        },
+        {
+          "id": "albus_dumbledore",
+          "text": "Albus Brumbál",
+          "hint": "citron"
+        },
+        {
+          "id": "severus_snape",
+          "text": "Severus Snape",
+          "hint": "lektvary"
+        },
+        {
+          "id": "lord_voldemort",
+          "text": "Lord Voldemort",
+          "hint": "stín"
+        },
+        {
+          "id": "draco_malfoy",
+          "text": "Draco Malfoy",
+          "hint": "rodokmen"
+        },
+        {
+          "id": "rubeus_hagrid",
+          "text": "Rubeus Hagrid",
+          "hint": "klíče"
+        },
+        {
+          "id": "sirius_black",
+          "text": "Sirius Black",
+          "hint": "vězení"
+        },
+        {
+          "id": "remus_lupin",
+          "text": "Remus Lupin",
+          "hint": "měsíc"
+        },
+        {
+          "id": "minerva_mcgonagall",
+          "text": "Minerva McGonagallová",
+          "hint": "kočka"
+        },
+        {
+          "id": "neville_longbottom",
+          "text": "Neville Longbottom",
+          "hint": "ropucha"
+        },
+        {
+          "id": "luna_lovegood",
+          "text": "Lenka Láskorádová",
+          "hint": "časopis"
+        },
+        {
+          "id": "ginny_weasley",
+          "text": "Ginny Weasleyová",
+          "hint": "deník"
+        },
+        {
+          "id": "dobby",
+          "text": "Dobby",
+          "hint": "ponožka"
+        },
+        {
+          "id": "hedwig",
+          "text": "Hedvika",
+          "hint": "peří"
+        },
+        {
+          "id": "buckbeak",
+          "text": "Klofan",
+          "hint": "úklona"
+        },
+        {
+          "id": "fawkes",
+          "text": "Fénix Fawkes",
+          "hint": "popel"
+        },
+        {
+          "id": "hogwarts",
+          "text": "Bradavice",
+          "hint": "věže"
+        },
+        {
+          "id": "gryffindor",
+          "text": "Nebelvír",
+          "hint": "odvaha"
+        },
+        {
+          "id": "slytherin",
+          "text": "Zmijozel",
+          "hint": "ambice"
+        },
+        {
+          "id": "hufflepuff",
+          "text": "Mrzimor",
+          "hint": "loajalita"
+        },
+        {
+          "id": "ravenclaw",
+          "text": "Havraspár",
+          "hint": "moudrost"
+        },
+        {
+          "id": "diagon_alley",
+          "text": "Příčná ulice",
+          "hint": "obchody"
+        },
+        {
+          "id": "hogsmeade",
+          "text": "Prasinky",
+          "hint": "vesnice"
+        },
+        {
+          "id": "forbidden_forest",
+          "text": "Zapovězený les",
+          "hint": "stromy"
+        },
+        {
+          "id": "azkaban",
+          "text": "Azkaban",
+          "hint": "cela"
+        },
+        {
+          "id": "ministry_of_magic",
+          "text": "Ministerstvo kouzel",
+          "hint": "úředníci"
+        },
+        {
+          "id": "platform_nine_and_three_quarters",
+          "text": "Nástupiště 9 a 3/4",
+          "hint": "zeď"
+        },
+        {
+          "id": "quidditch",
+          "text": "Famfrpál",
+          "hint": "koště"
+        },
+        {
+          "id": "golden_snitch",
+          "text": "Zlatonka",
+          "hint": "křídla"
+        },
+        {
+          "id": "nimbus_2000",
+          "text": "Nimbus 2000",
+          "hint": "rychlost"
+        },
+        {
+          "id": "sorting_hat",
+          "text": "Moudrý klobouk",
+          "hint": "zařazení"
+        },
+        {
+          "id": "elder_wand",
+          "text": "Bezová hůlka",
+          "hint": "moc"
+        },
+        {
+          "id": "invisibility_cloak",
+          "text": "Neviditelný plášť",
+          "hint": "úkryt"
+        },
+        {
+          "id": "marauders_map",
+          "text": "Pobertův plánek",
+          "hint": "stopy"
+        },
+        {
+          "id": "time_turner",
+          "text": "Obraceč času",
+          "hint": "hodiny"
+        },
+        {
+          "id": "philosophers_stone",
+          "text": "Kámen mudrců",
+          "hint": "elixír"
+        },
+        {
+          "id": "horcrux",
+          "text": "Viteál",
+          "hint": "duše"
+        },
+        {
+          "id": "dementor",
+          "text": "Mozkomor",
+          "hint": "chlad"
+        },
+        {
+          "id": "patronus",
+          "text": "Patron",
+          "hint": "světlo"
+        },
+        {
+          "id": "boggart",
+          "text": "Bubák",
+          "hint": "strach"
+        },
+        {
+          "id": "hippogriff",
+          "text": "Hipogryf",
+          "hint": "úcta"
+        },
+        {
+          "id": "basilisk",
+          "text": "Bazilišek",
+          "hint": "pohled"
+        },
+        {
+          "id": "goblet_of_fire",
+          "text": "Ohnivý pohár",
+          "hint": "plamen"
+        },
+        {
+          "id": "triwizard_tournament",
+          "text": "Turnaj tří kouzelníků",
+          "hint": "zkouška"
+        },
+        {
+          "id": "chamber_of_secrets",
+          "text": "Tajemná komnata",
+          "hint": "nápis"
+        },
+        {
+          "id": "deathly_hallows",
+          "text": "Relikvie smrti",
+          "hint": "symbol"
+        },
+        {
+          "id": "butterbeer",
+          "text": "Máslový ležák",
+          "hint": "pěna"
+        },
+        {
+          "id": "polyjuice_potion",
+          "text": "Mnoholičný lektvar",
+          "hint": "proměna"
+        }
+      ]
     }
   ]
 }

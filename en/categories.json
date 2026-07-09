@@ -2321,6 +2321,265 @@
           "hint": "slot"
         }
       ]
+    },
+    {
+      "id": "harry_potter",
+      "name": "Harry Potter",
+      "description": "Characters, places, spells and items from the Harry Potter world.",
+      "imagePath": "assets/categories/hp.png",
+      "isSpecial": true,
+      "words": [
+        {
+          "id": "harry_potter",
+          "text": "Harry Potter",
+          "hint": "scar"
+        },
+        {
+          "id": "ron_weasley",
+          "text": "Ron Weasley",
+          "hint": "chess"
+        },
+        {
+          "id": "hermione_granger",
+          "text": "Hermione Granger",
+          "hint": "books"
+        },
+        {
+          "id": "albus_dumbledore",
+          "text": "Albus Dumbledore",
+          "hint": "lemon"
+        },
+        {
+          "id": "severus_snape",
+          "text": "Severus Snape",
+          "hint": "potions"
+        },
+        {
+          "id": "lord_voldemort",
+          "text": "Lord Voldemort",
+          "hint": "shadow"
+        },
+        {
+          "id": "draco_malfoy",
+          "text": "Draco Malfoy",
+          "hint": "bloodline"
+        },
+        {
+          "id": "rubeus_hagrid",
+          "text": "Rubeus Hagrid",
+          "hint": "keys"
+        },
+        {
+          "id": "sirius_black",
+          "text": "Sirius Black",
+          "hint": "prison"
+        },
+        {
+          "id": "remus_lupin",
+          "text": "Remus Lupin",
+          "hint": "moon"
+        },
+        {
+          "id": "minerva_mcgonagall",
+          "text": "Minerva McGonagall",
+          "hint": "cat"
+        },
+        {
+          "id": "neville_longbottom",
+          "text": "Neville Longbottom",
+          "hint": "toad"
+        },
+        {
+          "id": "luna_lovegood",
+          "text": "Luna Lovegood",
+          "hint": "magazine"
+        },
+        {
+          "id": "ginny_weasley",
+          "text": "Ginny Weasley",
+          "hint": "diary"
+        },
+        {
+          "id": "dobby",
+          "text": "Dobby",
+          "hint": "sock"
+        },
+        {
+          "id": "hedwig",
+          "text": "Hedwig",
+          "hint": "feather"
+        },
+        {
+          "id": "buckbeak",
+          "text": "Buckbeak",
+          "hint": "bow"
+        },
+        {
+          "id": "fawkes",
+          "text": "Fawkes",
+          "hint": "ashes"
+        },
+        {
+          "id": "hogwarts",
+          "text": "Hogwarts",
+          "hint": "towers"
+        },
+        {
+          "id": "gryffindor",
+          "text": "Gryffindor",
+          "hint": "bravery"
+        },
+        {
+          "id": "slytherin",
+          "text": "Slytherin",
+          "hint": "ambition"
+        },
+        {
+          "id": "hufflepuff",
+          "text": "Hufflepuff",
+          "hint": "loyalty"
+        },
+        {
+          "id": "ravenclaw",
+          "text": "Ravenclaw",
+          "hint": "wisdom"
+        },
+        {
+          "id": "diagon_alley",
+          "text": "Diagon Alley",
+          "hint": "shops"
+        },
+        {
+          "id": "hogsmeade",
+          "text": "Hogsmeade",
+          "hint": "village"
+        },
+        {
+          "id": "forbidden_forest",
+          "text": "Forbidden Forest",
+          "hint": "trees"
+        },
+        {
+          "id": "azkaban",
+          "text": "Azkaban",
+          "hint": "cell"
+        },
+        {
+          "id": "ministry_of_magic",
+          "text": "Ministry of Magic",
+          "hint": "officials"
+        },
+        {
+          "id": "platform_nine_and_three_quarters",
+          "text": "Platform 9 3/4",
+          "hint": "wall"
+        },
+        {
+          "id": "quidditch",
+          "text": "Quidditch",
+          "hint": "broom"
+        },
+        {
+          "id": "golden_snitch",
+          "text": "Golden Snitch",
+          "hint": "wings"
+        },
+        {
+          "id": "nimbus_2000",
+          "text": "Nimbus 2000",
+          "hint": "speed"
+        },
+        {
+          "id": "sorting_hat",
+          "text": "Sorting Hat",
+          "hint": "sorting"
+        },
+        {
+          "id": "elder_wand",
+          "text": "Elder Wand",
+          "hint": "power"
+        },
+        {
+          "id": "invisibility_cloak",
+          "text": "Invisibility Cloak",
+          "hint": "hiding"
+        },
+        {
+          "id": "marauders_map",
+          "text": "Marauder's Map",
+          "hint": "footsteps"
+        },
+        {
+          "id": "time_turner",
+          "text": "Time-Turner",
+          "hint": "clock"
+        },
+        {
+          "id": "philosophers_stone",
+          "text": "Philosopher's Stone",
+          "hint": "elixir"
+        },
+        {
+          "id": "horcrux",
+          "text": "Horcrux",
+          "hint": "soul"
+        },
+        {
+          "id": "dementor",
+          "text": "Dementor",
+          "hint": "cold"
+        },
+        {
+          "id": "patronus",
+          "text": "Patronus",
+          "hint": "light"
+        },
+        {
+          "id": "boggart",
+          "text": "Boggart",
+          "hint": "fear"
+        },
+        {
+          "id": "hippogriff",
+          "text": "Hippogriff",
+          "hint": "respect"
+        },
+        {
+          "id": "basilisk",
+          "text": "Basilisk",
+          "hint": "gaze"
+        },
+        {
+          "id": "goblet_of_fire",
+          "text": "Goblet of Fire",
+          "hint": "flame"
+        },
+        {
+          "id": "triwizard_tournament",
+          "text": "Triwizard Tournament",
+          "hint": "trial"
+        },
+        {
+          "id": "chamber_of_secrets",
+          "text": "Chamber of Secrets",
+          "hint": "writing"
+        },
+        {
+          "id": "deathly_hallows",
+          "text": "Deathly Hallows",
+          "hint": "symbol"
+        },
+        {
+          "id": "butterbeer",
+          "text": "Butterbeer",
+          "hint": "foam"
+        },
+        {
+          "id": "polyjuice_potion",
+          "text": "Polyjuice Potion",
+          "hint": "change"
+        }
+      ]
     }
   ]
 }
