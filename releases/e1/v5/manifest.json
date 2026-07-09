@@ -1,0 +1,313 @@
+{
+  "schemaVersion": 1,
+  "contentEpoch": 1,
+  "contentVersion": 5,
+  "generatedAt": "2026-07-09T18:53:20Z",
+  "minimumAppVersion": "1.1.0",
+  "files": [
+    {
+      "id": "categories-cs",
+      "path": "cs/categories.json",
+      "url": "https://mcpitris.github.io/bluffword-content/releases/e1/v5/cs/categories.json",
+      "sha256": "a5bfcb7935617154aa289765b623ac577e394703b7abadfa1b210ad3061977b9",
+      "contentType": "application/json",
+      "sizeBytes": 55486
+    },
+    {
+      "id": "categories-en",
+      "path": "en/categories.json",
+      "url": "https://mcpitris.github.io/bluffword-content/releases/e1/v5/en/categories.json",
+      "sha256": "ad423e66f1992d72455c37a6db5fbc9b3eb36cf614e63b6bb5c9989a375d01c9",
+      "contentType": "application/json",
+      "sizeBytes": 54454
+    },
+    {
+      "id": "category-animals-image",
+      "path": "assets/categories/animals.png",
+      "url": "https://mcpitris.github.io/bluffword-content/releases/e1/v5/assets/categories/animals.png",
+      "sha256": "b01fe6dec181c6e9a9fb6665c7c60091b03296fcfc33ee8525df2fb59c2a034b",
+      "contentType": "image/png",
+      "sizeBytes": 2347199
+    },
+    {
+      "id": "category-food-image",
+      "path": "assets/categories/food.png",
+      "url": "https://mcpitris.github.io/bluffword-content/releases/e1/v5/assets/categories/food.png",
+      "sha256": "0d30c9d6d6fb831be8935a528b2a8e18d7a727330971dc4d5c53e018029302ca",
+      "contentType": "image/png",
+      "sizeBytes": 1925682
+    },
+    {
+      "id": "category-hp-image",
+      "path": "assets/categories/hp.png",
+      "url": "https://mcpitris.github.io/bluffword-content/releases/e1/v5/assets/categories/hp.png",
+      "sha256": "7fa23bac5e98697a9cd95e79313bc2fcd73c6b24d058164fdf604ea39fd6b2de",
+      "contentType": "image/png",
+      "sizeBytes": 2502909
+    },
+    {
+      "id": "category-jobs-image",
+      "path": "assets/categories/jobs.png",
+      "url": "https://mcpitris.github.io/bluffword-content/releases/e1/v5/assets/categories/jobs.png",
+      "sha256": "b59237451cb733017f06135f3ec198dc4bc1ed70d9d98a1166c442dd0c67337a",
+      "contentType": "image/png",
+      "sizeBytes": 2163360
+    },
+    {
+      "id": "category-lotr-image",
+      "path": "assets/categories/lotr.png",
+      "url": "https://mcpitris.github.io/bluffword-content/releases/e1/v5/assets/categories/lotr.png",
+      "sha256": "40fe3af63dbbc8248aa3e639d41e067af45ff1f4015bb0325ac5ae0505de38d9",
+      "contentType": "image/png",
+      "sizeBytes": 2465988
+    },
+    {
+      "id": "category-movies-image",
+      "path": "assets/categories/movies.png",
+      "url": "https://mcpitris.github.io/bluffword-content/releases/e1/v5/assets/categories/movies.png",
+      "sha256": "b026ab0fd9c5da30fafddb4df096ec6e1987eb39c95675a83313adeb585a8c09",
+      "contentType": "image/png",
+      "sizeBytes": 1929307
+    },
+    {
+      "id": "category-school-image",
+      "path": "assets/categories/school.png",
+      "url": "https://mcpitris.github.io/bluffword-content/releases/e1/v5/assets/categories/school.png",
+      "sha256": "82b3b36deb82a09d2125f8a92294f3bc11ce4b0edcacb11551ecc50385e6452b",
+      "contentType": "image/png",
+      "sizeBytes": 2197322
+    },
+    {
+      "id": "category-sport-image",
+      "path": "assets/categories/sport.png",
+      "url": "https://mcpitris.github.io/bluffword-content/releases/e1/v5/assets/categories/sport.png",
+      "sha256": "11285d494d6cae839dcb53cf29e03dd455bd5fbb76883b777006a64ceaa0d6a7",
+      "contentType": "image/png",
+      "sizeBytes": 2152321
+    },
+    {
+      "id": "category-technology-image",
+      "path": "assets/categories/technology.png",
+      "url": "https://mcpitris.github.io/bluffword-content/releases/e1/v5/assets/categories/technology.png",
+      "sha256": "f13222a603d9e5310b7ff65157736e719fe1053b6cafcec701dea5695271f225",
+      "contentType": "image/png",
+      "sizeBytes": 2003363
+    },
+    {
+      "id": "category-travel-image",
+      "path": "assets/categories/travel.png",
+      "url": "https://mcpitris.github.io/bluffword-content/releases/e1/v5/assets/categories/travel.png",
+      "sha256": "26508032c59210a6897543aa3977299dfb53c3cc445f8896bf92bfa9aed81fd5",
+      "contentType": "image/png",
+      "sizeBytes": 2048970
+    },
+    {
+      "id": "theme-hp-avatar-user_1-image",
+      "path": "assets/themes/hp/avatars/user_1.png",
+      "url": "https://mcpitris.github.io/bluffword-content/releases/e1/v5/assets/themes/hp/avatars/user_1.png",
+      "sha256": "605b37de7d5beecb0afcdc79c11e0d9751f720ade6bacd0b6de2c5c318fdf987",
+      "contentType": "image/png",
+      "sizeBytes": 2072428
+    },
+    {
+      "id": "theme-hp-avatar-user_10-image",
+      "path": "assets/themes/hp/avatars/user_10.png",
+      "url": "https://mcpitris.github.io/bluffword-content/releases/e1/v5/assets/themes/hp/avatars/user_10.png",
+      "sha256": "6944677b5ae029fea097e3f86431d7d7ed78c84dfb244e8840e73c1ceb1ea866",
+      "contentType": "image/png",
+      "sizeBytes": 2084851
+    },
+    {
+      "id": "theme-hp-avatar-user_11-image",
+      "path": "assets/themes/hp/avatars/user_11.png",
+      "url": "https://mcpitris.github.io/bluffword-content/releases/e1/v5/assets/themes/hp/avatars/user_11.png",
+      "sha256": "f9e12f789b5b8f837cf3c90f4aeecb28798c4de2fae76b92558be0be945871b9",
+      "contentType": "image/png",
+      "sizeBytes": 2198416
+    },
+    {
+      "id": "theme-hp-avatar-user_12-image",
+      "path": "assets/themes/hp/avatars/user_12.png",
+      "url": "https://mcpitris.github.io/bluffword-content/releases/e1/v5/assets/themes/hp/avatars/user_12.png",
+      "sha256": "aa9fe0acf6cbdf2aae88d83ea6c5c91a374c04f976f470d92f27cf095ab394d6",
+      "contentType": "image/png",
+      "sizeBytes": 2149044
+    },
+    {
+      "id": "theme-hp-avatar-user_13-image",
+      "path": "assets/themes/hp/avatars/user_13.png",
+      "url": "https://mcpitris.github.io/bluffword-content/releases/e1/v5/assets/themes/hp/avatars/user_13.png",
+      "sha256": "f3977e92815a69bc143f686fe71da58610f63af986395bae2fdd8a40b149cee0",
+      "contentType": "image/png",
+      "sizeBytes": 2357114
+    },
+    {
+      "id": "theme-hp-avatar-user_14-image",
+      "path": "assets/themes/hp/avatars/user_14.png",
+      "url": "https://mcpitris.github.io/bluffword-content/releases/e1/v5/assets/themes/hp/avatars/user_14.png",
+      "sha256": "18807abfa7f08c40ac1615d3007e8dbd3026e747bb7aeebf2923c3460a514bd6",
+      "contentType": "image/png",
+      "sizeBytes": 2065849
+    },
+    {
+      "id": "theme-hp-avatar-user_15-image",
+      "path": "assets/themes/hp/avatars/user_15.png",
+      "url": "https://mcpitris.github.io/bluffword-content/releases/e1/v5/assets/themes/hp/avatars/user_15.png",
+      "sha256": "9d18cc98866b9f5ccc8842b1e27d36f597f3f57f14b8c211040b63681d1ba42d",
+      "contentType": "image/png",
+      "sizeBytes": 1988356
+    },
+    {
+      "id": "theme-hp-avatar-user_16-image",
+      "path": "assets/themes/hp/avatars/user_16.png",
+      "url": "https://mcpitris.github.io/bluffword-content/releases/e1/v5/assets/themes/hp/avatars/user_16.png",
+      "sha256": "edd772eecdad1e11a42e10d99b00ebe5cd0c3e79f79737f04210687623d418ec",
+      "contentType": "image/png",
+      "sizeBytes": 2078862
+    },
+    {
+      "id": "theme-hp-avatar-user_2-image",
+      "path": "assets/themes/hp/avatars/user_2.png",
+      "url": "https://mcpitris.github.io/bluffword-content/releases/e1/v5/assets/themes/hp/avatars/user_2.png",
+      "sha256": "037e26cd0d401afd0034c5b07e3de1278c2d18ad593fe0d555c0ba439c9be956",
+      "contentType": "image/png",
+      "sizeBytes": 2029553
+    },
+    {
+      "id": "theme-hp-avatar-user_3-image",
+      "path": "assets/themes/hp/avatars/user_3.png",
+      "url": "https://mcpitris.github.io/bluffword-content/releases/e1/v5/assets/themes/hp/avatars/user_3.png",
+      "sha256": "c5b52d4fa20d86e155e2553ab32a17b304e816f1740fd74092f13098c273eb01",
+      "contentType": "image/png",
+      "sizeBytes": 2114502
+    },
+    {
+      "id": "theme-hp-avatar-user_4-image",
+      "path": "assets/themes/hp/avatars/user_4.png",
+      "url": "https://mcpitris.github.io/bluffword-content/releases/e1/v5/assets/themes/hp/avatars/user_4.png",
+      "sha256": "bd474b1d4349b51839942cbe67687fa2cfa39cf77bf62ec3c46781849484d070",
+      "contentType": "image/png",
+      "sizeBytes": 2034027
+    },
+    {
+      "id": "theme-hp-avatar-user_5-image",
+      "path": "assets/themes/hp/avatars/user_5.png",
+      "url": "https://mcpitris.github.io/bluffword-content/releases/e1/v5/assets/themes/hp/avatars/user_5.png",
+      "sha256": "8d78069ed6e0f1373596fe9809ddcd7395f6bb9abd517dd69cbbb4ee0c5c5348",
+      "contentType": "image/png",
+      "sizeBytes": 1936244
+    },
+    {
+      "id": "theme-hp-avatar-user_6-image",
+      "path": "assets/themes/hp/avatars/user_6.png",
+      "url": "https://mcpitris.github.io/bluffword-content/releases/e1/v5/assets/themes/hp/avatars/user_6.png",
+      "sha256": "5f8e415ed750d5025072aafda2547840a0602091248e7dfcb3ed3e6ca029d562",
+      "contentType": "image/png",
+      "sizeBytes": 1881441
+    },
+    {
+      "id": "theme-hp-avatar-user_7-image",
+      "path": "assets/themes/hp/avatars/user_7.png",
+      "url": "https://mcpitris.github.io/bluffword-content/releases/e1/v5/assets/themes/hp/avatars/user_7.png",
+      "sha256": "f1793c0d536ae59f266a71b3a93ca034ddd339e2c46c9939c615d9e819174927",
+      "contentType": "image/png",
+      "sizeBytes": 2130848
+    },
+    {
+      "id": "theme-hp-avatar-user_8-image",
+      "path": "assets/themes/hp/avatars/user_8.png",
+      "url": "https://mcpitris.github.io/bluffword-content/releases/e1/v5/assets/themes/hp/avatars/user_8.png",
+      "sha256": "d16f625596485fd165a0003dd36b49028962567626034c43c4b2879e05072fb1",
+      "contentType": "image/png",
+      "sizeBytes": 2056053
+    },
+    {
+      "id": "theme-hp-avatar-user_9-image",
+      "path": "assets/themes/hp/avatars/user_9.png",
+      "url": "https://mcpitris.github.io/bluffword-content/releases/e1/v5/assets/themes/hp/avatars/user_9.png",
+      "sha256": "f1c183d233a89051d4ae2c254da426fd01912d5abc93de2afd96f75472519a22",
+      "contentType": "image/png",
+      "sizeBytes": 1968586
+    },
+    {
+      "id": "theme-hp-category-animals-image",
+      "path": "assets/themes/hp/categories/animals.png",
+      "url": "https://mcpitris.github.io/bluffword-content/releases/e1/v5/assets/themes/hp/categories/animals.png",
+      "sha256": "6fe22878fb37f002a72ba207e43b045bf4c5ddef006060e77a7363753d4ca2ea",
+      "contentType": "image/png",
+      "sizeBytes": 1874025
+    },
+    {
+      "id": "theme-hp-category-food-image",
+      "path": "assets/themes/hp/categories/food.png",
+      "url": "https://mcpitris.github.io/bluffword-content/releases/e1/v5/assets/themes/hp/categories/food.png",
+      "sha256": "bc0c163942c466c157039b74b274a487cb785effc475b9b86942f14e1175d505",
+      "contentType": "image/png",
+      "sizeBytes": 2353528
+    },
+    {
+      "id": "theme-hp-category-jobs-image",
+      "path": "assets/themes/hp/categories/jobs.png",
+      "url": "https://mcpitris.github.io/bluffword-content/releases/e1/v5/assets/themes/hp/categories/jobs.png",
+      "sha256": "da74b26344543538b11f953c27cc92ae5c91eb056015318c6cc414c62551bab3",
+      "contentType": "image/png",
+      "sizeBytes": 1604639
+    },
+    {
+      "id": "theme-hp-category-movies-image",
+      "path": "assets/themes/hp/categories/movies.png",
+      "url": "https://mcpitris.github.io/bluffword-content/releases/e1/v5/assets/themes/hp/categories/movies.png",
+      "sha256": "eba84abaf3783bf827e0e287407879c8261c920f09f87ed3a9a62d1abae18fb0",
+      "contentType": "image/png",
+      "sizeBytes": 2383049
+    },
+    {
+      "id": "theme-hp-category-school-image",
+      "path": "assets/themes/hp/categories/school.png",
+      "url": "https://mcpitris.github.io/bluffword-content/releases/e1/v5/assets/themes/hp/categories/school.png",
+      "sha256": "328d58386e08a92dfd2b1bf3282f0bd2fcc523a8dd2f79cef7d59bf703a8137a",
+      "contentType": "image/png",
+      "sizeBytes": 1827289
+    },
+    {
+      "id": "theme-hp-category-sport-image",
+      "path": "assets/themes/hp/categories/sport.png",
+      "url": "https://mcpitris.github.io/bluffword-content/releases/e1/v5/assets/themes/hp/categories/sport.png",
+      "sha256": "56058e806e9428f663f25ee572ef91953b53c7235257cd7b5530dce635e2ff0f",
+      "contentType": "image/png",
+      "sizeBytes": 1702450
+    },
+    {
+      "id": "theme-hp-category-technology-image",
+      "path": "assets/themes/hp/categories/technology.png",
+      "url": "https://mcpitris.github.io/bluffword-content/releases/e1/v5/assets/themes/hp/categories/technology.png",
+      "sha256": "05a504899f2fa2277932eae78366205cda0fadf1afd8806a57d1b775b403b72f",
+      "contentType": "image/png",
+      "sizeBytes": 1635886
+    },
+    {
+      "id": "theme-hp-category-travel-image",
+      "path": "assets/themes/hp/categories/travel.png",
+      "url": "https://mcpitris.github.io/bluffword-content/releases/e1/v5/assets/themes/hp/categories/travel.png",
+      "sha256": "814220aacb2457e1cee0bbe1b2e3686c61e08d8a4156b2d55e1b8acf22a55c9a",
+      "contentType": "image/png",
+      "sizeBytes": 1586590
+    },
+    {
+      "id": "theme-lotr-category-school-image",
+      "path": "assets/themes/lotr/categories/school.png",
+      "url": "https://mcpitris.github.io/bluffword-content/releases/e1/v5/assets/themes/lotr/categories/school.png",
+      "sha256": "32e71138a784c500cce06ad2e3786008ab36f86063b110baf22907ef9d33acf1",
+      "contentType": "image/png",
+      "sizeBytes": 2677315
+    },
+    {
+      "id": "theme-lotr-category-technology-image",
+      "path": "assets/themes/lotr/categories/technology.png",
+      "url": "https://mcpitris.github.io/bluffword-content/releases/e1/v5/assets/themes/lotr/categories/technology.png",
+      "sha256": "647fede31cd1eb1bf36feb1845556ef3b2d86e9778526a014c227ba57b896b84",
+      "contentType": "image/png",
+      "sizeBytes": 2726580
+    }
+  ]
+}
