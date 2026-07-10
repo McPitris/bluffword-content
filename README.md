@@ -12,6 +12,7 @@ manifest_index.json
 content_config.json
 cs/categories.json
 en/categories.json
+themes.json
 assets/categories/*.png
 assets/themes/<theme-id>/categories/*.png
 assets/themes/<theme-id>/avatars/*.png
@@ -27,19 +28,32 @@ scripts/generate_manifest.py
 
 1. Edit `cs/categories.json` and `en/categories.json`.
 2. Add or replace category images in `assets/categories/` when needed.
-3. Add optional theme overrides in `assets/themes/<theme-id>/`.
-4. Keep category `id` stable across locales.
-5. Keep `imagePath` the same in both locale files, for example `assets/categories/food.png`.
-6. If the content needs a newer app, update `minimumAppVersion` in `content_config.json`.
-7. Push changes to `master`.
-8. GitHub Actions regenerates category `version`, `manifest.json`, `manifest_index.json`, and a release snapshot under `releases/e<epoch>/v<version>/`.
-9. GitHub Pages publishes static files.
+3. Add or edit a theme in `themes.json`.
+4. Add optional theme assets in `assets/themes/<theme-id>/`.
+5. Keep category `id` stable across locales.
+6. Keep `imagePath` the same in both locale files, for example `assets/categories/food.png`.
+7. If the content needs a newer app, update `minimumAppVersion` in `content_config.json`.
+8. Push changes to `master`.
+9. GitHub Actions regenerates category `version`, `manifest.json`, `manifest_index.json`, and a release snapshot under `releases/e<epoch>/v<version>/`.
+10. GitHub Pages publishes static files.
 
 ## Theme images
 
-Theme ids must match app ids. Current ids:
+Themes are runtime content. Adding a theme or changing its colors does not require a new app build. Current ids:
 
+- `classic`
 - `lotr`
+- `hp`
+
+Each entry in `themes.json` contains:
+
+- stable `id`
+- localized `names`
+- supported `icon` name
+- optional `assetPath`
+- the complete app color palette
+
+Use `#RRGGBB` or `#RRGGBBAA` colors. Supported icons are `palette`, `forest`, `magic`, `castle`, and `space`. Unknown names use the generic palette icon.
 
 Category override files use the category id:
 
@@ -86,7 +100,7 @@ Rules:
 
 ## Generate manifest locally
 
-Regenerate category `version`, hashes, `manifest.contentVersion`, `manifest_index.json`, and the immutable release snapshot from `cs/categories.json`, `en/categories.json`, and assets:
+Regenerate category `version`, hashes, `manifest.contentVersion`, `manifest_index.json`, and the immutable release snapshot from `themes.json`, category files, and assets:
 
 ```bash
 python3 scripts/generate_manifest.py
@@ -117,7 +131,7 @@ https://mcpitris.github.io/bluffword-content/manifest_index.json
 
 ```json
 {
-  "minimumAppVersion": "1.0.0",
+  "minimumAppVersion": "1.2.0",
   "contentEpoch": 1,
   "legacyManifestAppVersion": "1.0.0"
 }

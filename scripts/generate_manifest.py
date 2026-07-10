@@ -2,6 +2,7 @@
 import argparse
 import hashlib
 import json
+import re
 import shutil
 from datetime import datetime, timezone
 from pathlib import Path
@@ -23,6 +24,7 @@ CONTENT_TYPES = {
 }
 
 FILES = [
+    "themes.json",
     "cs/categories.json",
     "en/categories.json",
 ]
@@ -31,6 +33,29 @@ ASSET_DIRS = [
     "assets/categories",
     "assets/themes",
 ]
+
+THEME_COLOR_KEYS = {
+    "backgroundTop",
+    "backgroundBottom",
+    "darkBackground",
+    "darkSurface",
+    "darkSurfacePressed",
+    "darkOverlaySoft",
+    "darkOverlayStrong",
+    "primary",
+    "primaryDark",
+    "primaryLight",
+    "primarySoft",
+    "secondaryButtonFill",
+    "accent",
+    "textPrimary",
+    "textSecondary",
+    "textMuted",
+    "disabledFill",
+    "disabledText",
+    "gridLine",
+    "shadow",
+}
 
 
 def sha256_file(path: Path) -> str:
@@ -46,6 +71,8 @@ def content_type_for(path: Path) -> str:
 
 
 def file_id_for(path: str) -> str:
+    if path == "themes.json":
+        return "themes-catalog"
     if path == "cs/categories.json":
         return "categories-cs"
     if path == "en/categories.json":
@@ -129,6 +156,74 @@ def read_category_files(root: Path) -> dict[str, dict]:
             raise ValueError(f"{locale}/categories.json must contain categories")
         categories_by_locale[locale] = data
     return categories_by_locale
+
+
+def read_theme_catalog(root: Path) -> dict:
+    path = root / "themes.json"
+    data = json.loads(path.read_text(encoding="utf-8"))
+    if data.get("schemaVersion") != 1:
+        raise ValueError("themes.schemaVersion must be 1")
+    themes = data.get("themes")
+    if not isinstance(themes, list) or not themes:
+        raise ValueError("themes must contain at least one theme")
+
+    theme_ids = set()
+    for theme in themes:
+        if not isinstance(theme, dict):
+            raise ValueError("Each theme must be an object")
+        theme_id = theme.get("id")
+        if (
+            not isinstance(theme_id, str)
+            or re.fullmatch(r"[a-z0-9][a-z0-9_-]*", theme_id) is None
+        ):
+            raise ValueError(f"Invalid theme id: {theme_id}")
+        if theme_id in theme_ids:
+            raise ValueError(f"Duplicate theme id: {theme_id}")
+        theme_ids.add(theme_id)
+
+        names = theme.get("names")
+        if not isinstance(names, dict) or not names:
+            raise ValueError(f"theme.names must not be empty: {theme_id}")
+        if any(
+            not isinstance(value, str) or not value
+            for value in names.values()
+        ):
+            raise ValueError(f"theme.names values must be strings: {theme_id}")
+
+        icon = theme.get("icon")
+        if icon is not None and (not isinstance(icon, str) or not icon):
+            raise ValueError(f"theme.icon must be a non-empty string: {theme_id}")
+
+        colors = theme.get("colors")
+        if not isinstance(colors, dict) or set(colors) != THEME_COLOR_KEYS:
+            raise ValueError(f"theme.colors has invalid keys: {theme_id}")
+        for key, value in colors.items():
+            if (
+                not isinstance(value, str)
+                or not value.startswith("#")
+                or len(value) not in (7, 9)
+                or any(
+                    character not in "0123456789abcdefABCDEF"
+                    for character in value[1:]
+                )
+            ):
+                raise ValueError(f"Invalid theme color {theme_id}.{key}: {value}")
+
+        asset_path = theme.get("assetPath")
+        if asset_path is not None:
+            if (
+                not isinstance(asset_path, str)
+                or not asset_path
+                or asset_path.startswith("/")
+                or ".." in Path(asset_path).parts
+            ):
+                raise ValueError(f"Invalid theme assetPath: {theme_id}")
+            if not (root / asset_path).is_dir():
+                raise FileNotFoundError(f"Missing theme asset directory: {asset_path}")
+
+    if "classic" not in theme_ids:
+        raise ValueError("themes must contain the classic fallback theme")
+    return data
 
 
 def category_version(categories_by_locale: dict[str, dict]) -> int:
@@ -251,7 +346,12 @@ def next_content_version(
     return existing_version
 
 
-def validate_content_files(root: Path, paths: list[str], categories_by_locale: dict[str, dict]) -> None:
+def validate_content_files(
+    root: Path,
+    paths: list[str],
+    categories_by_locale: dict[str, dict],
+    theme_catalog: dict,
+) -> None:
     for path in paths:
         if not (root / path).exists():
             raise FileNotFoundError(f"Missing file: {path}")
@@ -302,6 +402,16 @@ def validate_content_files(root: Path, paths: list[str], categories_by_locale: d
             category_id = Path(path).stem
             if category_id not in category_ids:
                 raise ValueError(f"Theme category image has no matching category id: {path}")
+
+    collected_path_set = set(paths)
+    for theme in theme_catalog["themes"]:
+        asset_path = theme.get("assetPath")
+        if asset_path and not any(
+            path.startswith(f"{asset_path}/") for path in collected_path_set
+        ):
+            raise ValueError(
+                f"Theme assetPath has no files in release: {theme['id']}"
+            )
 
 
 def release_directory(epoch: int, version: int) -> Path:
@@ -375,10 +485,11 @@ def build_manifest(root: Path, args: argparse.Namespace) -> dict:
     existing = current_manifest(root)
     config = content_config(root)
     categories_by_locale = read_category_files(root)
+    theme_catalog = read_theme_catalog(root)
     epoch = content_epoch(existing, config, args.content_epoch)
     min_app_version = minimum_app_version(existing, config, args.min_app_version)
     paths = collected_paths(root)
-    validate_content_files(root, paths, categories_by_locale)
+    validate_content_files(root, paths, categories_by_locale, theme_catalog)
     content_version = next_content_version(
         existing,
         categories_by_locale,

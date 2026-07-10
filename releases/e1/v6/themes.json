@@ -1,0 +1,97 @@
+{
+  "schemaVersion": 1,
+  "themes": [
+    {
+      "id": "classic",
+      "names": {
+        "cs": "Výchozí",
+        "en": "Default"
+      },
+      "icon": "palette",
+      "colors": {
+        "backgroundTop": "#3B096C",
+        "backgroundBottom": "#7B2CBF",
+        "darkBackground": "#15101F",
+        "darkSurface": "#22182F",
+        "darkSurfacePressed": "#322244",
+        "darkOverlaySoft": "#00000033",
+        "darkOverlayStrong": "#000000CC",
+        "primary": "#480B84",
+        "primaryDark": "#3B096C",
+        "primaryLight": "#7B2CBF",
+        "primarySoft": "#E0AAFF",
+        "secondaryButtonFill": "#221D2D33",
+        "accent": "#FFC107",
+        "textPrimary": "#FFFFFF",
+        "textSecondary": "#EDE5F5",
+        "textMuted": "#B8ADC4",
+        "disabledFill": "#FFFFFF66",
+        "disabledText": "#5A3D70",
+        "gridLine": "#FFFFFF24",
+        "shadow": "#0000004D"
+      }
+    },
+    {
+      "id": "lotr",
+      "names": {
+        "cs": "Pán prstenů",
+        "en": "Lord of the Rings"
+      },
+      "icon": "forest",
+      "assetPath": "assets/themes/lotr",
+      "colors": {
+        "backgroundTop": "#142817",
+        "backgroundBottom": "#8B6F2A",
+        "darkBackground": "#100D08",
+        "darkSurface": "#2A2115",
+        "darkSurfacePressed": "#3E321F",
+        "darkOverlaySoft": "#100D0833",
+        "darkOverlayStrong": "#100D08CC",
+        "primary": "#355E2E",
+        "primaryDark": "#142817",
+        "primaryLight": "#8B6F2A",
+        "primarySoft": "#E4D3A3",
+        "secondaryButtonFill": "#3E321F33",
+        "accent": "#D6A844",
+        "textPrimary": "#FFF4D6",
+        "textSecondary": "#E8D8B4",
+        "textMuted": "#BCA981",
+        "disabledFill": "#FFF4D655",
+        "disabledText": "#6F6043",
+        "gridLine": "#D6A84424",
+        "shadow": "#100D0866"
+      }
+    },
+    {
+      "id": "hp",
+      "names": {
+        "cs": "Harry Potter",
+        "en": "Harry Potter"
+      },
+      "icon": "magic",
+      "assetPath": "assets/themes/hp",
+      "colors": {
+        "backgroundTop": "#22122B",
+        "backgroundBottom": "#7A1E2B",
+        "darkBackground": "#0E1018",
+        "darkSurface": "#1E2230",
+        "darkSurfacePressed": "#30364A",
+        "darkOverlaySoft": "#10101833",
+        "darkOverlayStrong": "#101018CC",
+        "primary": "#7A1E2B",
+        "primaryDark": "#22122B",
+        "primaryLight": "#C9A227",
+        "primarySoft": "#EBD79A",
+        "secondaryButtonFill": "#30364A33",
+        "accent": "#C9A227",
+        "textPrimary": "#FFF3CF",
+        "textSecondary": "#E8DBB6",
+        "textMuted": "#B9A987",
+        "disabledFill": "#FFF3CF55",
+        "disabledText": "#6E6471",
+        "gridLine": "#C9A22724",
+        "shadow": "#10101866"
+      }
+    }
+  ]
+}
