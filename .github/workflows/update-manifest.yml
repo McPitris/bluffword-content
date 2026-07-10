@@ -8,6 +8,7 @@ on:
       - 'cs/**'
       - 'en/**'
       - 'assets/**'
+      - 'themes.json'
       - 'content_config.json'
       - 'scripts/generate_manifest.py'
   workflow_dispatch:
