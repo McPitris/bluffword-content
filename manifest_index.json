@@ -1,6 +1,12 @@
 {
   "manifests": [
     {
+      "url": "https://mcpitris.github.io/bluffword-content/releases/e1/v8/manifest.json",
+      "contentEpoch": 1,
+      "contentVersion": 8,
+      "minimumAppVersion": "1.2.0"
+    },
+    {
       "url": "https://mcpitris.github.io/bluffword-content/releases/e1/v7/manifest.json",
       "contentEpoch": 1,
       "contentVersion": 7,
