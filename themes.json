@@ -92,6 +92,36 @@
         "gridLine": "#C9A22724",
         "shadow": "#10101866"
       }
+    },
+    {
+      "id": "deadpool",
+      "names": {
+        "cs": "Deadpool",
+        "en": "Deadpool"
+      },
+      "icon": "palette",
+      "colors": {
+        "backgroundTop": "#160507",
+        "backgroundBottom": "#8B0D18",
+        "darkBackground": "#0B0B0D",
+        "darkSurface": "#19191D",
+        "darkSurfacePressed": "#2A2A30",
+        "darkOverlaySoft": "#00000033",
+        "darkOverlayStrong": "#000000CC",
+        "primary": "#B5121B",
+        "primaryDark": "#710B12",
+        "primaryLight": "#E32636",
+        "primarySoft": "#FFB3BA",
+        "secondaryButtonFill": "#2A2A3033",
+        "accent": "#F2F2F2",
+        "textPrimary": "#FFFFFF",
+        "textSecondary": "#E6E1E2",
+        "textMuted": "#AAA0A2",
+        "disabledFill": "#FFFFFF55",
+        "disabledText": "#665C5E",
+        "gridLine": "#E326362E",
+        "shadow": "#00000080"
+      }
     }
   ]
 }
